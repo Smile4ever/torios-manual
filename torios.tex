@@ -57,7 +57,7 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 \item7- While we're targeting low hardware machines (32-bit), shouldn't we also think of those who wish to try ToriOS on more powerful machine (64bit)? if that so, we need two builds: i386 and amd64.
 \item8- I need the Wiki and Docs team to write each and every post, not only about the system, how to use it, system requirement, etc ... no ... I'm planning to document the steps that we have done to create this or will create this system and YES, I mean the technical side so I guess both the docs and devs guys need to work side by side if you agree on this.
 \item9- 60MB or 50MB? don't want to kill ourselves but if we could do that, why not? I guess you know what I'm talking about
-\item 10- Have we thought about the ISO size? any idea how big will it be? around 300MB? 400MB? less or more? AFAIK, it should never reach say 600MB, right?
+\item 10- Have we thought about the ISO size? any idea how big will it be? around 300Told or asked there is a difference,  problem is some old people are very rude due to lack of proper discipline when they were younger and think they can barge past people , and treat people with little respect,  if you ask nicely people usually oblige if you tellpeople rudeluyMB? 400MB? less or more? AFAIK, it should never reach say 600MB, right?
 \item 11- Where are we going to host the ISOs? do we have a host for that?
 \item 12- As long as ToriOS is based on Ubuntu, we can test it on Virtual Machine such as OracleVB, correct?
 \item 13- By any chance, do we need to talk with Ubuntu/Canonical team about our Project? I mean is there any kind of approval or stuff like that we need? I'm talking about the technical side of our project as they should have nothing to do with thewget -c http://torios.org/VB/ToriBuilder.vdi.xz \\ other stuff but maybe they do with the technical side, that is why I'm asking and we need to know IMHO.
@@ -245,9 +245,32 @@ Torios jwm development lead Israel israel@torios.org
 \newpage
 
 {\large \textbf{JWM Settings manager}} \\ \\
-\includegraphics{jwmsettingsmanager}
+
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{jwmsettingsmanager}
+\end{center}
+
 \\
+\begin{center}
+\includegraphics[width=0.7\linewidth]{mouse-settings}
+\end{center}
+
 \\
+\begin{center}
+\includegraphics[width=0.7\linewidth]{panel-settings}
+\end{center}
+\\
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{desktop-settings}
+\end{center}
+\\
+\begin{center}
+\includegraphics[width=0.7\linewidth]{window-settings}
+\end{center}
+\\
+
 
 %{Panel}
 
@@ -294,6 +317,23 @@ Once you are signed up then you can start testing the latest build this can be d
 
 wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
 
+Once done you need to extract,   either right click and select extract here or use the command line.  Due to the size of the Virtual box image this may take some time.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{extractVBimage}
+\end{center}
+
+Once this is done you will have a new file called:    in the ToriBuilder.vdi folder,  
+
+The next step is to open this in Virtual box.:
+
+Upon opening virtual box you will see this screen:
+\begin{center}
+\includegraphics[width=0.7\linewidth]{virtualbox}
+\end{center}
+ note yours may look different as I have a few images,  also note in this screen shot i have a different vm set up.  We still need to open up the ToriOS image we downloaded. 
+
+We will assume here you have thus already installed.
 
 \chapter{Glossary}
 \begin{multicols}{2}
