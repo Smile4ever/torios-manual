@@ -251,25 +251,23 @@ Torios jwm development lead Israel israel@torios.org
 \includegraphics[width=0.7\linewidth]{jwmsettingsmanager}
 \end{center}
 
-\\
 \begin{center}
 \includegraphics[width=0.7\linewidth]{mouse-settings}
 \end{center}
 
-\\
 \begin{center}
 \includegraphics[width=0.7\linewidth]{panel-settings}
 \end{center}
-\\
+
 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{desktop-settings}
 \end{center}
-\\
+
 \begin{center}
 \includegraphics[width=0.7\linewidth]{window-settings}
 \end{center}
-\\
+
 
 
 %{Panel}
@@ -317,27 +315,73 @@ Once you are signed up then you can start testing the latest build this can be d
 
 wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
 
-Once done you need to extract,   either right click and select extract here or use the command line.  Due to the size of the Virtual box image this may take some time.
+Once done you need to extract,   either right click and select extract here or use the command line.  Due to the size of the Virtual box image this may take some time. \\
+
+Once this is done you will have a new file called:    in the ToriBuilder.vdi folder,  
+
+
+Open virtual box
 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{extractVBimage}
 \end{center}
 
-Once this is done you will have a new file called:    in the ToriBuilder.vdi folder,  
+Virtual box 
+Click New
 
-The next step is to open this in Virtual box.:
+\begin{center}
+\item \includegraphics[width=0.7\linewidth]{ToriosTest01}
+\end{center}
+
+Use the following options
+\begin{itemize}
+\item Name : Torios
+\item Type : Linux
+\item Version : Ubuntu 32 bit
+\end{itemize}
+
+Click Next
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest02}
+\end{center}
+
+Should be Ok to leave the default memory as 256MB,so click next.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest03}
+\end{center}
 
 Upon opening virtual box you will see this screen:
 \begin{center}
 \includegraphics[width=0.7\linewidth]{virtualbox}
 \end{center}
+
+Click use existing and select the file you downloaded earlier, so in this case its \textbf{ToriBuilder.vdi}
+
+Click done.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest-done}
+\end{center}
+
+Torios needs PAE support enabled to do this select the virtual box image you just created,  and click settings.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosEnablePAE}
+\end{center}
+
+Click system, then processor tab then check the box EnablePAE/NX then press OK.
+
+You should then bereturned to the main virtual box window,  the image should still be selected so press start and you should boot in to the Torios Test Image. 
+
  note yours may look different as I have a few images,  also note in this screen shot i have a different vm set up.  We still need to open up the ToriOS image we downloaded. 
 
 We will assume here you have thus already installed.
 
 \chapter{Glossary}
 \begin{multicols}{2}
-
+ 
 
 \begin{description}
 \item[A]

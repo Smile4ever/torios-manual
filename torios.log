@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.3)  10 AUG 2014 18:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.3)  10 AUG 2014 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,106 +397,40 @@ File: jwmsettingsmanager.png Graphic file (type png)
 Package pdftex.def Info: jwmsettingsmanager.png used on input line 251.
 (pdftex.def)             Requested size: 272.99881pt x 278.54211pt.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 \begin
-            {center}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 <mouse-settings.png, id=70, 434.62375pt x 245.91875pt>
 File: mouse-settings.png Graphic file (type png)
 
 <use mouse-settings.png>
-Package pdftex.def Info: mouse-settings.png used on input line 256.
+Package pdftex.def Info: mouse-settings.png used on input line 255.
 (pdftex.def)             Requested size: 272.99881pt x 154.47557pt.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.260 \begin
-            {center}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 <panel-settings.png, id=71, 342.27875pt x 689.57625pt>
 File: panel-settings.png Graphic file (type png)
 
 <use panel-settings.png>
-Package pdftex.def Info: panel-settings.png used on input line 261.
+Package pdftex.def Info: panel-settings.png used on input line 259.
 (pdftex.def)             Requested size: 272.99881pt x 550.04134pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18 <./jwmsettingsmanager.png> <./mouse-settings.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.264 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 <desktop-settings.png, id=75, 536.0025pt x 583.17876pt>
 File: desktop-settings.png Graphic file (type png)
 
 <use desktop-settings.png>
-Package pdftex.def Info: desktop-settings.png used on input line 266.
+Package pdftex.def Info: desktop-settings.png used on input line 264.
 (pdftex.def)             Requested size: 272.99881pt x 297.0257pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./panel-settings.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.269 \begin
-            {center}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<window-settings.png, id=80, 681.54625pt x 480.79625pt>
+ [19 <./panel-settings.png>] <window-settings.png, id=80, 681.54625pt x 480.796
+25pt>
 File: window-settings.png Graphic file (type png)
 
 <use window-settings.png>
-Package pdftex.def Info: window-settings.png used on input line 270.
+Package pdftex.def Info: window-settings.png used on input line 268.
 (pdftex.def)             Requested size: 272.99881pt x 192.58653pt.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[20 <./desktop-settings.png> <./window-settings.png>]
+ [20 <./desktop-settings.png> <./window-settings.png>]
 Chapter 6.
 [21
 
@@ -504,17 +438,22 @@ Chapter 6.
 
 ]
 Chapter 7.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 295.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 293.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 295.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 293.
 
-Overfull \hbox (13.08609pt too wide) in paragraph at lines 311--313
+Overfull \hbox (13.08609pt too wide) in paragraph at lines 309--311
 []$\OT1/cmtt/m/n/12 https : / / www . youtube . com / watch ? v = P _ r2hHqyUa4
 $ $http : / / www . youtube .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
  []
 
 
@@ -522,42 +461,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-<extractVBimage.png, id=90, 481.8pt x 165.61874pt>
+[23] <extractVBimage.png, id=95, 481.8pt x 165.61874pt>
 File: extractVBimage.png Graphic file (type png)
- <use extractVBimage.png>
-Package pdftex.def Info: extractVBimage.png used on input line 323.
-(pdftex.def)             Requested size: 272.99881pt x 93.84515pt.
 
-[23] <virtualbox.png, id=96, 774.895pt x 578.16pt>
+<use extractVBimage.png>
+Package pdftex.def Info: extractVBimage.png used on input line 326.
+(pdftex.def)             Requested size: 272.99881pt x 93.84515pt.
+ <ToriosTest01.png, id=96, 566.115pt x 431.6125pt>
+File: ToriosTest01.png Graphic file (type png)
+
+<use ToriosTest01.png>
+Package pdftex.def Info: ToriosTest01.png used on input line 333.
+(pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
+ <ToriosTest02.png, id=97, 566.115pt x 431.6125pt>
+File: ToriosTest02.png Graphic file (type png)
+
+<use ToriosTest02.png>
+Package pdftex.def Info: ToriosTest02.png used on input line 346.
+(pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
+ [24 <./extractVBimage.png> <./ToriosTest01.png>]
+<ToriosTest03.png, id=103, 566.115pt x 431.6125pt>
+File: ToriosTest03.png Graphic file (type png)
+ <use ToriosTest03.png>
+Package pdftex.def Info: ToriosTest03.png used on input line 352.
+(pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
+
+<virtualbox.png, id=104, 774.895pt x 578.16pt>
 File: virtualbox.png Graphic file (type png)
  <use virtualbox.png>
-Package pdftex.def Info: virtualbox.png used on input line 332.
+Package pdftex.def Info: virtualbox.png used on input line 357.
 (pdftex.def)             Requested size: 272.99881pt x 203.69115pt.
 
-[24 <./extractVBimage.png> <./virtualbox.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./ToriosTest02.png> <./ToriosTest03.png>]
+<ToriosTest-done.png, id=111, 774.895pt x 578.16pt>
+File: ToriosTest-done.png Graphic file (type png)
+ <use ToriosTest-done.png>
+Package pdftex.def Info: ToriosTest-done.png used on input line 365.
+(pdftex.def)             Requested size: 272.99881pt x 203.69115pt.
+
+<ToriosEnablePAE.png, id=112, 671.50874pt x 464.73625pt>
+File: ToriosEnablePAE.png Graphic file (type png)
+
+<use ToriosEnablePAE.png>
+Package pdftex.def Info: ToriosEnablePAE.png used on input line 371.
+(pdftex.def)             Requested size: 272.99881pt x 188.93336pt.
+
+Underfull \vbox (badness 4569) has occurred while \output is active []
+
+ [26 <./virtualbox.png> <./ToriosTest-done.png>] [27 <./ToriosEnablePAE.png>] [
+28
+
+]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 []\OT1/cmr/m/n/12 Creator of the
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 367--368
+Underfull \hbox (badness 5022) in paragraph at lines 411--412
 []\OT1/cmr/m/n/12 Physical Ad-dress
  []
 
-[25
-
-] [26]
+[29] [30]
 Chapter 9.
-[27
+[31
 
 ] (./torios.aux) ) 
 Here is how much of TeX's memory you used:
- 2691 strings out of 495028
- 36039 string characters out of 6181498
+ 2716 strings out of 495028
+ 36564 string characters out of 6181498
  94551 words of memory out of 5000000
- 5842 multiletter control sequences out of 15000+600000
+ 5862 multiletter control sequences out of 15000+600000
  10324 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,6n,24p,486b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -568,10 +545,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on torios.pdf (27 pages, 794892 bytes).
+Output written on torios.pdf (31 pages, 1138675 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
