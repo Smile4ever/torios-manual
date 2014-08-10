@@ -14,7 +14,13 @@
 \begin{center}
 {\Huge ToriOS Manual}
 \end{center}
-\includegraphics{FinalLogo}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./FinalLogo}
+\caption{}
+\label{fig:FinalLogo}
+\end{figure}
+
 
 \begin{center}
 Minimal, Simple, Fast, Small and Gives you a freedom of choice :)
@@ -54,7 +60,7 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 \item 10- Have we thought about the ISO size? any idea how big will it be? around 300MB? 400MB? less or more? AFAIK, it should never reach say 600MB, right?
 \item 11- Where are we going to host the ISOs? do we have a host for that?
 \item 12- As long as ToriOS is based on Ubuntu, we can test it on Virtual Machine such as OracleVB, correct?
-\item 13- By any chance, do we need to talk with Ubuntu/Canonical team about our Project? I mean is there any kind of approval or stuff like that we need? I'm talking about the technical side of our project as they should have nothing to do with the other stuff but maybe they do with the technical side, that is why I'm asking and we need to know IMHO.
+\item 13- By any chance, do we need to talk with Ubuntu/Canonical team about our Project? I mean is there any kind of approval or stuff like that we need? I'm talking about the technical side of our project as they should have nothing to do with thewget -c http://torios.org/VB/ToriBuilder.vdi.xz \\ other stuff but maybe they do with the technical side, that is why I'm asking and we need to know IMHO.
 \item 14- Alpha 1, Alpha 2, Beta 1, Beta 2 and RC? or no need for that? should we just do Alpha, Beta and RC? these are milestones just like what Ubuntu GNOME or Lubuntu are doing when it comes to the development cycle.
 \item 15- I know it is hard to tell at this point but any idea when ToriOS 1.0 will be available to download and use? I know I'm the one who should announce that but if truth to be told, it is something that our devs should advise for and we haven't yet done anything serious. 
 \end{enumerate}
@@ -69,7 +75,7 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 \hline  Documentation (wiki) & Geoffrey De Belie & smile  & smile4ever@torios.org  \\ 
 \hline  Developer lead / driver & Alexander Kluth & DerAlex & alexander@torios.org \\ 
 \hline  QA Testing & Jack  & fjack  &  \\ 
-\hline  Marketing & David &  & dbyentzen@AT@torios.org \\
+\hline  Marketing & David &  & dbyentzen@torios.org \\
 \hline Artwork & Rafael & rafeallaguna & \\
 \hline ? & Israel & israeldahl & \\
 
@@ -79,20 +85,131 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 
 \chapter{Installation}
 
-
+There are several steps to an installation. \\
+\begin{enumerate}
+\item decide on the installation media CD-R or Flash disk
+\item Prepare install media - in the case of a flash disk make sure this is blank
+\item Prepare target media and decide where to install Torios to
+\item Download the iso file
+\item Create your install media
+\item initial boot
+\item either install from menu or run live session and install from there
+\end{enumerate}
 
 \subsection{Downloading the ISO}
+\subitem{Command Line}
+To download from the command line you can use the wget command, if you use the -c argument.  Then if the download is stopped or interupted then it will carry from where it left off if you re-run the command.\\
+
+\subitem{Browser}
 
 
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
 that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
 \subsection{Creating install media}
+
+\subsection{CD-R}
+
+
 \subsection{Flash Disks}
 
-You can use unetbootln to create a cd-r image,   http://zleap.net/?s=unetboot
+You can use unetbootln to bootable flash disk image,   http://zleap.net/?s=unetboot
 
-\subsection{CD-R - Recordable CD Media}
+You can follow the steps below \\
+
+Creating a boot usb flash disk
+
+(With thanks to Nio Wiklund for some helpful comments with regard to the title of this document)
+
+A good tool for this is Unetbootin,  you can install this on most popular Linux distributions,
+
+e.g sudo apt-get install unetbootin
+
+you need your root password.
+
+You can then load the software up, you will need your root password
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin} 
+\end{center}
+
+
+If you have downloaded an iso image  you don?t need to worry about the top section
+
+Click disk image,  ISO can be left as in,  then click the box with ? in and select the iso file
+
+select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
+
+drive should be the device reference for this disk
+
+make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
+
+I find it helpful to unmount and unplug my external hdd first,  it gives less options but also reduces the chances I will write to it,  The disks tool below is useful for finding out what device you are writing to.
+
+If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
+
+Click disk image radio button
+
+the drop down menu to the right of this is a betweet ISO and floppy
+
+you can then click on file search button (the one with ? )
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin2} 
+
+\end{center}
+
+
+
+Select if you want to have a persistent space for files.
+
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin3}
+\end{center}
+
+type ? you can choose between usb and hard disk (BE VERY CAREFUL)
+
+then select the device, if you select hard disk then the device reference chances to / indicating root of the file system.
+
+\paragraph{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.}
+
+ 
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin4}
+\end{center}
+You need to check if the target device should be mounted first or not
+
+
+\paragraph{Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team}
+
+\paragraph{You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post etc and are still stuck,  this shows you have tried to research the issue.}
+
+The ubuntu manual should have this information in it too.
+
+man unetbootin
+
+man fdisk
+
+man ls
+
+man df
+
+If you need to format the flash disk, using disks, this is a case of
+
+Unmount the flash disk
+
+Select format
+
+MAKE SURE YOU HAVE THE RIGHT DEVICE SELECTED.
+
+Once this is all done and you are happy with the destination click OK
+
+Progress bar showing how many files have been copied and a percentage
+
+
+\includegraphics[width=0.7\linewidth]{unetbootin5} \\
+
+All done you can now reboot, select usb disk from the boot device menu (see your Manual on how to access this) and tryout /  install the new OS
 
 \subsection{booting install media}
 Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.
@@ -106,7 +223,13 @@ Within Torios there is an installer called OBI - One button installer,  this wil
 Installation is covered in several documents which can be found in /Desktop/Documents
 mainly 
 OBI-quickstart-manual.pdf
+
 \subsection{Final steps}
+
+\subsection{Testing - For more advanced users}
+
+Please see getting invovled
+ 
 \chapter{Desktop}
 
 \subsection{JWM Settings}
@@ -128,42 +251,10 @@ Torios jwm development lead Israel israel@torios.org
 
 %{Panel}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{./panel-settings}
-\caption{}
-\label{fig:panel-settings}
-\end{figure}
 
 
 
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{./desktop-settings}
-\caption{}
-\label{fig:desktop-settings}
-\end{figure}
-\newpage
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{./mouse-settings}
-\caption{}
-\label{fig:mouse-settings}
-\end{figure}
-
-{Fonts}
-\textit{fonts}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{./window-settings}
-\caption{}
-\label{fig:window-settings}
-\end{figure}
 
 %{Keyboard}
 %{Icons}
@@ -185,6 +276,7 @@ Torios jwm development lead Israel israel@torios.org
 \item{Choose where you would like to help [4]}
 \end{itemize}
 
+
 \begin{enumerate}
 \item {https://help.launchpad.net/YourAccount/NewAccount}
 \item {https://launchpad.net/~torios}
@@ -195,6 +287,13 @@ Torios jwm development lead Israel israel@torios.org
 
 \url{https://www.youtube.com/watch?v=P_r2hHqyUa4}
 \url{http://www.youtube.com/watch?v=PtVxDv_vy8w}
+
+
+\subsection {testing}
+Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
+
+wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
+
 
 \chapter{Glossary}
 \begin{multicols}{2}
