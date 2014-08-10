@@ -78,20 +78,38 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 
 
 \chapter{Installation}
+
+
+
 \subsection{Downloading the ISO}
+
+
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
 that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
 \subsection{Creating install media}
+\subsection{Flash Disks}
+
+You can use unetbootln to create a cd-r image,   http://zleap.net/?s=unetboot
+
+\subsection{CD-R - Recordable CD Media}
+
 \subsection{booting install media}
 Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.
 
 \subsection{UEFI Boot}
 If you have very new hardware then you may have the new UEFI boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here.
 \subsection{Installing}
+
+Within Torios there is an installer called OBI - One button installer,  this will take you through the steps needed to install the Operating system. 
+
+Installation is covered in several documents which can be found in /Desktop/Documents
+mainly 
+OBI-quickstart-manual.pdf
 \subsection{Final steps}
 \chapter{Desktop}
 
+\subsection{JWM Settings}
 ToriOS will use the JWM (Joe's Window Manager) window environment:\\
 
 The following is quoted from the projects website
@@ -107,18 +125,54 @@ Torios jwm development lead Israel israel@torios.org
 \includegraphics{jwmsettingsmanager}
 \\
 \\
-\begin{itemize}
-\item{Panel}
-\item{Keyboard}
-\item{Icons}
-\item{Desktop}
-\item{Mouse}
-\item{Fonts}
-\item{Windows}
-\item{Themes}
-\item{Autostart}
 
-\end{itemize}
+%{Panel}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./panel-settings}
+\caption{}
+\label{fig:panel-settings}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./desktop-settings}
+\caption{}
+\label{fig:desktop-settings}
+\end{figure}
+\newpage
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./mouse-settings}
+\caption{}
+\label{fig:mouse-settings}
+\end{figure}
+
+{Fonts}
+\textit{fonts}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./window-settings}
+\caption{}
+\label{fig:window-settings}
+\end{figure}
+
+%{Keyboard}
+%{Icons}
+
+{Windows}
+{Themes}
+{Autostart}
+
+
 \chapter{Applications}
 
 \chapter{Get Involved}

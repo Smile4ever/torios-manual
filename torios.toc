@@ -3,17 +3,21 @@
 \contentsline {chapter}{\numberline {2}What is GNU / Linux}{7}
 \contentsline {subsection}{\numberline {2.0.2}About ToriOS}{7}
 \contentsline {subsection}{\numberline {2.0.3}Non PAE Support}{7}
+\contentsline {subsection}{\numberline {2.0.4}Technical overview}{7}
 \contentsline {chapter}{\numberline {3}The ToriOS Team}{9}
 \contentsline {chapter}{\numberline {4}Installation}{11}
-\contentsline {subsection}{\numberline {4.0.4}Downloading the ISO}{11}
-\contentsline {subsection}{\numberline {4.0.5}Verifying the download}{11}
-\contentsline {subsection}{\numberline {4.0.6}Creating install media}{11}
-\contentsline {subsection}{\numberline {4.0.7}booting install media}{11}
-\contentsline {subsection}{\numberline {4.0.8}UEFI Boot}{11}
-\contentsline {subsection}{\numberline {4.0.9}Installing}{11}
-\contentsline {subsection}{\numberline {4.0.10}Final steps}{11}
+\contentsline {subsection}{\numberline {4.0.5}Downloading the ISO}{11}
+\contentsline {subsection}{\numberline {4.0.6}Verifying the download}{11}
+\contentsline {subsection}{\numberline {4.0.7}Creating install media}{11}
+\contentsline {subsection}{\numberline {4.0.8}Flash Disks}{11}
+\contentsline {subsection}{\numberline {4.0.9}CD-R - Recordable CD Media}{11}
+\contentsline {subsection}{\numberline {4.0.10}booting install media}{11}
+\contentsline {subsection}{\numberline {4.0.11}UEFI Boot}{11}
+\contentsline {subsection}{\numberline {4.0.12}Installing}{12}
+\contentsline {subsection}{\numberline {4.0.13}Final steps}{12}
 \contentsline {chapter}{\numberline {5}Desktop}{13}
-\contentsline {chapter}{\numberline {6}Applications}{15}
-\contentsline {chapter}{\numberline {7}Get Involved}{17}
-\contentsline {chapter}{\numberline {8}Glossary}{19}
-\contentsline {chapter}{\numberline {9}Document License}{21}
+\contentsline {subsection}{\numberline {5.0.14}JWM Settings}{13}
+\contentsline {chapter}{\numberline {6}Applications}{19}
+\contentsline {chapter}{\numberline {7}Get Involved}{21}
+\contentsline {chapter}{\numberline {8}Glossary}{23}
+\contentsline {chapter}{\numberline {9}Document License}{25}
