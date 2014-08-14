@@ -1,0 +1,19 @@
+htfcss: cmtt font-family: monospace;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmsl font-style: oblique;
+File: torios.html
+--- characters ---
+Font("cmr","12","12","100")
+Font("cmr","17","17","143")
+Font("cmsl","12","12","100")
+Font("cmbx","12","12","207")
+Font("cmbx","12","12","100")
+Font("cmbx","12","12","120")
+Font("cmr","8","8","100")
+Font("cmsy","10","10","120")
+Font("cmtt","12","12","100")

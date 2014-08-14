@@ -1,0 +1,364 @@
+1
+                                  Figure 1:
+                        ToriOS Manual
+       Minimal, Simple, Fast, Small and Gives you a freedom of choice :)
+
+          2
+
+  Contents
+     1Introduction                                                                 5
+     2What is GNU / Linux                                                    7
+     3The ToriOS Team                                                          9
+     4Installation                                                                 11
+     5Desktop                                                                     15
+     6Applications                                                               17
+     7Get Involved                                                               19
+     8Glossary                                                                    21
+     9Document License                                                        23
+                                      3
+
+          4                                                                                 CONTENTS
+
+  Chapter 1
+  Introduction
+  The goal of this project is to produce a minimalist Linux distribution that
+  gives end users more choice as to what software is installed on their system.
+     Ubuntu 12.04 is used as a base for this new system.
+  1.0.1   About this Manual
+  This manual refers to external websites to help explain concepts further, to
+  avoid the need to reproduce what is already out there. The ToriOS team take
+  no responsibility for external content.  The links are correct and suitable at
+  the time of writing, Broken links are out of the Authors control between
+  revisions.  It is your responsibility to ensure suitability of information, you
+  should read fully and seek other sources of information and ask for help if
+  unsure. This manual has been prepared using LATE X.
+                                      5
+
+          6                                                     CHAPTER 1.  INTRODUCTION
+
+  Chapter 2
+  What is GNU / Linux
+  2.0.2   About ToriOS
+  ToriOS is a system aimed at replacing Windows XP, which will reach end-
+  of-life in April 2014. ToriOS is a fast and minimal system based on Ubuntu
+  12.04.
+  2.0.3   Non PAE Support
+  ToriOS will support PAE Hardware
+  https://blueprints.launchpad.net/torios/+spec/non-pae-support
+  2.0.4   Technical overview
+     1. 1- ToriOS is supporting Non-PAE machines by default - we have already
+        agreed on that - just a reminder.
+     2. 2- ToriOS is always an LTS - we too agreed on that as well - just a
+        reminder.
+     3. 3- ToriOS will be released every 12 months NOT every 6 months like
+        Ubuntu - new idea.
+     4. 4- ToriOS 1.0 is based on 12.04 LTS - we have discussed that before
+        but didn&#8217;t yet 100
+     5. 5- ToriOS 2.0 will be based on 14.04 LTS
+     6. 6- nm-manager should not be used as far as I have read so far from dif-
+        ferent people all of them confirmed the big RAM eater is nm-manager.
+                                      7
+
+          8                                           CHAPTER 2.  WHAT IS GNU / LINUX
+             7. 7- While we&#8217;re targeting low hardware machines (32-bit), shouldn&#8217;t we
+                also think of those who wish to try ToriOS on more powerful machine
+                (64bit)? if that so, we need two builds: i386 and amd64.
+             8. 8- I need the Wiki and Docs team to write each and every post, not
+                only about the system, how to use it, system requirement, etc ... no ...
+                I&#8217;m planning to document the steps that we have done to create this or
+                will create this system and YES, I mean the technical side so I guess
+                both the docs and devs guys need to work side by side if you agree on
+                this.
+             9. 9- 60MB or 50MB? don&#8217;t want to kill ourselves but if we could do that,
+                why not? I guess you know what I&#8217;m talking about
+            10. 10- Have we thought about the ISO size?  any idea how big will it
+                be? around 300Told or asked there is a difference, problem is some old
+                people are very rude due to lack of proper discipline when they were
+                younger and think they can barge past people , and treat people with
+                little respect, if you ask nicely people usually oblige if you tellpeople
+                rudeluyMB? 400MB? less or more? AFAIK, it should never reach say
+                600MB, right?
+            11. 11- Where are we going to host the ISOs? do we have a host for that?
+            12. 12- As long as ToriOS is based on Ubuntu, we can test it on Virtual
+                Machine such as OracleVB, correct?
+            13. 13- By any chance, do we need to talk with Ubuntu/Canonical team
+                about our Project?  I mean is there any kind of approval or stuff like
+                that we need? I&#8217;m talking about the technical side of our project as they
+                should have nothing to do with thewget -c http://torios.org/VB/ToriBuilder.vdi.xz
+                other stuff but maybe they do with the technical side, that is why I&#8217;m
+                asking and we need to know IMHO.
+            14. 14- Alpha 1, Alpha 2, Beta 1, Beta 2 and RC? or no need for that?
+                should we just do Alpha, Beta and RC? these are milestones just like
+                what Ubuntu GNOME or Lubuntu are doing when it comes to the
+                development cycle.
+            15. 15- I know it is hard to tell at this point but any idea when ToriOS 1.0
+                will be available to download and use? I know I&#8217;m the one who should
+                announce that but if truth to be told, it is something that our devs
+                should advise for and we haven&#8217;t yet done anything serious.
+
+  Chapter 3
+  The ToriOS Team
+  ________________________________________________ JOB ROLE  NAME  IRC NICK  E-MAIL 
+         Project lead                  Ali Linx            amjjawad      amjjawad@torios.org  
+    Website email admin            William                 ?            william@torios.org   
+ Documentation (manual)      Paul Sutton           zleap           zleap@torios.org     
+    Documentation (wiki)     Geoffrey De Belie       smile       smile4ever@torios.org 
+   Developer lead / driver     Alexander Kluth      DerAlex      alexander@torios.org  
+          QA Testing                    Jack                 fjack                                      
+           Marketing                    David                               dbyentzen@torios.org  
+             Artwork                      Rafael           rafeallaguna                                 
+                 ?                          Israel             israeldahl                                   
+                                      9
+
+          10                                              CHAPTER 3.  THE TORIOS TEAM
+
+  Chapter 4
+  Installation
+  There are several steps to an installation.
+     1. decide on the installation media CD-R or Flash disk
+     2. Prepare install media - in the case of a flash disk make sure this is
+        blank
+     3. Prepare target media and decide where to install Torios to
+     4. Download the iso file
+     5. Create your install media
+     6. initial boot
+     7. either install from menu or run live session and install from there
+  4.0.5   Downloading the ISO
+      Command Line To download from the command line you can use the
+          wget command, if you use the -c argument. Then if the download is
+          stopped or interupted then it will carry from where it left off if you
+          re-run the command.
+          Browser
+                                      11
+
+          12                                                     CHAPTER 4.  INSTALLATION
+          4.0.6   Verifying the download
+          There is an excellent guide at
+          https://help.ubuntu.com/community/HowToMD5SUM
+          that explains how to check your downloaded iso file for errors.  Apart from
+          the file name being different so for ToriOS you may have ToriOS-1.0.0.iso
+          the steps are pretty much the same.
+          4.0.7   Creating install media
+          4.0.8   CD-R
+          4.0.9   Flash Disks
+          You can use unetbootln to bootable flash disk image, http://zleap.net/?s=unetboot
+             You can follow the steps below
+             Creating a boot usb flash disk
+             (With thanks to Nio Wiklund for some helpful comments with regard to
+          the title of this document)
+             A good tool for this is Unetbootin, you can install this on most popular
+          Linux distributions,
+             e.g sudo apt-get install unetbootin
+             you need your root password.
+             You can then load the software up, you will need your root password
+                                               
+             If you have downloaded an iso image you don?t need to worry about the
+          top section
+             Click disk image, ISO can be left as in, then click the box with ? in and
+          select the iso file
+             select type, usb drive or hard disk, most people are going to want to
+          create a usb boot flash disk.
+             drive should be the device reference for this disk
+             make sure you are 100 percent sure, and if you are not sure ASK on
+          forums , IRC or elsewhere first.
+             I find it helpful to unmount and unplug my external hdd first, it gives
+          less options but also reduces the chances I will write to it, The disks tool
+          below is useful for finding out what device you are writing to.
+             If you have already downloaded and md5 checked your iso file then you
+          don?t need to worry about the top part,
+
+                                                                          13
+     Click disk image radio button
+     the drop down menu to the right of this is a betweet ISO and floppy
+     you can then click on file search button (the one with ? )
+                                       
+     Select if you want to have a persistent space for files.
+                                       
+     type ? you can choose between usb and hard disk (BE VERY CAREFUL)
+     then select the device, if you select hard disk then the device reference
+  chances to / indicating root of the file system.
+  REMEMBER that you can wipe your whole file system if you get
+  the options wrong, if you have an external hard disk and a usb disk
+  plugged in I find it helpful to unmount and unplug the external
+  hard disk, gives less target options and is less likely to get wiped
+  by mistake.   
+                                       
+  You need to check if the target device should be mounted first or not
+  Hopefully this how to is useful, please be careful as I am not re-
+  sponsible for data loss, I try and write guides to be generic not
+  explicit guides. I will leave this to the documentation team   
+  You can use fdisk and df to determine device references. Read the
+  man pages for more info if you get stuck as for help and say you
+  have looked at man pages, this blog post etc and are still stuck,
+  this shows you have tried to research the issue.   The ubuntu manual
+  should have this information in it too.
+     man unetbootin
+     man fdisk
+     man ls
+     man df
+     If you need to format the flash disk, using disks, this is a case of
+     Unmount the flash disk
+     Select format
+     MAKE SURE YOU HAVE THE RIGHT DEVICE SELECTED.
+     Once this is all done and you are happy with the destination click OK
+
+          14                                                     CHAPTER 4.  INSTALLATION
+             Progress bar showing how many files have been copied and a percentage
+             All done you can now reboot, select usb disk from the boot device menu
+          (see your Manual on how to access this) and tryout / install the new OS
+          4.0.10   booting install media
+          Depending on how your computer is set up, you need to tell the computer to
+          boot of which ever boot media you created either a) cdrom b) dvd c) usb.
+          4.0.11   UEFI Boot
+          If you have very new hardware then you may have the new UEFI boot system,
+          this means you can&#8217;t just boot the install media and there are a few extra
+          steps. These are outlined here.
+          4.0.12   Installing
+          Within Torios there is an installer called OBI - One button installer, this will
+          take you through the steps needed to install the Operating system.
+             Installation is covered in several documents which can be found in /Desk-
+          top/Documents mainly OBI-quickstart-manual.pdf
+          4.0.13   Final steps
+          4.0.14   Testing - For more advanced users
+          Please see getting invovled
+
+  Chapter 5
+  Desktop
+  5.0.15   JWM Settings
+  ToriOS will use the JWM (Joe&#8217;s Window Manager) window environment:
+     The following is quoted from the projects website
+        JWM is a light-weight window manager for the X11 Window
+        System. JWM is written in C and uses only Xlib at a minimum.
+        Because of its small footprint, JWM makes a good window man-
+        ager for older computers and less powerful systems, such as the
+        Raspberry Pi, though it is perfectly capable of running on mod-
+        ern systems. JWM is included in small Linux distributions such
+        as Puppy Linux and Damn Small Linux, and it is available as a
+        separate package in many other distributions.
+  http://www.joewing.net/projects/jwm/ Torios jwm development lead Israel
+  israel@torios.org
+                                      15
+
+          16                                                             CHAPTER 5.  DESKTOP
+             JWM Settings manager
+                                               
+                                               
+                                               
+                                               
+                                               
+             Windows Themes Autostart
+
+  Chapter 6
+  Applications
+                                      17
+
+          18                                                     CHAPTER 6.  APPLICATIONS
+
+  Chapter 7
+  Get Involved
+     &#x2219; Create a Launchpad Account [1]
+     &#x2219; Join the Team [2]
+     &#x2219; Subscribe to mailing list [3]
+     &#x2219; Send an e-mail to the list to introduce yourself
+     &#x2219; Choose where you would like to help [4]
+     1. https://help.launchpad.net/YourAccount/NewAccount
+     2. https://launchpad.net/ torios
+     3. https://help.launchpad.net/Teams/MailingLists - see subscribing
+     4. https://blueprints.launchpad.net/torios/+spec/recruit-contributors
+     https://www.youtube.com/watch?v=P_r2hHqyUa4http://www.youtube.
+  com/watch?v=PtVxDv_vy8w
+  7.0.16   testing
+  Once you are signed up then you can start testing the latest build this can
+  be downloaded as a Virtual box image with.
+     wget -c http://torios.org/VB/ToriBuilder.vdi.xz
+     Once done you need to extract, either right click and select extract here
+  or use the command line. Due to the size of the Virtual box image this may
+  take some time.
+                                      19
+
+          20                                                    CHAPTER 7.  GET INVOLVED
+             Once this is done you will have a new file called:  in the ToriBuilder.vdi
+          folder,
+             Open virtual box
+                                               
+             Virtual box Click New
+                                               
+                                               
+             Use the following options
+             &#x2219; Name : Torios
+             &#x2219; Type : Linux
+             &#x2219; Version : Ubuntu 32 bit
+             Click Next
+                                               
+             Should be Ok to leave the default memory as 256MB,so click next.
+                                               
+             Upon opening virtual box you will see this screen:
+                                               
+             Click use existing and select the file you downloaded earlier, so in this
+          case its ToriBuilder.vdi
+             Click done.
+                                               
+             Torios needs PAE support enabled to do this select the virtual box image
+          you just created, and click settings.
+                                               
+             Click system, then processor tab then check the box EnablePAE/NX then
+          press OK.
+             You should then bereturned to the main virtual box window, the image
+          should still be selected so press start and you should boot in to the Torios
+          Test Image.
+             note yours may look different as I have a few images, also note in this
+          screen shot i have a different vm set up. We still need to open up the ToriOS
+          image we downloaded.
+             We will assume here you have thus already installed.
+
+  Chapter 8
+  Glossary
+  A 
+  B 
+  C 
+  Creative commons Document and
+        Graphics Licensing.
+  D 
+  E 
+  ext(n) File  system  used  on  Linux
+        systems,   examples   are   ext2
+        ext3, and ext4
+  F 
+  G 
+  GPL General Public License
+  GNU/LINUX The  kernel  is  re-
+        leased under the GPL so we re-
+        fer to it as GNU / Linux
+  H 
+  I 
+  J                                     K 
+                                        Kernel This is the heart of the op-
+                                              erating system.
+                                      21
+
+          22                                                           CHAPTER 8.  GLOSSARY
+          L 
+          Linux Operating system Kernel.
+          Linus Torvalds Creator    of    the
+                Linux Kernel
+          M 
+          N 
+          O 
+          P 
+          PAE Hardware Physical   Address
+                Extension
+          Q                                    R 
+                                                S 
+                                                T 
+                                                U 
+                                                V 
+                                                W 
+                                                X 
+                                                Y 
+                                                Z 
+
+  Chapter 9
+  Document License
+                                      23
+
+

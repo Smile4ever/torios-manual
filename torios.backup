@@ -1,0 +1,430 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[latin1]{inputenc}
+%\usepackage{cclicenses}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\setcounter{tocdepth}{1}
+\author{Paul Sutton}
+\begin{document}
+
+\begin{center}
+{\Huge ToriOS Manual}
+\end{center}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./FinalLogo}
+\caption{}
+\label{fig:FinalLogo}
+\end{figure}
+
+
+\begin{center}
+Minimal, Simple, Fast, Small and Gives you a freedom of choice :)
+\end{center}
+\tableofcontents
+\chapter{Introduction}
+The goal of this project is to produce a minimalist Linux distribution that gives end users more choice as to what software is installed on their system.\\
+
+Ubuntu 12.04 is used as a base for this new system.
+\subsection{About this Manual}
+This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
+This manual has been prepared using \LaTeX. 
+
+\chapter{What is GNU / Linux}
+
+
+\subsection{About ToriOS}
+
+ToriOS is a system aimed at replacing Windows XP, which will reach end-of-life in April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
+\subsection{Non PAE Support}
+
+ToriOS will support PAE Hardware\\
+https://blueprints.launchpad.net/torios/+spec/non-pae-support
+
+\subsection{Technical overview}
+
+\begin{enumerate}
+\item 1- ToriOS is supporting Non-PAE machines by default - we have already agreed on that - just a reminder.
+\item 2- ToriOS is always an LTS - we too agreed on that as well - just a reminder.
+\item3- ToriOS will be released every 12 months NOT every 6 months like Ubuntu - new idea.
+\item4- ToriOS 1.0 is based on 12.04 LTS - we have discussed that before but didn't yet 100% agree on.
+\item5- ToriOS 2.0 will be based on 14.04 LTS
+\item6- nm-manager should not be used as far as I have read so far from different people all of them confirmed the big RAM eater is nm-manager.
+\item7- While we're targeting low hardware machines (32-bit), shouldn't we also think of those who wish to try ToriOS on more powerful machine (64bit)? if that so, we need two builds: i386 and amd64.
+\item8- I need the Wiki and Docs team to write each and every post, not only about the system, how to use it, system requirement, etc ... no ... I'm planning to document the steps that we have done to create this or will create this system and YES, I mean the technical side so I guess both the docs and devs guys need to work side by side if you agree on this.
+\item9- 60MB or 50MB? don't want to kill ourselves but if we could do that, why not? I guess you know what I'm talking about
+\item 10- Have we thought about the ISO size? any idea how big will it be? around 300Told or asked there is a difference,  problem is some old people are very rude due to lack of proper discipline when they were younger and think they can barge past people , and treat people with little respect,  if you ask nicely people usually oblige if you tellpeople rudeluyMB? 400MB? less or more? AFAIK, it should never reach say 600MB, right?
+\item 11- Where are we going to host the ISOs? do we have a host for that?
+\item 12- As long as ToriOS is based on Ubuntu, we can test it on Virtual Machine such as OracleVB, correct?
+\item 13- By any chance, do we need to talk with Ubuntu/Canonical team about our Project? I mean is there any kind of approval or stuff like that we need? I'm talking about the technical side of our project as they should have nothing to do with thewget -c http://torios.org/VB/ToriBuilder.vdi.xz \\ other stuff but maybe they do with the technical side, that is why I'm asking and we need to know IMHO.
+\item 14- Alpha 1, Alpha 2, Beta 1, Beta 2 and RC? or no need for that? should we just do Alpha, Beta and RC? these are milestones just like what Ubuntu GNOME or Lubuntu are doing when it comes to the development cycle.
+\item 15- I know it is hard to tell at this point but any idea when ToriOS 1.0 will be available to download and use? I know I'm the one who should announce that but if truth to be told, it is something that our devs should advise for and we haven't yet done anything serious. 
+\end{enumerate}
+
+\chapter{The ToriOS Team}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline  \textbf{JOB \ ROLE} & \textbf{NAME}  & \textbf{IRC NICK} & \textbf{E-MAIL}  \\ 
+\hline  Project lead & Ali Linx  & amjjawad & amjjawad@torios.org  \\ 
+\hline  Website email admin & William  & ? & william@torios.org  \\ 
+\hline  Documentation (manual)  & Paul Sutton  & zleap  & zleap@torios.org \\ 
+\hline  Documentation (wiki) & Geoffrey De Belie & smile  & smile4ever@torios.org  \\ 
+\hline  Developer lead / driver & Alexander Kluth & DerAlex & alexander@torios.org \\ 
+\hline  QA Testing & Jack  & fjack  &  \\ 
+\hline  Marketing & David &  & dbyentzen@torios.org \\
+\hline Artwork & Rafael & rafeallaguna & \\
+\hline ? & Israel & israeldahl & \\
+
+\hline 
+\end{tabular}
+
+
+\chapter{Installation}
+
+There are several steps to an installation. \\
+\begin{enumerate}
+\item decide on the installation media CD-R or Flash disk
+\item Prepare install media - in the case of a flash disk make sure this is blank
+\item Prepare target media and decide where to install Torios to
+\item Download the iso file
+\item Create your install media
+\item initial boot
+\item either install from menu or run live session and install from there
+\end{enumerate}
+
+\subsection{Downloading the ISO}
+\subitem{Command Line}
+To download from the command line you can use the wget command, if you use the -c argument.  Then if the download is stopped or interupted then it will carry from where it left off if you re-run the command.\\
+
+\subitem{Browser}
+
+
+\subsection{Verifying the download}
+There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
+that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
+\subsection{Creating install media}
+
+\subsection{CD-R}
+
+
+\subsection{Flash Disks}
+
+You can use unetbootln to bootable flash disk image,   http://zleap.net/?s=unetboot
+
+You can follow the steps below \\
+
+Creating a boot usb flash disk
+
+(With thanks to Nio Wiklund for some helpful comments with regard to the title of this document)
+
+A good tool for this is Unetbootin,  you can install this on most popular Linux distributions,
+
+e.g sudo apt-get install unetbootin
+
+you need your root password.
+
+You can then load the software up, you will need your root password
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin} 
+\end{center}
+
+
+If you have downloaded an iso image  you don?t need to worry about the top section
+
+Click disk image,  ISO can be left as in,  then click the box with ? in and select the iso file
+
+select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
+
+drive should be the device reference for this disk
+
+make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
+
+I find it helpful to unmount and unplug my external hdd first,  it gives less options but also reduces the chances I will write to it,  The disks tool below is useful for finding out what device you are writing to.
+
+If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
+
+Click disk image radio button
+
+the drop down menu to the right of this is a betweet ISO and floppy
+
+you can then click on file search button (the one with ? )
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin2} 
+
+\end{center}
+
+
+
+Select if you want to have a persistent space for files.
+
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin3}
+\end{center}
+
+type ? you can choose between usb and hard disk (BE VERY CAREFUL)
+
+then select the device, if you select hard disk then the device reference chances to / indicating root of the file system.
+
+\paragraph{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.}
+
+ 
+\begin{center}
+\includegraphics[width=0.7\linewidth]{unetbootin4}
+\end{center}
+You need to check if the target device should be mounted first or not
+
+
+\paragraph{Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team}
+
+\paragraph{You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post etc and are still stuck,  this shows you have tried to research the issue.}
+
+The ubuntu manual should have this information in it too.
+
+man unetbootin
+
+man fdisk
+
+man ls
+
+man df
+
+If you need to format the flash disk, using disks, this is a case of
+
+Unmount the flash disk
+
+Select format
+
+MAKE SURE YOU HAVE THE RIGHT DEVICE SELECTED.
+
+Once this is all done and you are happy with the destination click OK
+
+Progress bar showing how many files have been copied and a percentage
+
+
+\includegraphics[width=0.7\linewidth]{unetbootin5} \\
+
+All done you can now reboot, select usb disk from the boot device menu (see your Manual on how to access this) and tryout /  install the new OS
+
+\subsection{booting install media}
+Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.
+
+\subsection{UEFI Boot}
+If you have very new hardware then you may have the new UEFI boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here.
+\subsection{Installing}
+
+Within Torios there is an installer called OBI - One button installer,  this will take you through the steps needed to install the Operating system. 
+
+Installation is covered in several documents which can be found in /Desktop/Documents
+mainly 
+OBI-quickstart-manual.pdf
+
+\subsection{Final steps}
+
+\subsection{Testing - For more advanced users}
+
+Please see getting invovled
+ 
+\chapter{Desktop}
+
+\subsection{JWM Settings}
+ToriOS will use the JWM (Joe's Window Manager) window environment:\\
+
+The following is quoted from the projects website
+
+\begin{quote}
+JWM is a light-weight window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum. Because of its small footprint, JWM makes a good window manager for older computers and less powerful systems, such as the Raspberry Pi, though it is perfectly capable of running on modern systems. JWM is included in small Linux distributions such as Puppy Linux and Damn Small Linux, and it is available as a separate package in many other distributions. 
+\end{quote}
+http://www.joewing.net/projects/jwm/
+Torios jwm development lead Israel israel@torios.org
+\newpage
+
+{\large \textbf{JWM Settings manager}} \\ \\
+
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{jwmsettingsmanager}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{mouse-settings}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{panel-settings}
+\end{center}
+
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{desktop-settings}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{window-settings}
+\end{center}
+
+
+
+%{Panel}
+
+
+
+
+
+
+%{Keyboard}
+%{Icons}
+
+{Windows}
+{Themes}
+{Autostart}
+
+
+\chapter{Applications}
+
+\chapter{Get Involved}
+
+\begin{itemize}
+\item{Create a Launchpad Account [1]}
+\item{Join the Team [2]}
+\item{Subscribe to mailing list [3]}
+\item{Send an e-mail to the list to introduce yourself}
+\item{Choose where you would like to help [4]}
+\end{itemize}
+
+
+\begin{enumerate}
+\item {https://help.launchpad.net/YourAccount/NewAccount}
+\item {https://launchpad.net/~torios}
+\item {https://help.launchpad.net/Teams/MailingLists - see subscribing}
+\item {https://blueprints.launchpad.net/torios/+spec/recruit-contributors}
+
+\end{enumerate}
+
+\url{https://www.youtube.com/watch?v=P_r2hHqyUa4}
+\url{http://www.youtube.com/watch?v=PtVxDv_vy8w}
+
+
+\subsection {testing}
+Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
+
+wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
+
+Once done you need to extract,   either right click and select extract here or use the command line.  Due to the size of the Virtual box image this may take some time. \\
+
+Once this is done you will have a new file called:    in the ToriBuilder.vdi folder,  
+
+
+Open virtual box
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{extractVBimage}
+\end{center}
+
+Virtual box 
+Click New
+
+\begin{center}
+\item \includegraphics[width=0.7\linewidth]{ToriosTest01}
+\end{center}
+
+Use the following options
+\begin{itemize}
+\item Name : Torios
+\item Type : Linux
+\item Version : Ubuntu 32 bit
+\end{itemize}
+
+Click Next
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest02}
+\end{center}
+
+Should be Ok to leave the default memory as 256MB,so click next.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest03}
+\end{center}
+
+Upon opening virtual box you will see this screen:
+\begin{center}
+\includegraphics[width=0.7\linewidth]{virtualbox}
+\end{center}
+
+Click use existing and select the file you downloaded earlier, so in this case its \textbf{ToriBuilder.vdi}
+
+Click done.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosTest-done}
+\end{center}
+
+Torios needs PAE support enabled to do this select the virtual box image you just created,  and click settings.
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ToriosEnablePAE}
+\end{center}
+
+Click system, then processor tab then check the box EnablePAE/NX then press OK.
+
+You should then bereturned to the main virtual box window,  the image should still be selected so press start and you should boot in to the Torios Test Image. 
+
+ note yours may look different as I have a few images,  also note in this screen shot i have a different vm set up.  We still need to open up the ToriOS image we downloaded. 
+
+We will assume here you have thus already installed.
+
+\chapter{Glossary}
+\begin{multicols}{2}
+ 
+
+\begin{description}
+\item[A]
+\item[B]
+\item[C]
+\item[Creative commons] Document and Graphics Licensing.
+\item[D]
+\item[E]
+\item[ext(n)] File system used on Linux systems, examples are ext2 ext3, and ext4 
+\item[F]
+\item[G]
+\item[GPL] General Public License 
+\item[GNU/LINUX] The kernel is released under the GPL so we refer to it as GNU / Linux
+\item[H]
+\item[I]
+\item[J]
+\item[K]
+\item[Kernel] This is the heart of the operating system.
+\columnbreak
+\item[L]
+\item[Linux] Operating system Kernel. 
+\item[Linus Torvalds] Creator of the Linux Kernel
+\item[M]
+\item[N]
+\item[O]
+\item[P]
+\item[PAE Hardware] Physical Address Extension 
+\item[Q]
+\item[R]
+\item[S]
+\item[T]
+\item[U]
+\item[V]
+\item[W]
+\item[X]
+\item[Y]
+\item[Z]
+\end{description}
+\end{multicols}
+\chapter{Document License}
+
+%\cc \ccby \ccsa
+
+
+
+\end{document}
