@@ -302,15 +302,18 @@ Torios jwm development lead Israel israel@torios.org
 \item {https://help.launchpad.net/YourAccount/NewAccount}
 \item {https://launchpad.net/~torios}
 \item {https://help.launchpad.net/Teams/MailingLists - see subscribing}
-\item {https://blueprints.launchpad.net/torios/+spec/recruit-contributors}
+\item{https://blueprints.launchpad.net/torios/+spec/recruit-contributors}
+\item{weekly meetings in IRC on freenode : irc.freenode.net  channel torios http://torios.org/news/team-weekly-meetings/ }
 
 \end{enumerate}
 
-\url{https://www.youtube.com/watch?v=P_r2hHqyUa4}
-\url{http://www.youtube.com/watch?v=PtVxDv_vy8w}
+\url{https://www.youtube.com/watch?v=P_r2hHqyUa4} \\
+\url{http://www.youtube.com/watch?v=PtVxDv_vy8w} \\
 
 \newpage
 \subsection {testing - ISO}
+\bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
+
 As of Week ending 30 / 8 / 2014 Torios is in Alpha 1 this can be downloaded from the website download page  \\ \\
 \textbf{http://torios.org/iso.html}\\ \\
 \textbf{direct link to iso} \\ \\
@@ -321,6 +324,42 @@ or with wget  \\ \\
 \textbf{wget -c http://torios.org/ISO/ToriOS-alpha.iso} \\ \\
 or from torrent \\ \\
 \textbf{(available soon)}
+
+\textbf{MD5SUM: } md5sum = 9648e831912248d19cd8b115da24ea6b \\ 
+\begin{itemize}
+\item{save the above to a file e.g MD5SUMS}
+\item{place this in the SAME LOCATION as the iso file}
+\item{type md5sum -c ToriOS-alpla-iso} 
+\item({checking may take a while and you should get an OK if it checks out}
+\item{any problems please ask}
+\end{itemize}
+
+\textbf{Known issues (2014-Aug-29):}
+\begin{itemize}
+\item{Menu does not display items that do not use a desktop file}  
+\item{Missing features in the Settings Manager}
+\item{USB mounting support ONLY (no CD/DVD mounting unless using a terminal)}
+\item{Hardly any apps installed (this is a feature) :D}
+\item{Menu categories do not support localization yet, though all desktop files that have it are supported in the menu}
+\end{itemize}
+
+This uses the OBI installer. \\ \\
+It should run quite easily on 128MB ram for the Live version, and in even less for the installer.  It currently uses around 60-70MB Ram to run. \\ \\
+Currently you can try out the Live version, and install ONLY from the text installer (or you can use the terminal and launch OBI).
+It is highly suggested that you use the Live version ONLY \\ \\
+
+\begin{center}
+
+\textbf{THIS WILL OVERWRITE THE ENTIRE DEVICE IF YOU 
+INSTALL IT} \\
+
+\end{center}
+
+You should backup all your  personal files, and your OS if you choose to install this.\\ \\
+ToriOS contains a tool called mktbl, this tool can backup your entire disk as a tarball to easily reinstall \\ \\
+http://torios.org/contact.html and click ask us if you need help \\
+ 
+\newpage
 
 \subsection {testing virtual box images}
 Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
