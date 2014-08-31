@@ -106,6 +106,7 @@ To download from the command line you can use the wget command, if you use the -
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
 that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
+Please see getting invovled section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
 \subsection{Creating install media}
 
 \subsection{CD-R}
@@ -128,6 +129,11 @@ e.g sudo apt-get install unetbootin
 you need your root password.
 
 You can then load the software up, you will need your root password
+
+\newpage
+
+
+
 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{unetbootin} 
@@ -216,21 +222,77 @@ Depending on how your computer is set up,  you need to tell the computer to boot
 
 \subsection{UEFI Boot}
 If you have very new hardware then you may have the new UEFI boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here.
-\subsection{Installing}
 
-Within Torios there is an installer called OBI - One button installer,  this will take you through the steps needed to install the Operating system. 
+\newpage
+\section{Installation}
+
+\subsection{Installing Torios}
+
+Insert the installation CD / DVD drive and reboot, you then need to tell your computer to boot off that drive.  Sometimes you get to a boot device menu by pressing \textbf{F12} When told to.  \\
+
+\includegraphics[width=0.7\linewidth]{boot-screen1}
+
+First boot screen showing the following options \\
+
+\begin{itemize}
+\item{ToriOS - This boots in to Torios} 
+\item{Hardware Detection tool (HDT)}
+\item{Memory Failure Decection (memtest86+}
+\end{itemize}
+
+\includegraphics[width=0.7\linewidth]{boot-screen2}
+
+Second boot screen showing the following options \\
+
+\begin{itemize}
+\item{GrAphics Mode with One button Installer}
+\item {One button installer in text mode}
+\item{Quit from menu - exit to bash shell}
+\item{Reboot}
+\item{Poweroff}
+\end{itemize}
+
 
 Installation is covered in several documents which can be found in /Desktop/Documents
 mainly 
 OBI-quickstart-manual.pdf
+
+
 
 \subsection{Final steps}
 
 \subsection{Testing - For more advanced users}
 
 Please see getting invovled
+
  
-\chapter{Desktop}
+\chapter{Desktop and Applications}
+
+\section{Applications that come with ToriOS}
+As previously stated ToriOS is desgined to be very very minimal however it does come with a few applications. 
+\subsection{Internet Menu}
+\subsection{Midori (Web browser)}
+\subsection{Midori (Private Browsing)}
+\subsection{Wicd Network Manager}
+\subsection{WPA-gui}
+\subsection{ART Menu}
+\subsection{xpdf}
+\subsection{Development}
+\subsection{(Python 2.7)}
+
+\subsection{Settings}
+\subsection{GParted}
+\subsection{JWM Settings Manager}
+\subsection{Power Manager}
+
+\subsection{System}
+\subsection{UXTerm}
+\subsection{XTerm}
+\subsection{GParted}
+\subsection{Htop}
+
+\subsection{JWM Settings Manager}
+
 
 \subsection{JWM Settings}
 ToriOS will use the JWM (Joe's Window Manager) window environment:\\
@@ -285,7 +347,43 @@ Torios jwm development lead Israel israel@torios.org
 {Autostart}
 
 
-\chapter{Applications}
+
+
+
+
+\subsection{Installing Torios}
+
+Insert the installation CD / DVD drive and reboot, you then need to tell your computer to boot off that drive.  Sometimes you get to a boot device menu by pressing \textbf{F12} When told to.  \\
+
+\includegraphics[width=0.7\linewidth]{boot-screen1}
+
+First boot screen showing the following options \\
+
+\begin{itemize}
+\item{ToriOS - This boots in to Torios} 
+\item){Hardware Detection tool (HDT}
+\item{Memory Failure Decection (memtest86+}
+\end{itemize}
+
+
+The First letters of these are highlighted so you can just press the corresponding keyboard letters to choose that option \\
+
+\includegraphics[width=0.7\linewidth]{boot-screen2}
+
+Second boot screen showing the following options
+
+\begin{itemize}
+\item{Grphics Mode with One button Installer}
+\item {One button installer in text mode}
+\item{Quit from menu - exit to bash shell}
+\item{Reboot}
+\item{Poweroff}
+\end{itemize}
+\subsection{System}
+
+\newpage
+
+\subsection{}
 
 \chapter{Get Involved}
 
