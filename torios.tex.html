@@ -1,0 +1,614 @@
+<html><head><style type="text/css">pre { margin: 1px }
+.fmt0 {  } /* normal */
+.fmt1 {  } /* background */
+.fmt2 { background-color: #ffcabf; } /* line:error */
+.fmt3 { background-color: #fffbbf; } /* line:warning */
+.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+.fmt5 {  } /* line:bookmark */
+.fmt6 {  } /* line:bookmark0 */
+.fmt7 {  } /* line:bookmark1 */
+.fmt8 {  } /* line:bookmark2 */
+.fmt9 {  } /* line:bookmark3 */
+.fmt10 {  } /* line:bookmark4 */
+.fmt11 {  } /* line:bookmark5 */
+.fmt12 {  } /* line:bookmark6 */
+.fmt13 {  } /* line:bookmark7 */
+.fmt14 {  } /* line:bookmark8 */
+.fmt15 {  } /* line:bookmark9 */
+.fmt16 { color: #555580; } /* magicComment */
+.fmt17 { background-color: #a8cf83; } /* commentTodo */
+.fmt18 { color: #808080; } /* comment */
+.fmt19 { color: #800000; } /* keyword */
+.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+.fmt21 { color: #808000; } /* math-keyword */
+.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+.fmt24 { color: #008080; } /* verbatim */
+.fmt25 { color: #800000; } /* sweave-block */
+.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+.fmt27 { color: #800000; } /* pweave-block */
+.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+.fmt29 { color: #804000; } /* picture */
+.fmt30 { font-weight: 700;color: #c00000;background-color: #ffff7f; } /* braceMatch */
+.fmt31 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+.fmt32 { color: #000000;background-color: #ffff00; } /* search */
+.fmt33 { color: #008000; } /* numbers */
+.fmt34 { color: #509600; } /* math-delimiter */
+.fmt35 { color: #ff0000; } /* text */
+.fmt36 { color: #ff0088; } /* escapeseq */
+.fmt37 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+.fmt38 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+.fmt40 { text-decoration: line-through; } /* badWord */
+.fmt41 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+.fmt42 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+.fmt43 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+.fmt44 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+.fmt45 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+.fmt46 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+.fmt47 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+.fmt48 { color: #000080; } /* environment */
+.fmt49 { color: #008000; } /* referencePresent */
+.fmt50 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+.fmt51 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+.fmt52 { color: #008000; } /* citationPresent */
+.fmt53 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+.fmt54 { color: #008000; } /* packagePresent */
+.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+.fmt56 { font-weight: 700;color: #000000; } /* structure */
+.fmt57 { background-color: #eeeeff; } /* current */
+.fmt58 { background-color: #aaffff; } /* selection */
+.fmt59 { background-color: #ffaaaa; } /* replacement */
+.fmt60 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+.fmt61 { background-color: #aaffaa; } /* diffAdd */
+.fmt62 { background-color: #ffff50; } /* diffReplace */
+.fmt63 { font-weight: 700;color: #0095ff; } /* txs-test */
+.fmt64 { color: #008000; } /* txs-test-pass */
+.fmt65 { color: #c00000; } /* txs-test-fail */
+.fmt66 { color: #ea8800; } /* txs-test-warn */
+.fmt67 { color: #808000; } /* txs-test-qdebug */
+.fmt68 { color: #ffa500; } /* dtx:guard */
+.fmt69 { font-weight: 700;color: #006400; } /* dtx:macro */
+.fmt70 { color: #008080; } /* dtx:verbatim */
+.fmt71 { color: #cc8100; } /* dtx:specialchar */
+.fmt72 { font-weight: 700;color: #10c010; } /* dtx:commands */
+.fmt73 { color: #b200ff; } /* lua:keyword */
+.fmt74 { color: #808080; } /* lua:comment */
+.fmt75 { background-color: #ffff7f; } /* preedit */
+</style></head><body><pre><span class="fmt19">\documentclass</span>[12pt,a4paper]{<span class="fmt54">book</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>[latin1]{<span class="fmt54">inputenc</span>} </pre>
+<pre><span class="fmt18">%\usepackage{creativecommons}</span> </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">xmpincl</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">lipsum</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">url</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">amsmath</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">amsfonts</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">amssymb</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">graphicx</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">multicol</span>} </pre>
+<pre><span class="fmt19">\usepackage</span>[normalem]{<span class="fmt54">ulem</span>} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">needed</span><span class="fmt18"> </span><span class="fmt18">by</span><span class="fmt18"> </span><span class="fmt18">strike</span> </pre>
+<pre><span class="fmt19">\usepackage</span>[urlcolor=blue,colorlinks=true]{<span class="fmt54">hyperref</span>} </pre>
+<pre><span class="fmt19">\setcounter</span>{tocdepth}{1} </pre>
+<pre><span class="fmt19">\author</span>{Paul Sutton} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre>{<span class="fmt19">\Huge</span> <span class="fmt37">ToriOS</span> Manual} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">figure</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\centering</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{./FinalLogo} </pre>
+<pre><span class="fmt19">\caption</span>{} </pre>
+<pre><span class="fmt19">\label</span>{<span class="fmt49">fig:FinalLogo</span>} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">figure</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre>Minimal, Simple, Fast, Small and Gives you a freedom of choice :) </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\tableofcontents</span> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Introduction</span>} </pre>
+<pre>The goal of this project is to produce a minimalist Linux distribution that gives end users more choice as to what software is installed on their system.<span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>Ubuntu 12.04 is used as a base for this new system. </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">About</span><span class="fmt56"> </span><span class="fmt56">this</span><span class="fmt56"> </span><span class="fmt56">Manual</span>} </pre>
+<pre>This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The <span class="fmt37">ToriOS</span> team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.   </pre>
+<pre>This manual has been prepared using <span class="fmt19">\LaTeX</span>.  </pre>
+<pre> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">What</span><span class="fmt56"> </span><span class="fmt56">is</span><span class="fmt56"> </span><span class="fmt56">GNU</span><span class="fmt56"> </span><span class="fmt56">/</span><span class="fmt56"> </span><span class="fmt56">Linux</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">About</span><span class="fmt56"> </span><span class="fmt56"><span class="fmt37">ToriOS</span></span>} </pre>
+<pre> </pre>
+<pre><span class="fmt37">ToriOS</span> is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. <span class="fmt37">ToriOS</span> is a fast and minimal system based on Ubuntu 12.04.  </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Non</span><span class="fmt56"> </span><span class="fmt56"><span class="fmt37">PAE</span></span><span class="fmt56"> </span><span class="fmt56">Support</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt37">ToriOS</span> will support <span class="fmt37">PAE</span> Hardware<span class="fmt19">\\</span> </pre>
+<pre><span class="fmt37">https</span>://blueprints.launchpad.net/<span class="fmt37"><span class="fmt39">torios</span></span>/+<span class="fmt37">spec</span>/non-<span class="fmt37">pae</span>-support </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span>  </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Technical</span><span class="fmt56"> </span><span class="fmt56">overview</span>} </pre>
+<pre> </pre>
+<pre>About <span class="fmt37">Tori</span> OS - <span class="fmt37"><span class="fmt38">Tori</span></span> Operating System Overview: </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span>{Low memory and resource requirements} </pre>
+<pre><span class="fmt19">\item</span>{Low disk space} </pre>
+<pre><span class="fmt19">\item</span>{<span class="fmt38">Low</span> package overheads (you get to build your own system from a very minimal install base)} </pre>
+<pre><span class="fmt19">\item</span>{Built with Ubuntu 12.<span class="fmt37">04LTS</span> as a base , and completely compatible with many thousands of free and paid <span class="fmt37">apps</span>.} </pre>
+<pre><span class="fmt19">\item</span>{ A modern OS with up-to-date security built-in, as well as compatible with older processors and video graphics cards} </pre>
+<pre><span class="fmt19">\item</span>{Free and open source} </pre>
+<pre><span class="fmt19">\item</span>{A secure replacement for older unsupported versions of Microsoft Windows Operating System}  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">The</span><span class="fmt56"> </span><span class="fmt56"><span class="fmt37">ToriOS</span></span><span class="fmt56"> </span><span class="fmt56">Team</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|l|<span class="fmt38">l</span>|<span class="fmt38">l</span>|<span class="fmt38">l</span>|} </pre>
+<pre><span class="fmt19">\hline</span> <span class="fmt19">\textbf</span>{Job Title} <span class="fmt23">&amp;</span> <span class="fmt19">\textbf</span>{Name} <span class="fmt23">&amp;</span> <span class="fmt19">\textbf</span>{<span class="fmt37">IRC</span> Nick} <span class="fmt23">&amp;</span> <span class="fmt19">\textbf</span>{E-mail} <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Project lead <span class="fmt23">&amp;</span> Ali <span class="fmt37">Linx</span> <span class="fmt23">&amp;</span> <span class="fmt37">amjjawad</span> <span class="fmt23">&amp;</span> <span class="fmt37">amjjawad@torios</span>.<span class="fmt37">org</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Website admin <span class="fmt23">&amp;</span> William Cornelius <span class="fmt23">&amp;</span>  <span class="fmt23">&amp;</span> <span class="fmt37">william@torios</span>.<span class="fmt37">org</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Documentation - manual <span class="fmt23">&amp;</span> Paul Sutton <span class="fmt23">&amp;</span> <span class="fmt37">zleap</span>	<span class="fmt23">&amp;</span> <span class="fmt37">zleap@torios</span>.<span class="fmt37">org</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Documentation - wiki <span class="fmt23">&amp;</span> Geoffrey De Belie <span class="fmt23">&amp;</span> smile <span class="fmt23">&amp;</span> <span class="fmt37">smile4ever@torios</span>.<span class="fmt37">org</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt18">%\hline</span><span class="fmt18"> </span><span class="fmt18">Developer</span><span class="fmt18"> </span><span class="fmt18">lead</span><span class="fmt18"> </span><span class="fmt18">/</span><span class="fmt18"> </span><span class="fmt18">driver</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">Alexander</span><span class="fmt18"> </span><span class="fmt18">Kluth</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">DerAlex</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">alexander@torios.org</span><span class="fmt18"> </span><span class="fmt18">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Quality Assurance Testing <span class="fmt23">&amp;</span> Jack <span class="fmt23">&amp;</span> <span class="fmt37">fjack</span> <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt33">|</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Marketing <span class="fmt34">$</span><span class="fmt33">|</span><span class="fmt34">$</span>	David B <span class="fmt37">Yentzen</span> <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt33">|</span><span class="fmt34">$</span> <span class="fmt37">dbyentzen@torios</span>.<span class="fmt37">org</span> <span class="fmt19"><span class="fmt46">\\</span></span> </pre>
+<pre><span class="fmt19">\hline</span> Artwork <span class="fmt23">&amp;</span> <span class="fmt37">Rafael</span> <span class="fmt23">&amp;</span> <span class="fmt37">rafaellaguna</span> <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt33">|</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> Developer / testing <span class="fmt23">&amp;</span> Israel <span class="fmt23">&amp;</span> <span class="fmt37">israeldahl</span> <span class="fmt23">&amp;</span> <span class="fmt37">israel@torios</span>.<span class="fmt37">org</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\hline</span> <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Installation</span>} </pre>
+<pre> </pre>
+<pre>There are several steps to an installation. <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">enumerate</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span> decide on the installation media CD-R or Flash disk </pre>
+<pre><span class="fmt19">\item</span> Prepare install media - in the case of a flash disk make sure this is blank </pre>
+<pre><span class="fmt19">\item</span> Prepare target media and decide where to install <span class="fmt37">Torios</span> to </pre>
+<pre><span class="fmt19">\item</span> Download the <span class="fmt37">iso</span> file </pre>
+<pre><span class="fmt19">\item</span> Create your <span class="fmt39">install</span> media </pre>
+<pre><span class="fmt19">\item</span> initial boot </pre>
+<pre><span class="fmt19">\item</span> either <span class="fmt39">install</span> from menu or run live session and <span class="fmt39">install</span> from there </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">enumerate</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Downloading</span><span class="fmt56"> </span><span class="fmt56">the</span><span class="fmt56"> </span><span class="fmt56">ISO</span>} </pre>
+<pre><span class="fmt19">\subitem</span>{Command Line} </pre>
+<pre>To download from the command line you can use the <span class="fmt37">wget</span> <span class="fmt39">command</span>, if you use the -c argument.  Then if the download is stopped or <span class="fmt37">interupted</span> then it will carry from where it left off if you re-run the command.<span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\subitem</span>{Browser} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Verifying</span><span class="fmt56"> </span><span class="fmt56">the</span><span class="fmt56"> </span><span class="fmt56">download</span>} </pre>
+<pre>There is an excellent guide at<span class="fmt19">\\</span> <span class="fmt19">\textbf</span>{https://help.ubuntu.com/community/HowToMD5SUM} <span class="fmt19">\\</span> </pre>
+<pre>that explains how to check your downloaded <span class="fmt37">iso</span> file for errors.  Apart from the file name being different so for <span class="fmt37">ToriOS</span> you may have <span class="fmt37">ToriOS</span>-1.0.<span class="fmt38">0</span>.<span class="fmt37">iso</span> the steps are pretty much the same.   </pre>
+<pre>Please see getting <span class="fmt37">invovled</span> section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over.  </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Creating</span><span class="fmt56"> </span><span class="fmt56">install</span><span class="fmt56"> </span><span class="fmt56">media</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">CD-R</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Flash</span><span class="fmt56"> </span><span class="fmt56">Disks</span>} </pre>
+<pre> </pre>
+<pre>You can use <span class="fmt37">unetbootln</span> to <span class="fmt37">bootable</span> flash disk image,   http://<span class="fmt37">zleap</span>.net/?s=<span class="fmt37">unetboot</span> </pre>
+<pre> </pre>
+<pre>You can follow the steps below <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>Creating a boot <span class="fmt37">usb</span> flash disk </pre>
+<pre> </pre>
+<pre>(With thanks to <span class="fmt37">Nio</span> <span class="fmt37">Wiklund</span> for some helpful comments with regard to the title of this document) </pre>
+<pre> </pre>
+<pre>A good tool for this is <span class="fmt37">Unetbootin</span>,  you can install this on most popular Linux distributions, </pre>
+<pre> </pre>
+<pre>e.g <span class="fmt37">sudo</span> apt-get install <span class="fmt37">unetbootin</span> </pre>
+<pre> </pre>
+<pre>you need your root password. </pre>
+<pre> </pre>
+<pre>You can then load the software up, you will need your root password </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{unetbootin}  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre>If you have downloaded an <span class="fmt37">iso</span> image  you don?t need to worry about the top section </pre>
+<pre> </pre>
+<pre>Click disk image,  ISO can be left as in,  then click the box with ? in and select the <span class="fmt37">iso</span> file </pre>
+<pre> </pre>
+<pre>select type, <span class="fmt37">usb</span> drive or hard disk,  most people are going to want to create a <span class="fmt37">usb</span> boot flash disk. </pre>
+<pre> </pre>
+<pre>drive should be the device reference for this disk </pre>
+<pre> </pre>
+<pre>make sure you are 100 percent sure,  and if you are not sure ASK on forums , <span class="fmt37">IRC</span> or elsewhere first. </pre>
+<pre> </pre>
+<pre>I find it helpful to <span class="fmt37">unmount</span> and unplug my external <span class="fmt37">hdd</span> first,  it gives less options but also reduces the chances I will write to it,  The disks tool below is useful for finding out what device you are writing to. </pre>
+<pre> </pre>
+<pre>If you have already downloaded and <span class="fmt37">md5</span> checked your <span class="fmt37">iso</span> file then you don?t need to worry about the top part, </pre>
+<pre> </pre>
+<pre>Click disk image radio button </pre>
+<pre> </pre>
+<pre>the drop down menu to the right of this is a <span class="fmt37">betweet</span> ISO and floppy </pre>
+<pre> </pre>
+<pre>you can then click on file search button (the one with ? ) </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{unetbootin2}  </pre>
+<pre> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre>Select if you want to have a persistent space for files. </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{unetbootin3} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>type ? you can choose between <span class="fmt37">usb</span> and hard disk (BE VERY CAREFUL) </pre>
+<pre> </pre>
+<pre>then select the device, if you <span class="fmt39">select</span> hard disk then the <span class="fmt39">device</span> reference chances to / indicating root of the file system. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\paragraph</span>{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a <span class="fmt37">usb</span> disk plugged in I find it helpful to <span class="fmt37">unmount</span> and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.} </pre>
+<pre> </pre>
+<pre>  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{unetbootin4} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre>You need to check if the target device should be mounted first or not </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\paragraph</span>{Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\paragraph</span>{You can use <span class="fmt37">fdisk</span> and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post <span class="fmt37">etc</span> and are still stuck,  this shows you have tried to research the issue.} </pre>
+<pre> </pre>
+<pre>The <span class="fmt37">ubuntu</span> manual should have this information in it too. </pre>
+<pre> </pre>
+<pre>man <span class="fmt37">unetbootin</span> </pre>
+<pre> </pre>
+<pre>man <span class="fmt37">fdisk</span> </pre>
+<pre> </pre>
+<pre>man ls </pre>
+<pre> </pre>
+<pre>man df </pre>
+<pre> </pre>
+<pre>If you need to format the flash disk, using disks, this is a case of </pre>
+<pre> </pre>
+<pre><span class="fmt37">Unmount</span> the flash disk </pre>
+<pre> </pre>
+<pre>Select format </pre>
+<pre> </pre>
+<pre>MAKE SURE YOU HAVE THE RIGHT DEVICE SELECTED. </pre>
+<pre> </pre>
+<pre>Once this is all done and you are happy with the destination click OK </pre>
+<pre> </pre>
+<pre>Progress bar showing how many files have been copied and a percentage </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{unetbootin5} <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>All done you can now reboot, select <span class="fmt37">usb</span> disk from the boot device menu (see your Manual on how to access this) and <span class="fmt37">tryout</span> /  install the new OS </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">booting</span><span class="fmt56"> </span><span class="fmt56">install</span><span class="fmt56"> </span><span class="fmt56">media</span>} </pre>
+<pre>Depending on how your computer is set up,  you need to tell the <span class="fmt39">computer</span> to boot of which ever boot media you created either a) <span class="fmt37">cdrom</span> b) <span class="fmt37">dvd</span> c) <span class="fmt37">usb</span>. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">UEFI</span></span><span class="fmt56"> </span><span class="fmt56">Boot</span>} </pre>
+<pre>If you have very new hardware then you may have the new <span class="fmt37">UEFI</span> boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here. </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt56">Installation</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Installing</span><span class="fmt56"> </span><span class="fmt56"><span class="fmt37">Torios</span></span>} </pre>
+<pre> </pre>
+<pre>For more help with the One button installer please refer to the <span class="fmt37">OBI</span>-<span class="fmt37">quickstart</span>-manual.<span class="fmt37">pdf</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\textbf</span>{Note ; This is based on the RC-2 test version.} </pre>
+<pre><span class="fmt19">\linebreak</span> <span class="fmt19">\\</span> </pre>
+<pre>I set up virtual box with the default settings (<span class="fmt37">256mb</span> RAM)and added a <span class="fmt37">16gb</span> virtual hard disk <span class="fmt37">sda</span>. <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>First step in the process is to boot the <span class="fmt37">iso</span> image,  this automatically boots in to the new <span class="fmt37">ToriOS</span> desktop </pre>
+<pre> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{toriosRC2}  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>Note the install button at the bottom of the screen,  click this to start the install process. <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{torios-rc2-install1} </pre>
+<pre> </pre>
+<pre>The initial screen is show here,  i accepted all the defaults except right at the very end for the confirm, where I had to manually select (yes) <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{torios-rc2-install2} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%end</span><span class="fmt18"> </span><span class="fmt18">install</span><span class="fmt18"> </span><span class="fmt18">section</span> </pre>
+<pre> </pre>
+<pre>  </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Testing</span><span class="fmt56"> </span><span class="fmt56">-</span><span class="fmt56"> </span><span class="fmt56">For</span><span class="fmt56"> </span><span class="fmt56">more</span><span class="fmt56"> </span><span class="fmt56">advanced</span><span class="fmt56"> </span><span class="fmt56">users</span>} </pre>
+<pre> </pre>
+<pre>Please see getting <span class="fmt37">invovled</span> </pre>
+<pre> </pre>
+<pre>  </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Desktop</span><span class="fmt56"> </span><span class="fmt56">and</span><span class="fmt56"> </span><span class="fmt56">Applications</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt56">Applications</span><span class="fmt56"> </span><span class="fmt56">that</span><span class="fmt56"> </span><span class="fmt56">come</span><span class="fmt56"> </span><span class="fmt56">with</span><span class="fmt56"> </span><span class="fmt56"><span class="fmt37">ToriOS</span></span>} </pre>
+<pre>As previously stated <span class="fmt37">ToriOS</span> is <span class="fmt37">desgined</span> to be very <span class="fmt38">very</span> minimal however it does come with a few applications.  </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Internet</span><span class="fmt56"> </span><span class="fmt56">Menu</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">Midori</span></span><span class="fmt56"> </span><span class="fmt56">(Web</span><span class="fmt56"> </span><span class="fmt56">browser)</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">Midori</span></span><span class="fmt56"> </span><span class="fmt56">(Private</span><span class="fmt56"> </span><span class="fmt56">Browsing)</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">Wicd</span></span><span class="fmt56"> </span><span class="fmt56">Network</span><span class="fmt56"> </span><span class="fmt56">Manager</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">WPA</span></span><span class="fmt56">-</span><span class="fmt56"><span class="fmt37">gui</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">ART</span><span class="fmt56"> </span><span class="fmt56">Menu</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">xpdf</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Development</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">(Python</span><span class="fmt56"> </span><span class="fmt56">2.7)</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Settings</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">GParted</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">JWM</span></span><span class="fmt56"> </span><span class="fmt56">Settings</span><span class="fmt56"> </span><span class="fmt56">Manager</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Power</span><span class="fmt56"> </span><span class="fmt56">Manager</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56">System</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">UXTerm</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">XTerm</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">GParted</span></span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">Htop</span></span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">JWM</span></span><span class="fmt56"> </span><span class="fmt56">Settings</span><span class="fmt56"> </span><span class="fmt56">Manager</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt56"><span class="fmt37">JWM</span></span><span class="fmt56"> </span><span class="fmt56">Settings</span>} </pre>
+<pre><span class="fmt37">ToriOS</span> will use the <span class="fmt37">JWM</span> (Joe's Window Manager) <span class="fmt38">window</span> environment:<span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>The following is quoted from the projects website </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">quote</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt37">JWM</span> is a light-weight window manager for the <span class="fmt37">X11</span> <span class="fmt39">Window</span> System. <span class="fmt37">JWM</span> is written in C and uses only <span class="fmt37">Xlib</span> at a minimum. Because of its small footprint, <span class="fmt37">JWM</span> makes a good window manager for older computers and less powerful systems, such as the Raspberry Pi, though it is perfectly capable of running on modern systems. <span class="fmt37">JWM</span> is included in small Linux distributions such as Puppy Linux and Damn Small Linux, and it is available as a separate package in many other distributions.  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">quote</span></span><span class="fmt20">}</span> </pre>
+<pre>http://<span class="fmt37">www</span>.<span class="fmt37">joewing</span>.net/projects/<span class="fmt37">jwm</span>/ </pre>
+<pre><span class="fmt37">Torios</span> <span class="fmt37"><span class="fmt38">jwm</span></span> development lead Israel <span class="fmt37">israel@torios</span>.<span class="fmt37">org</span> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre>{<span class="fmt19">\large</span> <span class="fmt19">\textbf</span>{JWM Settings manager}} <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{jwmsettingsmanager} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{mouse-settings} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{panel-settings} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{desktop-settings} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{window-settings} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt18">%{Panel}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%{Keyboard}</span> </pre>
+<pre><span class="fmt18">%{Icons}</span> </pre>
+<pre> </pre>
+<pre>{Windows} </pre>
+<pre>{Themes} </pre>
+<pre>{<span class="fmt37">Autostart</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Get</span><span class="fmt56"> </span><span class="fmt56">Involved</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span>{Create a Launchpad Account [1]} </pre>
+<pre><span class="fmt19">\item</span>{Join the Team [2]} </pre>
+<pre><span class="fmt19">\item</span>{Subscribe to mailing list [3]} </pre>
+<pre><span class="fmt19">\item</span>{Send an e-mail to the list to introduce yourself} </pre>
+<pre><span class="fmt19">\item</span>{Choose where you would like to help [4]} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">enumerate</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span> {<span class="fmt37">https</span>://help.launchpad.net/<span class="fmt37">YourAccount</span>/<span class="fmt37">NewAccount</span>} </pre>
+<pre><span class="fmt19">\item</span> {<span class="fmt37">https</span>://<span class="fmt39">launchpad.</span>net/~<span class="fmt37">torios</span>} </pre>
+<pre><span class="fmt19">\item</span> {<span class="fmt37">https</span>://help.<span class="fmt39">launchpad.</span>net/Teams/<span class="fmt37">MailingLists</span> - see subscribing} </pre>
+<pre><span class="fmt19">\item</span>{<span class="fmt37">https</span>://blueprints.<span class="fmt39">launchpad.</span>net/<span class="fmt37">torios</span>/+<span class="fmt37">spec</span>/recruit-contributors} </pre>
+<pre><span class="fmt19">\item</span>{weekly meetings in <span class="fmt37">IRC</span> on <span class="fmt37">freenode</span> : <span class="fmt37">irc</span>.<span class="fmt37">freenode</span>.net  channel <span class="fmt37">torios</span> http://<span class="fmt37">torios</span>.<span class="fmt37">org</span>/news/team-weekly-meetings/ } </pre>
+<pre> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">enumerate</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\url</span>{https://www.youtube.com/watch?v=P_r2hHqyUa4} <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\url</span>{http://www.youtube.com/watch?v=PtVxDv_vy8w} <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Testing</span>} </pre>
+<pre><span class="fmt20">\subsection</span> {<span class="fmt56">testing</span><span class="fmt56"> </span><span class="fmt56">-</span><span class="fmt56"> </span><span class="fmt56">ISO</span>} </pre>
+<pre><span class="fmt19">\bf</span>{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING} </pre>
+<pre> </pre>
+<pre>As of Week ending 30 / 8 / 2014 <span class="fmt37">Torios</span> is in Alpha 1 this can be downloaded from the website download page  <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\textbf</span>{http://<span class="fmt37">torios</span>.<span class="fmt37">org</span>/<span class="fmt37">iso</span>.html}<span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\textbf</span>{direct link to <span class="fmt37">iso</span>} <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\textbf</span>{<span class="fmt37"><span class="fmt39">torios</span></span><span class="fmt39">.</span><span class="fmt37">org</span>/<span class="fmt38">ISO</span>/<span class="fmt37">ToriOS</span>-alpha.<span class="fmt37"><span class="fmt38">iso</span></span>} <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre>or with <span class="fmt37">wget</span>  <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{torios-wget-download} <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\textbf</span>{<span class="fmt37">wget</span> -c http://<span class="fmt37">torios</span>.<span class="fmt37">org</span>/ISO/<span class="fmt37">ToriOS</span>-alpha.<span class="fmt37"><span class="fmt38">iso</span></span>} <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre>or from torrent <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\textbf</span>{(available soon)} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\textbf</span>{<span class="fmt37">MD5SUM</span>: } <span class="fmt37"><span class="fmt38">md5sum</span></span> = <span class="fmt37">9648e831912248d19cd8b115da24ea6b</span> <span class="fmt19">\\</span>  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span>{save the above to a file e.g <span class="fmt37">MD5SUMS</span>} </pre>
+<pre><span class="fmt19">\item</span>{place this in the SAME LOCATION as the <span class="fmt37">iso</span> file} </pre>
+<pre><span class="fmt19">\item</span>{type <span class="fmt37">md5sum</span> -c <span class="fmt37">ToriOS</span>-<span class="fmt37">alpla</span>-<span class="fmt37">iso</span>}  </pre>
+<pre><span class="fmt19">\item</span>({checking may take a while and you should get an OK if it checks out} </pre>
+<pre><span class="fmt19">\item</span>{any problems please ask} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\textbf</span>{Known issues (2014-Aug-29):} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span>{Menu does not display items that do not use a desktop file}   </pre>
+<pre><span class="fmt19">\item</span>{Missing features in the Settings Manager} </pre>
+<pre><span class="fmt19">\item</span>{<span class="fmt37">USB</span> mounting support ONLY (no CD/DVD <span class="fmt39">mounting</span> unless using a terminal)} </pre>
+<pre><span class="fmt19">\item</span>{Hardly any <span class="fmt37">apps</span> installed (this is a feature) :D} </pre>
+<pre><span class="fmt19">\item</span>{Menu categories do not support localization yet, though all desktop files that have it are supported in the menu} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>This uses the <span class="fmt37">OBI</span> installer. <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre>It should run quite easily on <span class="fmt37">128MB</span> ram for the Live version, and in even less for the installer.  It currently uses around 60-<span class="fmt37">70MB</span> Ram to run. <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt39">Currently</span> you can try out the Live version, and install ONLY from the text installer (or you can use the terminal and launch <span class="fmt37">OBI</span>). </pre>
+<pre>It is highly suggested that you use the Live version ONLY <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\textbf</span>{THIS WILL OVERWRITE THE ENTIRE DEVICE IF YOU  </pre>
+<pre>INSTALL IT} <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>You should backup all your  personal files, and your OS if you choose to install this.<span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre><span class="fmt37">ToriOS</span> contains a tool called <span class="fmt37">mktbl</span>, this tool can backup your entire disk as a <span class="fmt37">tarball</span> to easily reinstall <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
+<pre>http://<span class="fmt37">torios</span>.<span class="fmt37">org</span>/contact.html and click ask us if you need help <span class="fmt19">\\</span> </pre>
+<pre>  </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span> {<span class="fmt56">testing</span><span class="fmt56"> </span><span class="fmt56">virtual</span><span class="fmt56"> </span><span class="fmt56">box</span><span class="fmt56"> </span><span class="fmt56">images</span>} </pre>
+<pre>Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with. </pre>
+<pre> </pre>
+<pre><span class="fmt37">wget</span> -c http://<span class="fmt37">torios</span>.<span class="fmt37">org</span>/VB/<span class="fmt37">ToriBuilder</span>.<span class="fmt37">vdi</span>.xz <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>Once done you need to extract,   either right click and select <span class="fmt39">extract</span> here or use the command line.  Due to the size of the Virtual box image this may take some time. <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>Once this is done you will have a new file called:    in the <span class="fmt37">ToriBuilder</span>.<span class="fmt37">vdi</span> folder,   </pre>
+<pre> </pre>
+<pre> </pre>
+<pre>Open virtual box </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{extractVBimage} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Virtual box  </pre>
+<pre>Click New </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span> <span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{ToriosTest01} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Use the following options </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\item</span> Name : <span class="fmt37">Torios</span> </pre>
+<pre><span class="fmt19">\item</span> Type : Linux </pre>
+<pre><span class="fmt19">\item</span> Version : Ubuntu 32 bit </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Click Next </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{ToriosTest02} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Should be Ok to leave the default memory as <span class="fmt37">256MB</span>,so click next. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{ToriosTest03} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Upon opening virtual box you will see this screen: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{virtualbox} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Click use existing and select the file you downloaded earlier, so in this case its <span class="fmt19">\textbf</span>{<span class="fmt37">ToriBuilder</span>.<span class="fmt37">vdi</span>} </pre>
+<pre> </pre>
+<pre>Click done. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{ToriosTest-done} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt37">Torios</span> needs <span class="fmt37">PAE</span> support enabled to do this select the virtual box image you just created,  and click settings. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{ToriosEnablePAE} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Click system, then processor tab then check the box <span class="fmt37">EnablePAE</span>/NX then press OK. </pre>
+<pre> </pre>
+<pre>You should then <span class="fmt37">bereturned</span> to the main virtual box window,  the image should still be selected so press start and you should boot in to the <span class="fmt37">Torios</span> Test Image.  </pre>
+<pre> </pre>
+<pre> note yours may look different as I have a few images,  also note in this screen shot i have a different vm set up.  We still need to open up the <span class="fmt37">ToriOS</span> image we downloaded.  </pre>
+<pre> </pre>
+<pre>We will assume here you have thus already installed. </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\chapter</span>{<span class="fmt56">Document</span><span class="fmt56"> </span><span class="fmt56">License</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\textbf</span>{Attribution-<span class="fmt37">ShareAlike</span> 4.0 International (CC BY-SA 4.0)} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">verbatim</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">You</span><span class="fmt24"> </span><span class="fmt24">are</span><span class="fmt24"> </span><span class="fmt24">free</span><span class="fmt24"> </span><span class="fmt24">to:</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">Share</span><span class="fmt24"> </span><span class="fmt24">?</span><span class="fmt24"> </span><span class="fmt24">copy</span><span class="fmt24"> </span><span class="fmt24">and</span><span class="fmt24"> </span><span class="fmt24">redistribute</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">material</span><span class="fmt24"> </span><span class="fmt24">in</span><span class="fmt24"> </span><span class="fmt24">any</span><span class="fmt24"> </span><span class="fmt24">medium</span><span class="fmt24"> </span><span class="fmt24">or</span><span class="fmt24"> </span><span class="fmt24">format</span> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">Adapt</span><span class="fmt24"> </span><span class="fmt24">?</span><span class="fmt24"> </span><span class="fmt24">remix,</span><span class="fmt24"> </span><span class="fmt24">transform,</span><span class="fmt24"> </span><span class="fmt24">and</span><span class="fmt24"> </span><span class="fmt24">build</span><span class="fmt24"> </span><span class="fmt24">upon</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">material</span> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">for</span><span class="fmt24"> </span><span class="fmt24">any</span><span class="fmt24"> </span><span class="fmt24">purpose,</span><span class="fmt24"> </span><span class="fmt24">even</span><span class="fmt24"> </span><span class="fmt24">commercially.</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">The</span><span class="fmt24"> </span><span class="fmt24">licensor</span><span class="fmt24"> </span><span class="fmt24">cannot</span><span class="fmt24"> </span><span class="fmt24">revoke</span><span class="fmt24"> </span><span class="fmt24">these</span><span class="fmt24"> </span><span class="fmt24">freedoms</span> </pre>
+<pre><span class="fmt24">     </span><span class="fmt24">as</span><span class="fmt24"> </span><span class="fmt24">long</span><span class="fmt24"> </span><span class="fmt24">as</span><span class="fmt24"> </span><span class="fmt24">you</span><span class="fmt24"> </span><span class="fmt24">follow</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">license</span><span class="fmt24"> </span><span class="fmt24">terms.</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt24">Under</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">following</span><span class="fmt24"> </span><span class="fmt24">terms:</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">Attribution</span><span class="fmt24"> </span><span class="fmt24">?</span><span class="fmt24"> </span><span class="fmt24">You</span><span class="fmt24"> </span><span class="fmt24">must</span><span class="fmt24"> </span><span class="fmt24">give</span><span class="fmt24"> </span><span class="fmt24">appropriate</span><span class="fmt24"> </span><span class="fmt24">credit,</span><span class="fmt24"> </span><span class="fmt24">provide</span><span class="fmt24"> </span><span class="fmt24">a</span><span class="fmt24"> </span><span class="fmt24">link</span><span class="fmt24"> </span><span class="fmt24">to</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">license,</span> </pre>
+<pre><span class="fmt24">     </span><span class="fmt24">and</span><span class="fmt24"> </span><span class="fmt24">indicate</span><span class="fmt24"> </span><span class="fmt24">if</span><span class="fmt24"> </span><span class="fmt24">changes</span><span class="fmt24"> </span><span class="fmt24">were</span><span class="fmt24"> </span><span class="fmt24">made.</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">     </span><span class="fmt24">You</span><span class="fmt24"> </span><span class="fmt24">may</span><span class="fmt24"> </span><span class="fmt24">do</span><span class="fmt24"> </span><span class="fmt24">so</span><span class="fmt24"> </span><span class="fmt24">in</span><span class="fmt24"> </span><span class="fmt24">any</span><span class="fmt24"> </span><span class="fmt24">reasonable</span><span class="fmt24"> </span><span class="fmt24">manner,</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">     </span><span class="fmt24">but</span><span class="fmt24"> </span><span class="fmt24">not</span><span class="fmt24"> </span><span class="fmt24">in</span><span class="fmt24"> </span><span class="fmt24">any</span><span class="fmt24"> </span><span class="fmt24">way</span><span class="fmt24"> </span><span class="fmt24">that</span><span class="fmt24"> </span><span class="fmt24">suggests</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">licensor</span><span class="fmt24"> </span><span class="fmt24">endorses</span><span class="fmt24"> </span><span class="fmt24">you</span><span class="fmt24"> </span><span class="fmt24">or</span><span class="fmt24"> </span><span class="fmt24">your</span><span class="fmt24"> </span><span class="fmt24">use.</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">ShareAlike</span><span class="fmt24"> </span><span class="fmt24">?</span><span class="fmt24"> </span><span class="fmt24">If</span><span class="fmt24"> </span><span class="fmt24">you</span><span class="fmt24"> </span><span class="fmt24">remix,</span><span class="fmt24"> </span><span class="fmt24">transform,</span> </pre>
+<pre><span class="fmt24">     </span><span class="fmt24">or</span><span class="fmt24"> </span><span class="fmt24">build</span><span class="fmt24"> </span><span class="fmt24">upon</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">material,</span><span class="fmt24"> </span><span class="fmt24">you</span><span class="fmt24"> </span><span class="fmt24">must</span><span class="fmt24"> </span><span class="fmt24">distribute</span><span class="fmt24"> </span><span class="fmt24">your</span><span class="fmt24"> </span><span class="fmt24">contributions</span><span class="fmt24"> </span><span class="fmt24">under</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">same</span><span class="fmt24"> </span><span class="fmt24">license</span><span class="fmt24"> </span><span class="fmt24">as</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">original.</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">No</span><span class="fmt24"> </span><span class="fmt24">additional</span><span class="fmt24"> </span><span class="fmt24">restrictions</span><span class="fmt24"> </span><span class="fmt24">?</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">You</span><span class="fmt24"> </span><span class="fmt24">may</span><span class="fmt24"> </span><span class="fmt24">not</span><span class="fmt24"> </span><span class="fmt24">apply</span><span class="fmt24"> </span><span class="fmt24">legal</span><span class="fmt24"> </span><span class="fmt24">terms</span><span class="fmt24"> </span><span class="fmt24">or</span><span class="fmt24"> </span><span class="fmt24">technological</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">measures</span><span class="fmt24"> </span><span class="fmt24">that</span><span class="fmt24"> </span><span class="fmt24">legally</span><span class="fmt24"> </span><span class="fmt24">restrict</span><span class="fmt24"> </span><span class="fmt24">others</span><span class="fmt24"> </span><span class="fmt24">from</span><span class="fmt24"> </span><span class="fmt24">doing</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">    </span><span class="fmt24">anything</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">license</span><span class="fmt24"> </span><span class="fmt24">permits.</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">verbatim</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>http://<span class="fmt37">creativecommons</span>.<span class="fmt37">org</span>/licenses/by-sa/4.0/ </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\includegraphics</span>{cc-logi} </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre><span class="fmt19">\lipsum</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%\license[2.5]{by-nc-sa}</span> </pre>
+<pre>... </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">images</span><span class="fmt18"> </span><span class="fmt18">only</span> </pre>
+<pre><span class="fmt18">%\shortlicense[3.0]{by-nc-sa}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%\cc</span><span class="fmt18"> </span><span class="fmt18">\ccby</span><span class="fmt18"> </span><span class="fmt18">\ccsa</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newpage</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\indexspace</span> </pre>
+<pre><span class="fmt19">\indexname</span>{} </pre>
+<pre><span class="fmt19">\index</span>{entry} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre></body></html>

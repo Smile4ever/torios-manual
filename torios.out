@@ -1,7 +1,10 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.2}{What is Linux}{}% 2
-\BOOKMARK [0][-]{chapter.3}{The Torios Team}{}% 3
+\BOOKMARK [0][-]{chapter.2}{What is GNU / Linux}{}% 2
+\BOOKMARK [0][-]{chapter.3}{The ToriOS Team}{}% 3
 \BOOKMARK [0][-]{chapter.4}{Installation}{}% 4
-\BOOKMARK [0][-]{chapter.5}{Desktop}{}% 5
-\BOOKMARK [0][-]{chapter.6}{Applications}{}% 6
-\BOOKMARK [0][-]{chapter.7}{Get Involved}{}% 7
+\BOOKMARK [1][-]{section.4.1}{Installation}{chapter.4}% 5
+\BOOKMARK [0][-]{chapter.5}{Desktop and Applications}{}% 6
+\BOOKMARK [1][-]{section.5.1}{Applications that come with ToriOS}{chapter.5}% 7
+\BOOKMARK [0][-]{chapter.6}{Get Involved}{}% 8
+\BOOKMARK [0][-]{chapter.7}{Testing}{}% 9
+\BOOKMARK [0][-]{chapter.8}{Document License}{}% 10

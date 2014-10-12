@@ -1,6 +1,8 @@
 \documentclass[12pt,a4paper]{book}
 \usepackage[latin1]{inputenc}
-%\usepackage{cclicenses}
+%\usepackage{creativecommons}
+\usepackage{xmpincl}
+\usepackage{lipsum}
 \usepackage{url}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -16,6 +18,9 @@
 \begin{center}
 {\Huge ToriOS Manual}
 \end{center}
+
+
+
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{./FinalLogo}
@@ -71,7 +76,7 @@ About Tori OS - Tori Operating System Overview:
 \hline Website admin & William Cornelius &  & william@torios.org \\
 \hline Documentation - manual & Paul Sutton & zleap	& zleap@torios.org \\
 \hline Documentation - wiki & Geoffrey De Belie & smile & smile4ever@torios.org \\
-\hline Developer lead / driver & Alexander Kluth & DerAlex & alexander@torios.org \\
+%\hline Developer lead / driver & Alexander Kluth & DerAlex & alexander@torios.org \\
 \hline Quality Assurance Testing & Jack & fjack & $|$ \\
 \hline Marketing $|$	David B Yentzen & $|$ dbyentzen@torios.org \\
 \hline Artwork & Rafael & rafaellaguna & $|$ \\
@@ -224,38 +229,47 @@ If you have very new hardware then you may have the new UEFI boot system,  this 
 
 \subsection{Installing Torios}
 
-Insert the installation CD / DVD drive and reboot, you then need to tell your computer to boot off that drive.  Sometimes you get to a boot device menu by pressing \textbf{F12} When told to.  \\
+For more help with the One button installer please refer to the OBI-quickstart-manual.pdf
 
-\includegraphics[width=0.7\linewidth]{boot-screen1}
+\textbf{Note ; This is based on the RC-2 test version.}
+\linebreak \\
+I set up virtual box with the default settings (256mb RAM)and added a 16gb virtual hard disk sda. \\
 
-First boot screen showing the following options \\
+First step in the process is to boot the iso image,  this automatically boots in to the new ToriOS desktop
 
-\begin{itemize}
-\item{ToriOS - This boots in to Torios} 
-\item{Hardware Detection tool (HDT)}
-\item{Memory Failure Decection (memtest86+}
-\end{itemize}
+\includegraphics[width=0.7\linewidth]{toriosRC2} 
+\\
 
-\includegraphics[width=0.7\linewidth]{boot-screen2}
+Note the install button at the bottom of the screen,  click this to start the install process. \\
+\includegraphics[width=0.7\linewidth]{torios-rc2-install1}
 
-Second boot screen showing the following options \\
+The initial screen is show here,  i accepted all the defaults except right at the very end for the confirm, where I had to manually select (yes) \\
 
-\begin{itemize}
-\item{GrAphics Mode with One button Installer}
-\item {One button installer in text mode}
-\item{Quit from menu - exit to bash shell}
-\item{Reboot}
-\item{Poweroff}
-\end{itemize}
+\includegraphics[width=0.7\linewidth]{torios-rc2-install2}
 
+\includegraphics[width=0.7\linewidth]{torios-rc2-install3}
 
-Installation is covered in several documents which can be found in /Desktop/Documents
-mainly 
-OBI-quickstart-manual.pdf
+\includegraphics[width=0.7\linewidth]{torios-rc2-install4}
+
+\includegraphics[width=0.7\linewidth]{torios-rc2-install5}
+
+\includegraphics[width=0.7\linewidth]{torios-rc2-install6}
 
 
+the next screen has a FINAL RED warning. \\ 
 
-\subsection{Final steps}
+\includegraphics[width=0.7\linewidth]{torios-rc2-install8-final-warning}
+%\includegraphics{torios-rc2-install8-final warning}
+
+\includegraphics[width=0.7\linewidth]{torios-rc2-install9}
+
+
+\includegraphics[width=0.7\linewidth]{torios-rc2-login-screen}
+
+%end install section
+
+ 
+\newpage
 
 \subsection{Testing - For more advanced users}
 
@@ -325,15 +339,7 @@ Torios jwm development lead Israel israel@torios.org
 \begin{center}
 \includegraphics[width=0.7\linewidth]{window-settings}
 \end{center}
-
-
-
 %{Panel}
-
-
-
-
-
 
 %{Keyboard}
 %{Icons}
@@ -342,40 +348,6 @@ Torios jwm development lead Israel israel@torios.org
 {Themes}
 {Autostart}
 
-
-
-
-
-
-\subsection{Installing Torios}
-
-Insert the installation CD / DVD drive and reboot, you then need to tell your computer to boot off that drive.  Sometimes you get to a boot device menu by pressing \textbf{F12} When told to.  \\
-
-\includegraphics[width=0.7\linewidth]{boot-screen1}
-
-First boot screen showing the following options \\
-
-\begin{itemize}
-\item{ToriOS - This boots in to Torios} 
-\item){Hardware Detection tool (HDT}
-\item{Memory Failure Decection (memtest86+}
-\end{itemize}
-
-
-The First letters of these are highlighted so you can just press the corresponding keyboard letters to choose that option \\
-
-\includegraphics[width=0.7\linewidth]{boot-screen2}
-
-Second boot screen showing the following options
-
-\begin{itemize}
-\item{Grphics Mode with One button Installer}
-\item {One button installer in text mode}
-\item{Quit from menu - exit to bash shell}
-\item{Reboot}
-\item{Poweroff}
-\end{itemize}
-\subsection{System}
 
 \newpage
 
@@ -404,7 +376,10 @@ Second boot screen showing the following options
 \url{https://www.youtube.com/watch?v=P_r2hHqyUa4} \\
 \url{http://www.youtube.com/watch?v=PtVxDv_vy8w} \\
 
+
+
 \newpage
+\chapter{Testing}
 \subsection {testing - ISO}
 \bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
 
@@ -524,52 +499,57 @@ You should then bereturned to the main virtual box window,  the image should sti
 
 We will assume here you have thus already installed.
 
-\chapter{Glossary}
-\begin{multicols}{2}
- 
 
-\begin{description}
-\item[A]
-\item[B]
-\item[C]
-\item[Creative commons] Document and Graphics Licensing.
-\item[D]
-\item[E]
-\item[ext(n)] File system used on Linux systems, examples are ext2 ext3, and ext4 
-\item[F]
-\item[G]
-\item[GPL] General Public License 
-\item[GNU/LINUX] The kernel is released under the GPL so we refer to it as GNU / Linux
-\item[H]
-\item[I]
-\item[J]
-\item[K]
-\item[Kernel] This is the heart of the operating system.
-\columnbreak
-\item[L]
-\item[Linux] Operating system Kernel. 
-\item[Linus Torvalds] Creator of the Linux Kernel
-\item[M]
-\item[N]
-\item[O]
-\item[P]
-\item[PAE Hardware] Physical Address Extension 
-\item[Q]
-\item[R]
-\item[S]
-\item[T]
-\item[U]
-\item[V]
-\item[W]
-\item[X]
-\item[Y]
-\item[Z]
-\end{description}
-\end{multicols}
 \chapter{Document License}
+
+\textbf{Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)}
+
+\begin{verbatim}
+You are free to:
+
+    Share ? copy and redistribute the material in any medium or format
+    Adapt ? remix, transform, and build upon the material
+    for any purpose, even commercially.
+
+    The licensor cannot revoke these freedoms
+     as long as you follow the license terms.
+
+
+Under the following terms:
+
+    Attribution ? You must give appropriate credit, provide a link to the license,
+     and indicate if changes were made. 
+     You may do so in any reasonable manner, 
+     but not in any way that suggests the licensor endorses you or your use.
+
+    ShareAlike ? If you remix, transform,
+     or build upon the material, you must distribute your contributions under the same license as the original.
+
+    No additional restrictions ? 
+    You may not apply legal terms or technological 
+    measures that legally restrict others from doing 
+    anything the license permits.
+
+
+\end{verbatim}
+
+http://creativecommons.org/licenses/by-sa/4.0/
+
+
+\includegraphics{cc-logi}
+\newpage
+\lipsum
+
+%\license[2.5]{by-nc-sa}
+...
+% images only
+%\shortlicense[3.0]{by-nc-sa}
 
 %\cc \ccby \ccsa
 
+\newpage
 
-
+\indexspace
+\indexname{}
+\index{entry}
 \end{document}
