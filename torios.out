@@ -1,10 +1,15 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{What is GNU / Linux}{}% 2
 \BOOKMARK [0][-]{chapter.3}{The ToriOS Team}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Installation}{}% 4
-\BOOKMARK [1][-]{section.4.1}{Installation}{chapter.4}% 5
-\BOOKMARK [0][-]{chapter.5}{Desktop and Applications}{}% 6
-\BOOKMARK [1][-]{section.5.1}{Applications that come with ToriOS}{chapter.5}% 7
-\BOOKMARK [0][-]{chapter.6}{Get Involved}{}% 8
-\BOOKMARK [0][-]{chapter.7}{Testing}{}% 9
-\BOOKMARK [0][-]{chapter.8}{Document License}{}% 10
+\BOOKMARK [0][-]{chapter.4}{Installation - Getting ToriOS}{}% 4
+\BOOKMARK [0][-]{chapter.5}{Creating install media}{}% 5
+\BOOKMARK [0][-]{chapter.6}{BOOTING INSTALL MEDIA}{}% 6
+\BOOKMARK [1][-]{section.6.1}{Installation}{chapter.6}% 7
+\BOOKMARK [0][-]{chapter.7}{Login}{}% 8
+\BOOKMARK [0][-]{chapter.8}{Logout}{}% 9
+\BOOKMARK [0][-]{chapter.9}{Desktop}{}% 10
+\BOOKMARK [0][-]{chapter.10}{Keyboard - Shortcuts}{}% 11
+\BOOKMARK [0][-]{chapter.11}{Applications}{}% 12
+\BOOKMARK [0][-]{chapter.12}{Get Involved}{}% 13
+\BOOKMARK [0][-]{chapter.13}{Testing}{}% 14
+\BOOKMARK [0][-]{chapter.14}{Document License}{}% 15

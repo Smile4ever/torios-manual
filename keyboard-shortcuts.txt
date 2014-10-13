@@ -1,0 +1,23 @@
+F12		Fullscreen
+Mute Key	Mute
+RaiseVolume Key	Raise Volume
+LowerVolume Key	Lower Volume
+WWW Key		Webbrowser
+
+XF86Calculator	Calculator
+Print		Screen Shot
+Ctrl+Alt+p	Screen Shot
+Ctrl+Alt+t	Open Terminal
+Ctrl+Alt+Delete	Open System Monitor
+Alt+Tab		Switch to the next stacked window
+Ctrl+Alt+Tab	Cycle to the next stacked window
+Alt+F4		Close the window
+Alt+#		Move to Desktop #
+Alt+F1		Main Menu
+Alt+F2		Unmaximize a window
+Alt+F10		Maximize a window
+Ctrl+Alt+Right	Move Right 1 Desktop
+Ctrl+Alt+Left	Move Left 1 Desktop
+Ctrl+Alt+Up	Move Up 1 Desktop
+Ctrl+Alt+Down	Move Down 1 Desktop
+Ctrl+Alt+q	close 

@@ -11,6 +11,8 @@
 \usepackage{multicol}
 \usepackage[normalem]{ulem} % needed by strike
 \usepackage[urlcolor=blue,colorlinks=true]{hyperref}
+\usepackage{makeidx}
+\makeindex
 \setcounter{tocdepth}{1}
 \author{Paul Sutton}
 \begin{document}
@@ -39,13 +41,13 @@ The goal of this project is to produce a minimalist Linux distribution that give
 Ubuntu 12.04 is used as a base for this new system.
 \subsection{About this Manual}
 This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
-This manual has been prepared using \LaTeX. 
+This manual has been prepared using \LaTeX. , if  you know any young people in to coding please could you let them know about this,  
 
 \chapter{What is GNU / Linux}
 
 
 \subsection{About ToriOS}
-
+\index{About ToriOS}
 ToriOS is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
 \subsection{Non PAE Support}
 
@@ -54,7 +56,7 @@ https://blueprints.launchpad.net/torios/+spec/non-pae-support
 
 \newpage 
 \subsection{Technical overview}
-
+\index{Technical overview}
 About Tori OS - Tori Operating System Overview:
 
 \begin{itemize}
@@ -69,7 +71,7 @@ About Tori OS - Tori Operating System Overview:
 
 
 \chapter{The ToriOS Team}
-
+\index{The Team}
 \begin{center}\begin{tabular}{|l|l|l|l|}
 \hline \textbf{Job Title} & \textbf{Name} & \textbf{IRC Nick} & \textbf{E-mail} \\
 \hline Project lead & Ali Linx & amjjawad & amjjawad@torios.org \\
@@ -84,8 +86,8 @@ About Tori OS - Tori Operating System Overview:
 \hline \end{tabular}\end{center}
 
 
-\chapter{Installation}
-
+\chapter{Installation - Getting ToriOS}
+\index{Installation}
 There are several steps to an installation. \\
 \begin{enumerate}
 \item decide on the installation media CD-R or Flash disk
@@ -95,49 +97,43 @@ There are several steps to an installation. \\
 \item Create your install media
 \item initial boot
 \item either install from menu or run live session and install from there
+
+
 \end{enumerate}
 
 \subsection{Downloading the ISO}
+\index{Downloading - CLI}
 \subitem{Command Line}
-To download from the command line you can use the wget command, if you use the -c argument.  Then if the download is stopped or interupted then it will carry from where it left off if you re-run the command.\\
+
+See chapter \ref{Testing} for how to download and test the iso. 
 
 \subitem{Browser}
+\index{Downloading - Browser}
 
+\text{You can also download using a web browser}
 
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
-that explains how to check your downloaded iso file for errors.  Apart from the file name being\chapter{Login}
+that explains how to check your downloaded iso file for errors.  Apart from the file name being
 
 
 
-\includegraphics[width=0.8\linewidth]{screen-shots/torios-rc2-login-screen} \\
 
-After booting you will be presented with a graphical login screen :
-
-\chapter{Logout}
-
-\text{Logging out of ToriOS}\\
-\text{Click the shutdown menu in the top right corner}\\
-\includegraphics[width=0.8\linewidth]{screen-shots/torios-rc2-shutdown-menu} \\
-
-Here you are presented with 4 options:\\
-\begin{itemize}
-\item{Shutdown}
-\item{Suspend}
-\item{Logout}
-\item{Restart}
-
-\end{itemize}
  different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
 Please see getting invovled section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
-\subsection{Creating install media}
+\chapter{Creating install media}
 
 \subsection{CD-R}
+\index{CD-R/RW/DVD-R/RW}
+
+Whem you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it 
 
 
-\subsection{Flash Disks}
 
-You can use unetbootln to bootable flash disk image,   http://zleap.net/?s=unetboot
+\subsection{Flash Disks - Unetbootin}
+\index{Flash Disks}
+\index{Unetbootin}
+You can use unetbootin to bootable flash disk image,   http://zleap.net/?s=unetboot
 
 You can follow the steps below \\
 
@@ -152,6 +148,13 @@ e.g sudo apt-get install unetbootin
 you need your root password.
 
 You can then load the software up, you will need your root password
+
+Unetbootin as well as mkusb works in most linux distros, but I think
+it is also very important, that Unetbootin works in Windows (and I
+think also in MacOS). Please write very clearly, at or near page 16,
+that Unetbootin can be installed in Windows and used to create a
+ToriOS boot USB pendrive/stick/flash/thumb drive (whatever name you
+prefer, or all of them).
 
 \newpage
 
@@ -196,11 +199,11 @@ Select if you want to have a persistent space for files.
 \includegraphics[width=0.7\linewidth]{unetbootin3}
 \end{center}
 
-type ? you can choose between usb and hard disk (BE VERY CAREFUL)
+Type? you can choose between usb and hard disk (BE VERY CAREFUL) //
 
-then select the device, if you select hard disk then the device reference chances to / indicating root of the file system.
+then select the device, if you select hard disk then the device reference chances to / indicating root of the file system. //
 
-\paragraph{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.}
+/textbf{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.} //
 
  
 \begin{center}
@@ -240,13 +243,39 @@ Progress bar showing how many files have been copied and a percentage
 
 All done you can now reboot, select usb disk from the boot device menu (see your Manual on how to access this) and tryout /  install the new OS
 
-\subsection{booting install media}
-Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.
+\text{unetbootin also works from Windows / Mac}
+
+\subsection{Flash Disks - mkUsb}
+\index{MkUSB}
+\text{mkUSB - Make USB}
+
+mkusb is split now into one GUI program 'mkusb' and two console or text
+applications, mkusb-nox and mkusb-bas. The GUI version works in ToriOS
+(as well as in Ubuntu, Fedora, Debian, openSUSE. Arch to mention a few
+distros).
+
+mkusb-nox 'can do what mkusb can' but without eye-candy. mkusb-bas is
+basic and can be used in simple distros, where certain tools are not
+available (I have tested and tweaked it to work in Wary Puppy and Tiny
+Core).
+
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf
+
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf
+
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf
+
+\newpage 
+
+\chapter{BOOTING INSTALL MEDIA}
+
+\text{Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.} //
 
 \subsection{UEFI Boot}
 If you have very new hardware then you may have the new UEFI boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here.
 
 \newpage
+
 \section{Installation}
 
 \subsection{Installing Torios}
@@ -262,7 +291,7 @@ First step in the process is to boot the iso image,  this automatically boots in
 \includegraphics[width=0.7\linewidth]{toriosRC2} 
 \\
 
-Note the install button at the bottom of the screen,  click this to start the install process. \\
+Note the install button at the http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdfbottom of the screen,  click this to start the install process. \\
 \includegraphics[width=0.7\linewidth]{torios-rc2-install1}
 
 The initial screen is show here,  i accepted all the defaults except right at the very end for the confirm, where I had to manually select (yes) \\
@@ -295,13 +324,7 @@ the next screen has a FINAL RED warning. \\
  
 \newpage
 
-\subsection{Testing - For more advanced users}
-
-Please see getting invovled
-
 \chapter{Login}
-
-
 
 \includegraphics[width=0.8\linewidth]{screen-shots/torios-rc2-login-screen} \\
 
@@ -331,17 +354,68 @@ Here you are presented with 4 options:\\
 
 \includegraphics[width=0.8\linewidth]{screen-shots/Torios_Alpha2-desktop}
 
+\chapter{Keyboard - Shortcuts}
+
+\begin{center}\begin{tabular}{|l|l|}
+\hline \textbf{KEY} & \textbf{FUNCTION} \\
+\hline F12 & Fullscreen \\
+\hline Mute Key & Mute \\
+\hline RaiseVolume Key & Raise Volume \\
+\hline LowerVolume Key & Lower Volume \\
+\hline WWW Key & Webbrowser \\
+\hline PrintScr & Screen Shot - whole screen \\
+\hline Ctrl+Alt+p &	Screen Shot \\
+\hline Ctrl+Alt+t &	 Open Terminal \\
+\hline Ctrl+Alt+Delete & Open System Monitor \\
+\hline Alt+Tab & Switch to the next stacked window \\
+\hline Ctrl+Alt+Tab & Cycle to the next stacked window \\
+\hline Alt+F4 &	Close the window \\
+\hline Alt+\# & Move to Desktop \# \\
+\hline Alt+F1 &	Main Menu \\
+\hline Alt+F2 & Unmaximize a window \\
+\hline Alt+F10 & Maximize a window \\
+\hline Ctrl+Alt+Right & Move Right 1 Desktop \\
+\hline Ctrl+Alt+Left & Move Left 1 Desktop \\
+\hline Ctrl+Alt+Up & Move Up 1 Desktop \\
+\hline Ctrl+Alt+Down & Move Down 1 Desktop \\
+\hline Ctrl+Alt+q &	close \\
+\hline \end{tabular}
+\end{center}
+
+\textbf{This is work in progress}
 
 
 \chapter{Applications}
 As previously stated ToriOS is desgined to be very very minimal however it does come with a few applications. 
 \subsection{Internet Menu}
-\subsection{Midori (Web browser)}
-\subsection{Midori (Private Browsing)}
+\subsection{seamonkey (Web browser)}
+\subsection{seamonkey (Private Browsing)}
 \subsection{Wicd Network Manager}
 \subsection{WPA-gui}
 \subsection{ART Menu}
-\subsection{xpdf}
+\newpage
+\subsection{Evince}
+\index{Evince}
+
+
+\includegraphics[width=0.8\linewidth]{screen-shots/evince}
+\\
+Document (PDF) Viewer
+\\
+\begin{center}\begin{tabular}{|l|l|}
+\hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
+\hline Application name & Evince \\
+\hline Application Description & PDF Viewer \\
+\hline Menu Name & Document Viewer \\
+\hline Installed Version & 3.4 \\
+\hline Screen Shot version & 3.10.3 \\
+\hline Screen Shot Source & xubuntu 14.04 \\
+\hline Website & \htmladdnormallink{https://wiki.gnome.org/Apps/Evince}{https://wiki.gnome.org/Apps/Evince} \\
+\hline \end{tabular}\end{center}
+
+
+
+\newpage 
 \subsection{Development}
 \subsection{(Python 2.7)}
 
@@ -434,8 +508,10 @@ Torios jwm development lead Israel israel@torios.org
 
 
 \newpage
+
 \chapter{Testing}
 \subsection {testing - ISO}
+\label{Testing}
 \bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
 
 As of Week ending 30 / 8 / 2014 Torios is in Alpha 1 this can be downloaded from the website download page  \\ \\
@@ -602,9 +678,5 @@ http://creativecommons.org/licenses/by-sa/4.0/
 
 %\cc \ccby \ccsa
 
-\newpage
-
-\indexspace
-\indexname{}
-\index{entry}
+\printindex
 \end{document}
