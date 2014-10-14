@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{book}
+	\documentclass[12pt,a4paper]{book}
 \usepackage[latin1]{inputenc}
 %\usepackage{creativecommons}
 \usepackage{xmpincl}
@@ -26,30 +26,46 @@
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{./FinalLogo}
-\caption{}
-\label{fig:FinalLogo}
+
 \end{figure}
 
 
 \begin{center}
-Minimal, Simple, Fast, Small and Gives you a freedom of choice :)
+Minimal, Simple, Fast, Small and Gives you a freedom of choice :) \\
+Manual by Paul Sutton
 \end{center}
+
 \tableofcontents
+\index{Table of Contents}
 \chapter{Introduction}
+\index{Introduction}
 The goal of this project is to produce a minimalist Linux distribution that gives end users more choice as to what software is installed on their system.\\
 
 Ubuntu 12.04 is used as a base for this new system.
 \subsection{About this Manual}
 This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
-This manual has been prepared using \LaTeX. , if  you know any young people in to coding please could you let them know about this,  
+This manual has been prepared using \LaTeX.
 
 \chapter{What is GNU / Linux}
 
-
+Linux refers to the kernel of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNUs Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
+\index{GNU}
+\index{Linux}
+\index{GNU / Linux}
+\index{GPL}
 \subsection{About ToriOS}
 \index{About ToriOS}
 ToriOS is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
+
 \subsection{Non PAE Support}
+\index{PAE}
+\index{Non PAE}
+
+PAE - Physical Address Extension.\\
+To quote Wikipedia - In computing, Physical Address Extension (PAE) is a feature to allow 32-bit IA-32 central processing units (CPUs) to access a physical address space (including random access memory and memory mapped devices) larger than 4 gigabytes.  \\
+
+
+
 
 ToriOS will support PAE Hardware\\
 https://blueprints.launchpad.net/torios/+spec/non-pae-support
@@ -114,26 +130,21 @@ See chapter \ref{Testing} for how to download and test the iso.
 
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
-that explains how to check your downloaded iso file for errors.  Apart from the file name being
-
-
-
-
- different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
-Please see getting invovled section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
+that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
+Please see getting involved section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
 \chapter{Creating install media}
 
 \subsection{CD-R}
 \index{CD-R/RW/DVD-R/RW}
 
-Whem you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it 
-
-
+When you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it.  You won't be able to boot from that media.
 
 \subsection{Flash Disks - Unetbootin}
 \index{Flash Disks}
 \index{Unetbootin}
-You can use unetbootin to bootable flash disk image,   http://zleap.net/?s=unetboot
+You can use unetbootin to create a bootable flash disk image,   
+
+See the URL ref section for links to the unetbootin website \ref{URL REF}
 
 You can follow the steps below \\
 
@@ -155,6 +166,8 @@ think also in MacOS). Please write very clearly, at or near page 16,
 that Unetbootin can be installed in Windows and used to create a
 ToriOS boot USB pendrive/stick/flash/thumb drive (whatever name you
 prefer, or all of them).
+
+http://unetbootin.sourceforge.net/
 
 \newpage
 
@@ -199,11 +212,11 @@ Select if you want to have a persistent space for files.
 \includegraphics[width=0.7\linewidth]{unetbootin3}
 \end{center}
 
-Type? you can choose between usb and hard disk (BE VERY CAREFUL) //
+Type? you can choose between usb and hard disk \textbf{BE VERY CAREFUL} //
 
 then select the device, if you select hard disk then the device reference chances to / indicating root of the file system. //
 
-/textbf{REMEMBER that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake.} //
+\textbf{REMEMBER} that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake. //
 
  
 \begin{center}
@@ -249,6 +262,8 @@ All done you can now reboot, select usb disk from the boot device menu (see your
 \index{MkUSB}
 \text{mkUSB - Make USB}
 
+See the URL ref section for links to the information on mkusb \ref{URL REF}
+
 mkusb is split now into one GUI program 'mkusb' and two console or text
 applications, mkusb-nox and mkusb-bas. The GUI version works in ToriOS
 (as well as in Ubuntu, Fedora, Debian, openSUSE. Arch to mention a few
@@ -278,14 +293,15 @@ If you have very new hardware then you may have the new UEFI boot system,  this 
 
 \section{Installation}
 
-\subsection{Installing Torios}
-
+\subsection{Installing Torios One Button Installer}
+\index{OBI}
+https://help.ubuntu.com/community/OBI\\
 For more help with the One button installer please refer to the OBI-quickstart-manual.pdf
-
+\\
 \textbf{Note ; This is based on the RC-2 test version.}
 \linebreak \\
 I set up virtual box with the default settings (256mb RAM)and added a 16gb virtual hard disk sda. \\
-
+\\
 First step in the process is to boot the iso image,  this automatically boots in to the new ToriOS desktop
 
 \includegraphics[width=0.7\linewidth]{toriosRC2} 
@@ -354,8 +370,8 @@ Here you are presented with 4 options:\\
 
 \includegraphics[width=0.8\linewidth]{screen-shots/Torios_Alpha2-desktop}
 
-\chapter{Keyboard - Shortcuts}
-
+\chapter{Shortcuts}
+\index{Shortcuts}
 \begin{center}\begin{tabular}{|l|l|}
 \hline \textbf{KEY} & \textbf{FUNCTION} \\
 \hline F12 & Fullscreen \\
@@ -387,8 +403,9 @@ Here you are presented with 4 options:\\
 
 \chapter{Applications}
 As previously stated ToriOS is desgined to be very very minimal however it does come with a few applications. 
-\subsection{Internet Menu}
+
 \subsection{seamonkey (Web browser)}
+\index{Seamonkey}
 \subsection{seamonkey (Private Browsing)}
 \subsection{Wicd Network Manager}
 \subsection{WPA-gui}
@@ -421,19 +438,19 @@ Document (PDF) Viewer
 
 \subsection{Settings}
 \subsection{GParted}
+\index{GParted}
 \subsection{JWM Settings Manager}
 \subsection{Power Manager}
 
 \subsection{System}
 \subsection{UXTerm}
 \subsection{XTerm}
-\subsection{GParted}
 \subsection{Htop}
 
-\subsection{JWM Settings Manager}
 
 
 \subsection{JWM Settings}
+\index{JWM Settings Manager}
 ToriOS will use the JWM (Joe's Window Manager) window environment:\\
 
 The following is quoted from the projects website
@@ -443,6 +460,7 @@ JWM is a light-weight window manager for the X11 Window System. JWM is written i
 \end{quote}
 http://www.joewing.net/projects/jwm/
 Torios jwm development lead Israel israel@torios.org
+ToriOS Site Page : http://torios.org/jwm.html
 \newpage
 
 {\large \textbf{JWM Settings manager}} \\ \\
@@ -510,22 +528,21 @@ Torios jwm development lead Israel israel@torios.org
 \newpage
 
 \chapter{Testing}
+\index{testing}
+\index{ISO Testing}
 \subsection {testing - ISO}
+\index{Linux}
 \label{Testing}
 \bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
 
-As of Week ending 30 / 8 / 2014 Torios is in Alpha 1 this can be downloaded from the website download page  \\ \\
-\textbf{http://torios.org/iso.html}\\ \\
-\textbf{direct link to iso} \\ \\
-\textbf{torios.org/ISO/ToriOS-alpha.iso} \\ \\
-or with wget  \\ \\
+\begin{center}\begin{tabular}{|l|l|}
+\hline \textbf{Heading} & \textbf{Content} \\
+\hline Filenamne & ToriOS-alpha-rc2.iso \\
+\hline URL & \htmladdnormallink{http://torios.org/ISO/ToriOS-alpha-rc2.iso}{http://torios.org/ISO/ToriOS-alpha-rc2.iso} \\
+\hline MD5 Sum & 6775c77be242e6145552eeed9b6e85a7 \\
+\hline \end{tabular}\end{center}
 
-\includegraphics[width=0.7\linewidth]{torios-wget-download} \\ \\
-\textbf{wget -c http://torios.org/ISO/ToriOS-alpha.iso} \\ \\
-or from torrent \\ \\
-\textbf{(available soon)}
 
-\textbf{MD5SUM: } md5sum = 9648e831912248d19cd8b115da24ea6b \\ 
 \begin{itemize}
 \item{save the above to a file e.g MD5SUMS}
 \item{place this in the SAME LOCATION as the iso file}
@@ -561,7 +578,11 @@ http://torios.org/contact.html and click ask us if you need help \\
  
 \newpage
 
-\subsection {testing virtual box images}
+\subsection {Testing virtual box images}
+\index {Testing virtual box images}
+\index{Virtualbox}
+See \ref{URL REF} for website on virtual box.
+
 Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
 
 wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
@@ -632,7 +653,8 @@ We will assume here you have thus already installed.
 
 
 \chapter{Document License}
-
+\index{Creative Commons}
+\index{Document License}
 \textbf{Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)}
 
 \begin{verbatim}
@@ -666,17 +688,74 @@ Under the following terms:
 
 http://creativecommons.org/licenses/by-sa/4.0/
 
-
-\includegraphics{cc-logi}
-\newpage
-\lipsum
-
+\chapter{Software License}
+\index{Software License}
 %\license[2.5]{by-nc-sa}
 ...
 % images only
 %\shortlicense[3.0]{by-nc-sa}
-
 %\cc \ccby \ccsa
 
+\chapter{URL References}
+\index {URL References}
+\label{URL REF}
+
+\begin{center}\begin{tabular}{|l|l|}
+\hline \textbf{Topic} & \textbf{URL} \\
+\hline ToriOS Home Page & \htmladdnormallink{http://torios.org/}{http://torios.org/} \\
+
+\hline ToriOS ISO & \htmladdnormallink{http://torios.org/ISO/ToriOS-alpha-rc2.iso}{http://torios.org/ISO/ToriOS-alpha-rc2.iso} \\
+
+\hline Evince & \htmladdnormallink{https://wiki.gnome.org/Apps/Evince}{https://wiki.gnome.org/Apps/Evince} \\
+
+\hline unetbootin & \htmladdnormallink{http://unetbootin.sourceforge.net/}{http://unetbootin.sourceforge.net/}\\
+
+\hline mkusb & \htmladdnormallink{http://phillw.net/isos/linux-tools/mkusb/README.txt}{http://phillw.net/isos/linux-tools/mkusb/README.txt}\\
+
+\hline Virtualboxx & \htmladdnormallink{https://www.virtualbox.org/}{https://www.virtualbox.org/}\\
+
+\hline CC License & \htmladdnormallink{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}\\
+
+
+\hline \end{tabular}\end{center}
+
+
+
+
+\chapter{PDF References}
+\index{PDF References}
+\label{PDF References}
+\begin{center}\begin{tabular}{|l|l|}
+\hline \textbf{PDF} & \textbf{Location} \\
+\hline Quick start & \htmladdnormallink{mkUSB-quick-start-manual.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf} \\
+
+\hline nox manual & \htmladdnormallink{mkUSB-quick-start-manual-nox.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf} \\
+
+\hline bas manual & \htmladdnormallink{mkUSB-quick-start-manual-bas.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf} \\
+
+
+\hline x & \htmladdnormallink{}{}\\
+
+\hline x & \htmladdnormallink{}{}\\
+
+\hline x & \htmladdnormallink{}{}\\
+
+\hline x & \htmladdnormallink{}{}\\
+
+\hline \end{tabular}\end{center}
+
+
+
+\newpage
+
+
+
+
+
+
 \printindex
+
+\newpage
+
+
 \end{document}

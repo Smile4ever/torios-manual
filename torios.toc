@@ -17,35 +17,35 @@
 \contentsline {chapter}{\numberline {6}BOOTING INSTALL MEDIA}{19}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.10}UEFI Boot}{19}{subsection.6.0.10}
 \contentsline {section}{\numberline {6.1}Installation}{20}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Installing Torios}{20}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Installing Torios One Button Installer}{20}{subsection.6.1.1}
 \contentsline {chapter}{\numberline {7}Login}{27}{chapter.7}
 \contentsline {chapter}{\numberline {8}Logout}{29}{chapter.8}
 \contentsline {chapter}{\numberline {9}Desktop}{31}{chapter.9}
-\contentsline {chapter}{\numberline {10}Keyboard - Shortcuts}{33}{chapter.10}
+\contentsline {chapter}{\numberline {10}Shortcuts}{33}{chapter.10}
 \contentsline {chapter}{\numberline {11}Applications}{35}{chapter.11}
-\contentsline {subsection}{\numberline {11.0.2}Internet Menu}{35}{subsection.11.0.2}
-\contentsline {subsection}{\numberline {11.0.3}seamonkey (Web browser)}{35}{subsection.11.0.3}
-\contentsline {subsection}{\numberline {11.0.4}seamonkey (Private Browsing)}{35}{subsection.11.0.4}
-\contentsline {subsection}{\numberline {11.0.5}Wicd Network Manager}{35}{subsection.11.0.5}
-\contentsline {subsection}{\numberline {11.0.6}WPA-gui}{35}{subsection.11.0.6}
-\contentsline {subsection}{\numberline {11.0.7}ART Menu}{35}{subsection.11.0.7}
-\contentsline {subsection}{\numberline {11.0.8}Evince}{36}{subsection.11.0.8}
-\contentsline {subsection}{\numberline {11.0.9}Development}{37}{subsection.11.0.9}
-\contentsline {subsection}{\numberline {11.0.10}(Python 2.7)}{37}{subsection.11.0.10}
-\contentsline {subsection}{\numberline {11.0.11}Settings}{37}{subsection.11.0.11}
-\contentsline {subsection}{\numberline {11.0.12}GParted}{37}{subsection.11.0.12}
-\contentsline {subsection}{\numberline {11.0.13}JWM Settings Manager}{37}{subsection.11.0.13}
-\contentsline {subsection}{\numberline {11.0.14}Power Manager}{37}{subsection.11.0.14}
-\contentsline {subsection}{\numberline {11.0.15}System}{37}{subsection.11.0.15}
-\contentsline {subsection}{\numberline {11.0.16}UXTerm}{37}{subsection.11.0.16}
-\contentsline {subsection}{\numberline {11.0.17}XTerm}{37}{subsection.11.0.17}
-\contentsline {subsection}{\numberline {11.0.18}GParted}{37}{subsection.11.0.18}
-\contentsline {subsection}{\numberline {11.0.19}Htop}{37}{subsection.11.0.19}
-\contentsline {subsection}{\numberline {11.0.20}JWM Settings Manager}{37}{subsection.11.0.20}
-\contentsline {subsection}{\numberline {11.0.21}JWM Settings}{37}{subsection.11.0.21}
-\contentsline {subsection}{\numberline {11.0.22}}{41}{subsection.11.0.22}
+\contentsline {subsection}{\numberline {11.0.2}seamonkey (Web browser)}{35}{subsection.11.0.2}
+\contentsline {subsection}{\numberline {11.0.3}seamonkey (Private Browsing)}{35}{subsection.11.0.3}
+\contentsline {subsection}{\numberline {11.0.4}Wicd Network Manager}{35}{subsection.11.0.4}
+\contentsline {subsection}{\numberline {11.0.5}WPA-gui}{35}{subsection.11.0.5}
+\contentsline {subsection}{\numberline {11.0.6}ART Menu}{35}{subsection.11.0.6}
+\contentsline {subsection}{\numberline {11.0.7}Evince}{36}{subsection.11.0.7}
+\contentsline {subsection}{\numberline {11.0.8}Development}{37}{subsection.11.0.8}
+\contentsline {subsection}{\numberline {11.0.9}(Python 2.7)}{37}{subsection.11.0.9}
+\contentsline {subsection}{\numberline {11.0.10}Settings}{37}{subsection.11.0.10}
+\contentsline {subsection}{\numberline {11.0.11}GParted}{37}{subsection.11.0.11}
+\contentsline {subsection}{\numberline {11.0.12}JWM Settings Manager}{37}{subsection.11.0.12}
+\contentsline {subsection}{\numberline {11.0.13}Power Manager}{37}{subsection.11.0.13}
+\contentsline {subsection}{\numberline {11.0.14}System}{37}{subsection.11.0.14}
+\contentsline {subsection}{\numberline {11.0.15}UXTerm}{37}{subsection.11.0.15}
+\contentsline {subsection}{\numberline {11.0.16}XTerm}{37}{subsection.11.0.16}
+\contentsline {subsection}{\numberline {11.0.17}Htop}{37}{subsection.11.0.17}
+\contentsline {subsection}{\numberline {11.0.18}JWM Settings}{37}{subsection.11.0.18}
+\contentsline {subsection}{\numberline {11.0.19}}{41}{subsection.11.0.19}
 \contentsline {chapter}{\numberline {12}Get Involved}{43}{chapter.12}
 \contentsline {chapter}{\numberline {13}Testing}{45}{chapter.13}
-\contentsline {subsection}{\numberline {13.0.23}testing - ISO}{45}{subsection.13.0.23}
-\contentsline {subsection}{\numberline {13.0.24}testing virtual box images}{48}{subsection.13.0.24}
-\contentsline {chapter}{\numberline {14}Document License}{53}{chapter.14}
+\contentsline {subsection}{\numberline {13.0.20}testing - ISO}{45}{subsection.13.0.20}
+\contentsline {subsection}{\numberline {13.0.21}Testing virtual box images}{47}{subsection.13.0.21}
+\contentsline {chapter}{\numberline {14}Document License}{51}{chapter.14}
+\contentsline {chapter}{\numberline {15}Software License}{53}{chapter.15}
+\contentsline {chapter}{\numberline {16}URL References}{55}{chapter.16}
+\contentsline {chapter}{\numberline {17}PDF References}{57}{chapter.17}
