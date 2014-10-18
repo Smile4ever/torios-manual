@@ -1,4 +1,4 @@
-	\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper]{book}
 \usepackage[latin1]{inputenc}
 %\usepackage{creativecommons}
 \usepackage{xmpincl}
@@ -39,33 +39,36 @@ Manual by Paul Sutton
 \index{Table of Contents}
 \chapter{Introduction}
 \index{Introduction}
-The goal of this project is to produce a minimalist Linux distribution that gives end users more choice as to what software is installed on their system.\\
+The goal of this project is to produce a minimalist Linux distribution that uses as little memory (RAM) as possible.
+
+
 
 Ubuntu 12.04 is used as a base for this new system.
 \subsection{About this Manual}
-This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
+This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team takes no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
 This manual has been prepared using \LaTeX.
+
+
+
+
 
 \chapter{What is GNU / Linux}
 
-Linux refers to the kernel of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNUs Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
+Linux refers to the kernel (the core) of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNUs Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
 \index{GNU}
 \index{Linux}
 \index{GNU / Linux}
 \index{GPL}
 \subsection{About ToriOS}
 \index{About ToriOS}
-ToriOS is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
+ToriOS \cite{ToriOS} is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
 
 \subsection{Non PAE Support}
 \index{PAE}
 \index{Non PAE}
 
-PAE - Physical Address Extension.\\
-To quote Wikipedia - In computing, Physical Address Extension (PAE) is a feature to allow 32-bit IA-32 central processing units (CPUs) to access a physical address space (including random access memory and memory mapped devices) larger than 4 gigabytes.  \\
-
-
-
+PAE - Physical Address Extension. \cite{PAE} \\
+ToriOS is designed to support NON PAE hardware as well as .  \\
 
 ToriOS will support PAE Hardware\\
 https://blueprints.launchpad.net/torios/+spec/non-pae-support
@@ -88,6 +91,7 @@ About Tori OS - Tori Operating System Overview:
 
 \chapter{The ToriOS Team}
 \index{The Team}
+The ToriOS operating system is made possible by:
 \begin{center}\begin{tabular}{|l|l|l|l|}
 \hline \textbf{Job Title} & \textbf{Name} & \textbf{IRC Nick} & \textbf{E-mail} \\
 \hline Project lead & Ali Linx & amjjawad & amjjawad@torios.org \\
@@ -106,13 +110,13 @@ About Tori OS - Tori Operating System Overview:
 \index{Installation}
 There are several steps to an installation. \\
 \begin{enumerate}
-\item decide on the installation media CD-R or Flash disk
-\item Prepare install media - in the case of a flash disk make sure this is blank
-\item Prepare target media and decide where to install Torios to
+\item Decide on the installation media CD-R or flash disk
+\item Prepare install media - in the case of a flash disk make sure this is empty
+\item Prepare target media and decide where to install Torios to (for example a hard disk)
 \item Download the iso file
 \item Create your install media
-\item initial boot
-\item either install from menu or run live session and install from there
+\item Initial boot
+\item Either install from menu or run live session and install from there
 
 
 \end{enumerate}
@@ -139,12 +143,22 @@ Please see getting involved section as this covers some of the above during the 
 
 When you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it.  You won't be able to boot from that media.
 
+Examples of software for creating your CD / DVD include
+
+\begin{itemize}
+\item Windows vista and above can write / burn optical media
+\item Brassero and k3b are examples of optical media software under Linux
+\item There are several command line tools for this too.
+\end{itemize}
+
 \subsection{Flash Disks - Unetbootin}
 \index{Flash Disks}
 \index{Unetbootin}
 You can use unetbootin to create a bootable flash disk image,   
 
 See the URL ref section for links to the unetbootin website \ref{URL REF}
+
+http://unetbootin.sourceforge.net/
 
 You can follow the steps below \\
 
@@ -181,7 +195,7 @@ http://unetbootin.sourceforge.net/
 
 If you have downloaded an iso image  you don?t need to worry about the top section
 
-Click disk image,  ISO can be left as in,  then click the box with ? in and select the iso file
+Click disk image,  ISO can be left as in,  then select the box with ? in and select the iso file
 
 select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
 
@@ -189,13 +203,13 @@ drive should be the device reference for this disk
 
 make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
 
-I find it helpful to unmount and unplug my external hdd first,  it gives less options but also reduces the chances I will write to it,  The disks tool below is useful for finding out what device you are writing to.
+I find it helpful to unmount and unplug my external hdd first,  In other words if you don't want to write to it,  remove that device (if possible)
 
 If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
 
 Click disk image radio button
 
-the drop down menu to the right of this is a betweet ISO and floppy
+the drop down menu to the right of this is a between ISO and floppy
 
 you can then click on file search button (the one with ? )
 \begin{center}
@@ -224,6 +238,13 @@ then select the device, if you select hard disk then the device reference chance
 \end{center}
 You need to check if the target device should be mounted first or not
 
+Hopefully this how to is useful, please be careful as I am not re-
+sponsible for data loss, I try and write guides to be generic not
+explicit guides. I will leave this to the documentation team
+You can use fdisk and df to determine device references. Read the
+man pages for more info if you get stuck as for help and say you
+have looked at man pages, this blog post etc and are still stuck,
+this shows you have tried to research the issue.
 
 \paragraph{Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team}
 
@@ -579,7 +600,7 @@ http://torios.org/contact.html and click ask us if you need help \\
 \newpage
 
 \subsection {Testing virtual box images}
-\index {Testing virtual box images}
+\index{Testing virtual box images}
 \index{Virtualbox}
 See \ref{URL REF} for website on virtual box.
 
@@ -697,7 +718,7 @@ http://creativecommons.org/licenses/by-sa/4.0/
 %\cc \ccby \ccsa
 
 \chapter{URL References}
-\index {URL References}
+\index{URL References}
 \label{URL REF}
 
 \begin{center}\begin{tabular}{|l|l|}
@@ -746,12 +767,59 @@ http://creativecommons.org/licenses/by-sa/4.0/
 
 
 
+
+
 \newpage
 
+\begin{thebibliography}{1} % 1 is a random guess of the total number of
+%references
+
+\bibitem{ToriOS}
+\url{http://www.torios.org}
+\emph{2014}
+
+\bibitem{PAE}
+\url{http://en.wikipedia.org/wiki/Physical_Address_Extension}
+\emph{September 2014}
+
+\bibitem{ToriOS_ISO}
+\url{http://torios.org/ISO/ToriOS-alpha-rc2.iso}
+
+\bibitem{Evince}
+\url{https://wiki.gnome.org/Apps/Evince}
+
+\bibitem{unetbootin}
+\url{http://unetbootin.sourceforge.net/}
+
+	
+\bibitem{mkusb-url}
+\url{http://phillw.net/isos/linux-tools/mkusb/README.txt}
+
+\bibitem{VirtualBox}
+\url{https://www.virtualbox.org/}
+
+\bibitem{CC-BY-SA-4}
+\url{http://creativecommons.org/licenses/by-sa/4.0/}
+	
+	
+\bibitem{mkUSB-Quick-Start-manual}
+\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf}
+	
+	
+\bibitem{mkUSB-quick-start-manual-nox}
+\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf}
+
+\bibitem{mkUSB-quick-start-manual-bas}
+\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf}
+	
+	
 
 
+			
+\end{thebibliography}
 
 
+\newpage
 
 \printindex
 
