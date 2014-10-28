@@ -1,51 +1,54 @@
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
 \contentsline {subsection}{\numberline {1.0.1}About this Manual}{5}{subsection.1.0.1}
 \contentsline {chapter}{\numberline {2}What is GNU / Linux}{7}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.2}About ToriOS}{7}{subsection.2.0.2}
-\contentsline {subsection}{\numberline {2.0.3}Non PAE Support}{7}{subsection.2.0.3}
-\contentsline {subsection}{\numberline {2.0.4}Technical overview}{8}{subsection.2.0.4}
-\contentsline {chapter}{\numberline {3}The ToriOS Team}{9}{chapter.3}
-\contentsline {chapter}{\numberline {4}Installation - Getting ToriOS}{11}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.5}Downloading the ISO}{11}{subsection.4.0.5}
-\contentsline {subsection}{\numberline {4.0.6}Verifying the download}{11}{subsection.4.0.6}
-\contentsline {chapter}{\numberline {5}Creating install media}{13}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.7}CD-R}{13}{subsection.5.0.7}
-\contentsline {subsection}{\numberline {5.0.8}Flash Disks - Unetbootin}{13}{subsection.5.0.8}
-\contentsline {paragraph}{Hopefully this how to is useful, please be careful as I am not responsible for data loss, I try and write guides to be generic not explicit guides. I will leave this to the documentation team}{16}{section*.2}
-\contentsline {paragraph}{You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages, this blog post etc and are still stuck, this shows you have tried to research the issue.}{16}{section*.3}
-\contentsline {subsection}{\numberline {5.0.9}Flash Disks - mkUsb}{17}{subsection.5.0.9}
-\contentsline {chapter}{\numberline {6}BOOTING INSTALL MEDIA}{19}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.10}UEFI Boot}{19}{subsection.6.0.10}
-\contentsline {section}{\numberline {6.1}Installation}{20}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Installing Torios One Button Installer}{20}{subsection.6.1.1}
-\contentsline {chapter}{\numberline {7}Login}{27}{chapter.7}
-\contentsline {chapter}{\numberline {8}Logout}{29}{chapter.8}
-\contentsline {chapter}{\numberline {9}Desktop}{31}{chapter.9}
-\contentsline {chapter}{\numberline {10}Shortcuts}{33}{chapter.10}
-\contentsline {chapter}{\numberline {11}Applications}{35}{chapter.11}
-\contentsline {subsection}{\numberline {11.0.2}seamonkey (Web browser)}{35}{subsection.11.0.2}
-\contentsline {subsection}{\numberline {11.0.3}seamonkey (Private Browsing)}{35}{subsection.11.0.3}
-\contentsline {subsection}{\numberline {11.0.4}Wicd Network Manager}{35}{subsection.11.0.4}
-\contentsline {subsection}{\numberline {11.0.5}WPA-gui}{35}{subsection.11.0.5}
-\contentsline {subsection}{\numberline {11.0.6}ART Menu}{35}{subsection.11.0.6}
-\contentsline {subsection}{\numberline {11.0.7}Evince}{36}{subsection.11.0.7}
-\contentsline {subsection}{\numberline {11.0.8}Development}{37}{subsection.11.0.8}
-\contentsline {subsection}{\numberline {11.0.9}(Python 2.7)}{37}{subsection.11.0.9}
-\contentsline {subsection}{\numberline {11.0.10}Settings}{37}{subsection.11.0.10}
-\contentsline {subsection}{\numberline {11.0.11}GParted}{37}{subsection.11.0.11}
-\contentsline {subsection}{\numberline {11.0.12}JWM Settings Manager}{37}{subsection.11.0.12}
-\contentsline {subsection}{\numberline {11.0.13}Power Manager}{37}{subsection.11.0.13}
-\contentsline {subsection}{\numberline {11.0.14}System}{37}{subsection.11.0.14}
-\contentsline {subsection}{\numberline {11.0.15}UXTerm}{37}{subsection.11.0.15}
-\contentsline {subsection}{\numberline {11.0.16}XTerm}{37}{subsection.11.0.16}
-\contentsline {subsection}{\numberline {11.0.17}Htop}{37}{subsection.11.0.17}
-\contentsline {subsection}{\numberline {11.0.18}JWM Settings}{37}{subsection.11.0.18}
-\contentsline {subsection}{\numberline {11.0.19}}{41}{subsection.11.0.19}
-\contentsline {chapter}{\numberline {12}Get Involved}{43}{chapter.12}
-\contentsline {chapter}{\numberline {13}Testing}{45}{chapter.13}
-\contentsline {subsection}{\numberline {13.0.20}testing - ISO}{45}{subsection.13.0.20}
-\contentsline {subsection}{\numberline {13.0.21}Testing virtual box images}{47}{subsection.13.0.21}
-\contentsline {chapter}{\numberline {14}Document License}{51}{chapter.14}
-\contentsline {chapter}{\numberline {15}Software License}{53}{chapter.15}
-\contentsline {chapter}{\numberline {16}URL References}{55}{chapter.16}
-\contentsline {chapter}{\numberline {17}PDF References}{57}{chapter.17}
+\contentsline {chapter}{\numberline {3}About ToriOS}{9}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.2}PAE Hardware}{9}{subsection.3.0.2}
+\contentsline {chapter}{\numberline {4}The ToriOS Team}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}Installation Overview}{13}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.3}Downloading the ISO}{13}{subsection.5.0.3}
+\contentsline {subsection}{\numberline {5.0.4}Verifying the download}{14}{subsection.5.0.4}
+\contentsline {chapter}{\numberline {6}Creating install media}{15}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.5}CD-R}{15}{subsection.6.0.5}
+\contentsline {subsection}{\numberline {6.0.6}Flash Disks - Unetbootin}{15}{subsection.6.0.6}
+\contentsline {paragraph}{Hopefully this how to is useful, please be careful as I am not responsible for data loss, I try and write guides to be generic not explicit guides. I will leave this to the documentation team}{19}{section*.2}
+\contentsline {paragraph}{You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages, this blog post etc and are still stuck, this shows you have tried to research the issue.}{19}{section*.3}
+\contentsline {subsection}{\numberline {6.0.7}Flash Disks - mkUsb}{20}{subsection.6.0.7}
+\contentsline {chapter}{\numberline {7}BOOTING INSTALL MEDIA}{21}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.8}UEFI Boot}{21}{subsection.7.0.8}
+\contentsline {section}{\numberline {7.1}Installation}{22}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Installing Torios One Button Installer}{22}{subsection.7.1.1}
+\contentsline {chapter}{\numberline {8}Login Manager}{29}{chapter.8}
+\contentsline {chapter}{\numberline {9}Login}{31}{chapter.9}
+\contentsline {chapter}{\numberline {10}Logout}{33}{chapter.10}
+\contentsline {chapter}{\numberline {11}Desktop}{35}{chapter.11}
+\contentsline {chapter}{\numberline {12}Shortcuts}{37}{chapter.12}
+\contentsline {chapter}{\numberline {13}Applications}{39}{chapter.13}
+\contentsline {subsection}{\numberline {13.0.2}Seamonkey (Internet Suite)}{40}{subsection.13.0.2}
+\contentsline {subsection}{\numberline {13.0.3}seamonkey (Private Browsing)}{41}{subsection.13.0.3}
+\contentsline {subsection}{\numberline {13.0.4}Wicd Network Manager}{41}{subsection.13.0.4}
+\contentsline {subsection}{\numberline {13.0.5}WPA-gui}{41}{subsection.13.0.5}
+\contentsline {subsection}{\numberline {13.0.6}ART Menu}{41}{subsection.13.0.6}
+\contentsline {subsection}{\numberline {13.0.7}Evince}{42}{subsection.13.0.7}
+\contentsline {subsection}{\numberline {13.0.8}Development}{43}{subsection.13.0.8}
+\contentsline {subsection}{\numberline {13.0.9}(Python 2.7)}{43}{subsection.13.0.9}
+\contentsline {subsection}{\numberline {13.0.10}Settings}{43}{subsection.13.0.10}
+\contentsline {subsection}{\numberline {13.0.11}GParted}{44}{subsection.13.0.11}
+\contentsline {subsection}{\numberline {13.0.12}JWM Settings Manager}{46}{subsection.13.0.12}
+\contentsline {subsection}{\numberline {13.0.13}Power Manager}{46}{subsection.13.0.13}
+\contentsline {subsection}{\numberline {13.0.14}System}{46}{subsection.13.0.14}
+\contentsline {subsection}{\numberline {13.0.15}XTerm}{46}{subsection.13.0.15}
+\contentsline {subsection}{\numberline {13.0.16}UXTerm}{46}{subsection.13.0.16}
+\contentsline {subsection}{\numberline {13.0.17}Htop}{46}{subsection.13.0.17}
+\contentsline {subsection}{\numberline {13.0.18}synaptic package manager}{46}{subsection.13.0.18}
+\contentsline {subsection}{\numberline {13.0.19}JWM Settings}{46}{subsection.13.0.19}
+\contentsline {chapter}{\numberline {14}System administration}{51}{chapter.14}
+\contentsline {section}{\numberline {14.1}Installing Software}{51}{section.14.1}
+\contentsline {section}{\numberline {14.2}User management}{54}{section.14.2}
+\contentsline {chapter}{\numberline {15}Get Involved}{55}{chapter.15}
+\contentsline {chapter}{\numberline {16}Testing}{57}{chapter.16}
+\contentsline {subsection}{\numberline {16.0.1}testing - ISO}{57}{subsection.16.0.1}
+\contentsline {subsection}{\numberline {16.0.2}Testing virtual box images}{59}{subsection.16.0.2}
+\contentsline {chapter}{\numberline {17}Document License}{63}{chapter.17}
+\contentsline {chapter}{\numberline {18}Software License}{65}{chapter.18}
+\contentsline {chapter}{\numberline {19}URL References}{67}{chapter.19}
+\contentsline {chapter}{\numberline {20}PDF References}{69}{chapter.20}

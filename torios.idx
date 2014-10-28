@@ -4,31 +4,42 @@
 \indexentry{Linux|hyperpage}{7}
 \indexentry{GNU / Linux|hyperpage}{7}
 \indexentry{GPL|hyperpage}{7}
-\indexentry{About ToriOS|hyperpage}{7}
-\indexentry{PAE|hyperpage}{7}
-\indexentry{Non PAE|hyperpage}{7}
-\indexentry{Technical overview|hyperpage}{8}
-\indexentry{The Team|hyperpage}{9}
-\indexentry{Installation|hyperpage}{11}
-\indexentry{Downloading - CLI|hyperpage}{11}
-\indexentry{Downloading - Browser|hyperpage}{11}
-\indexentry{CD-R/RW/DVD-R/RW|hyperpage}{13}
-\indexentry{Flash Disks|hyperpage}{13}
-\indexentry{Unetbootin|hyperpage}{13}
-\indexentry{MkUSB|hyperpage}{18}
-\indexentry{OBI|hyperpage}{20}
-\indexentry{Shortcuts|hyperpage}{33}
-\indexentry{Seamonkey|hyperpage}{35}
-\indexentry{Evince|hyperpage}{36}
-\indexentry{GParted|hyperpage}{37}
-\indexentry{JWM Settings Manager|hyperpage}{37}
-\indexentry{testing|hyperpage}{45}
-\indexentry{ISO Testing|hyperpage}{45}
-\indexentry{Linux|hyperpage}{45}
-\indexentry{Testing virtual box images|hyperpage}{47}
-\indexentry{Virtualbox|hyperpage}{47}
-\indexentry{Creative Commons|hyperpage}{51}
-\indexentry{Document License|hyperpage}{51}
-\indexentry{Software License|hyperpage}{53}
-\indexentry{URL References|hyperpage}{55}
-\indexentry{PDF References|hyperpage}{57}
+\indexentry{About ToriOS|hyperpage}{9}
+\indexentry{Technical overview|hyperpage}{9}
+\indexentry{PAE|hyperpage}{9}
+\indexentry{Non PAE|hyperpage}{9}
+\indexentry{The Team|hyperpage}{11}
+\indexentry{Installation|hyperpage}{13}
+\indexentry{Downloading - CLI|hyperpage}{13}
+\indexentry{Downloading - Browser|hyperpage}{13}
+\indexentry{CD-R/RW/DVD-R/RW|hyperpage}{15}
+\indexentry{Flash Disks|hyperpage}{15}
+\indexentry{Unetbootin|hyperpage}{15}
+\indexentry{MkUSB|hyperpage}{20}
+\indexentry{UEFI|hyperpage}{21}
+\indexentry{OBI|hyperpage}{22}
+\indexentry{Login Manager|hyperpage}{29}
+\indexentry{Shortcuts|hyperpage}{37}
+\indexentry{Seamonkey|hyperpage}{40}
+\indexentry{Evince|hyperpage}{42}
+\indexentry{GParted|hyperpage}{44}
+\indexentry{xterm|hyperpage}{46}
+\indexentry{uxterm|hyperpage}{46}
+\indexentry{JWM Settings Manager|hyperpage}{46}
+\indexentry{system administration|hyperpage}{51}
+\indexentry{Package management - synaptic|hyperpage}{51}
+\indexentry{Synaptic|hyperpage}{51}
+\indexentry{Package management - apt|hyperpage}{53}
+\indexentry{apt|hyperpage}{53}
+\indexentry{testing|hyperpage}{57}
+\indexentry{ISO Testing|hyperpage}{57}
+\indexentry{Linux|hyperpage}{57}
+\indexentry{Testing virtual box images|hyperpage}{59}
+\indexentry{Virtualbox|hyperpage}{59}
+\indexentry{Creative Commons|hyperpage}{63}
+\indexentry{Document License|hyperpage}{63}
+\indexentry{Software License|hyperpage}{65}
+\indexentry{URL References|hyperpage}{67}
+\indexentry{PDF References|hyperpage}{69}
+\indexentry{Bibliography|hyperpage}{70}
+\indexentry{Further Reading|hyperpage}{70}

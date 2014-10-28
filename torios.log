@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.27)  13 OCT 2014 19:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.27)  28 OCT 2014 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,6 +323,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
 \@indexfile=\write3
 \openout3 = `torios.idx'.
 
@@ -331,20 +339,20 @@ Writing index file torios.idx
 (./torios.aux)
 \openout1 = `torios.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -374,16 +382,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box58
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring ON on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -393,194 +392,187 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./torios.out) (./torios.out)
 \@outlinefile=\write4
 \openout4 = `torios.out'.
 
- <./FinalLogo.png, id=64, 385.44pt x 385.44pt>
+ <./FinalLogo.png, id=96, 385.44pt x 385.44pt>
 File: ./FinalLogo.png Graphic file (type png)
 
 <use ./FinalLogo.png>
-Package pdftex.def Info: ./FinalLogo.png used on input line 28.
+Package pdftex.def Info: ./FinalLogo.png used on input line 29.
 (pdftex.def)             Requested size: 272.99881pt x 272.99973pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./FinalLogo.png>] [2
 
 ] (./torios.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [3])
 \tf@toc=\write5
 \openout5 = `torios.toc'.
 
- [3] [4
-
-]
+ [4]
 Chapter 1.
+[5
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-[5] [6
+] [6
 
 ]
 Chapter 2.
-[7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+[7] [8
+
+]
+Chapter 3.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
- [8]
-Chapter 3.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
 
-Overfull \hbox (98.29004pt too wide) in paragraph at lines 75--86
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
  []
 
-[9
-
-] [10
+[9] [10
 
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
+Overfull \hbox (59.83755pt too wide) in paragraph at lines 95--106
+ [] 
  []
 
-[11] [12]
+[11] [12
+
+]
 Chapter 5.
 
-Overfull \hbox (30.57619pt too wide) in paragraph at lines 136--137
-\OT1/cmr/m/n/12 You can use un-et-bootin to bootable flash disk im-age, http://
-zleap.net/?s=unetboot 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[13
+[13] [14]
+Chapter 6.
 
-] <unetbootin.png, id=163, 540.0175pt x 404.51125pt>
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+[15
+
+] [16] <unetbootin.png, id=224, 540.0175pt x 404.51125pt>
 File: unetbootin.png Graphic file (type png)
- <use unetbootin.png>
-Package pdftex.def Info: unetbootin.png used on input line 165.
-(pdftex.def)             Requested size: 272.99881pt x 204.49568pt.
 
-<unetbootin2.png, id=164, 648.4225pt x 465.74pt>
+<use unetbootin.png>
+Package pdftex.def Info: unetbootin.png used on input line 191.
+(pdftex.def)             Requested size: 272.99881pt x 204.49568pt.
+ <unetbootin2.png, id=225, 648.4225pt x 465.74pt>
 File: unetbootin2.png Graphic file (type png)
- <use unetbootin2.png>
-Package pdftex.def Info: unetbootin2.png used on input line 189.
+
+<use unetbootin2.png>
+Package pdftex.def Info: unetbootin2.png used on input line 214.
 (pdftex.def)             Requested size: 272.99881pt x 196.0856pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./unetbootin.png>] <unetbootin3.png, id=169, 561.09625pt x 420.57124pt>
+ [17 <./unetbootin.png>] <unetbootin3.png, id=230, 561.09625pt x 420.57124pt>
 File: unetbootin3.png Graphic file (type png)
 
 <use unetbootin3.png>
-Package pdftex.def Info: unetbootin3.png used on input line 199.
+Package pdftex.def Info: unetbootin3.png used on input line 224.
 (pdftex.def)             Requested size: 272.99881pt x 204.62497pt.
- <unetbootin4.png, id=170, 818.05624pt x 639.38875pt>
+ <unetbootin4.png, id=231, 818.05624pt x 639.38875pt>
 File: unetbootin4.png Graphic file (type png)
 
 <use unetbootin4.png>
-Package pdftex.def Info: unetbootin4.png used on input line 210.
+Package pdftex.def Info: unetbootin4.png used on input line 235.
 (pdftex.def)             Requested size: 272.99881pt x 213.37946pt.
- [15 <./unetbootin2.png> <./unetbootin3.png>]
-<unetbootin5.png, id=175, 572.1375pt x 413.545pt>
+ [18 <./unetbootin2.png> <./unetbootin3.png>] [19 <./unetbootin4.png>] <unetboo
+tin5.png, id=243, 572.1375pt x 413.545pt>
 File: unetbootin5.png Graphic file (type png)
- <use unetbootin5.png>
-Package pdftex.def Info: unetbootin5.png used on input line 242.
+
+<use unetbootin5.png>
+Package pdftex.def Info: unetbootin5.png used on input line 274.
 (pdftex.def)             Requested size: 272.99881pt x 197.32564pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-[16 <./unetbootin4.png>]
-Overfull \hbox (5.40979pt too wide) in paragraph at lines 262--263
+
+Overfull \hbox (5.40979pt too wide) in paragraph at lines 296--297
 []\OT1/cmr/m/n/12 http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-ma
 nual.pdf 
  []
 
 
-Overfull \hbox (27.604pt too wide) in paragraph at lines 264--265
+Overfull \hbox (27.604pt too wide) in paragraph at lines 298--299
 []\OT1/cmr/m/n/12 http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-ma
 nual-nox.pdf 
  []
 
 
-Overfull \hbox (26.36374pt too wide) in paragraph at lines 266--267
+Overfull \hbox (26.36374pt too wide) in paragraph at lines 300--301
 []\OT1/cmr/m/n/12 http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-ma
 nual-bas.pdf 
  []
 
-[17 <./unetbootin5.png>] [18
+[20 <./unetbootin5.png>]
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+[21
 
 ]
-Chapter 6.
-
-Overfull \hbox (391.07106pt too wide) in paragraph at lines 272--273
-[]
- []
-
-[19]
-Overfull \hbox (2.82927pt too wide) in paragraph at lines 283--284
-\OT1/cmr/m/n/12 For more help with the One but-ton in-staller please re-fer to 
-the OBI-quickstart-
+Underfull \hbox (badness 10000) in paragraph at lines 318--326
+\OT1/cmr/bx/n/12 Note ; This is based on the RC-2 test ver-sion.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
-[]\OT1/cmr/bx/n/12 Note ; This is based on the RC-2 test ver-sion.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
+Underfull \hbox (badness 10000) in paragraph at lines 318--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
+Underfull \hbox (badness 10000) in paragraph at lines 318--326
 
  []
 
-<toriosRC2.png, id=197, 1031.855pt x 840.13875pt>
+<toriosRC2.png, id=258, 1031.855pt x 840.13875pt>
 File: toriosRC2.png Graphic file (type png)
  <use toriosRC2.png>
-Package pdftex.def Info: toriosRC2.png used on input line 291.
+Package pdftex.def Info: toriosRC2.png used on input line 327.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
-<torios-rc2-install1.png, id=198, 1031.855pt x 840.13875pt>
+<torios-rc2-install1.png, id=259, 1031.855pt x 840.13875pt>
 File: torios-rc2-install1.png Graphic file (type png)
 
 <use torios-rc2-install1.png>
-Package pdftex.def Info: torios-rc2-install1.png used on input line 295.
+Package pdftex.def Info: torios-rc2-install1.png used on input line 331.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-Overfull \hbox (37.71779pt too wide) in paragraph at lines 294--296
+Overfull \hbox (37.71779pt too wide) in paragraph at lines 330--332
 []\OT1/cmr/m/n/12 Note the in-stall but-ton at the http://phillw.net/isos/linux
 -tools/mkusb/mkUSB-
  []
@@ -588,450 +580,535 @@ Overfull \hbox (37.71779pt too wide) in paragraph at lines 294--296
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./toriosRC2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+ [22 <./toriosRC2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
-<torios-rc2-install2.png, id=205, 1031.855pt x 840.13875pt>
+<torios-rc2-install2.png, id=268, 1031.855pt x 840.13875pt>
 File: torios-rc2-install2.png Graphic file (type png)
 
 <use torios-rc2-install2.png>
-Package pdftex.def Info: torios-rc2-install2.png used on input line 299.
+Package pdftex.def Info: torios-rc2-install2.png used on input line 335.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<torios-rc2-install3.png, id=206, 1031.855pt x 840.13875pt>
+<torios-rc2-install3.png, id=269, 1031.855pt x 840.13875pt>
 File: torios-rc2-install3.png Graphic file (type png)
 
 <use torios-rc2-install3.png>
-Package pdftex.def Info: torios-rc2-install3.png used on input line 301.
+Package pdftex.def Info: torios-rc2-install3.png used on input line 337.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<torios-rc2-install4.png, id=207, 1031.855pt x 840.13875pt>
+<torios-rc2-install4.png, id=270, 1031.855pt x 840.13875pt>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./torios-rc2-install1.png> <./torios-rc2-install2.png>]
+ [23 <./torios-rc2-install1.png> <./torios-rc2-install2.png>]
 File: torios-rc2-install4.png Graphic file (type png)
 
 <use torios-rc2-install4.png>
-Package pdftex.def Info: torios-rc2-install4.png used on input line 303.
+Package pdftex.def Info: torios-rc2-install4.png used on input line 339.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<torios-rc2-install5.png, id=214, 1031.855pt x 840.13875pt>
+<torios-rc2-install5.png, id=277, 1031.855pt x 840.13875pt>
 File: torios-rc2-install5.png Graphic file (type png)
 
 <use torios-rc2-install5.png>
-Package pdftex.def Info: torios-rc2-install5.png used on input line 305.
+Package pdftex.def Info: torios-rc2-install5.png used on input line 341.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<torios-rc2-install6.png, id=215, 1031.855pt x 840.13875pt>
+<torios-rc2-install6.png, id=278, 1031.855pt x 840.13875pt>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./torios-rc2-install3.png> <./torios-rc2-install4.png>]
+ [24 <./torios-rc2-install3.png> <./torios-rc2-install4.png>]
 File: torios-rc2-install6.png Graphic file (type png)
 
 <use torios-rc2-install6.png>
-Package pdftex.def Info: torios-rc2-install6.png used on input line 307.
+Package pdftex.def Info: torios-rc2-install6.png used on input line 343.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
-<torios-rc2-install8-final-warning.png, id=222, 1031.855pt x 840.13875pt>
+<torios-rc2-install8-final-warning.png, id=285, 1031.855pt x 840.13875pt>
 File: torios-rc2-install8-final-warning.png Graphic file (type png)
 
 <use torios-rc2-install8-final-warning.png>
 Package pdftex.def Info: torios-rc2-install8-final-warning.png used on input li
-ne 312.
+ne 348.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<torios-rc2-install9.png, id=223, 1031.855pt x 840.13875pt>
+<torios-rc2-install9.png, id=286, 1031.855pt x 840.13875pt>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./torios-rc2-install5.png> <./torios-rc2-install6.png>]
+ [25 <./torios-rc2-install5.png> <./torios-rc2-install6.png>]
 File: torios-rc2-install9.png Graphic file (type png)
 
 <use torios-rc2-install9.png>
-Package pdftex.def Info: torios-rc2-install9.png used on input line 315.
+Package pdftex.def Info: torios-rc2-install9.png used on input line 351.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
-<screen-shots/torios-rc2-login-screen.png, id=230, 1031.855pt x 840.13875pt>
+<screen-shots/torios-rc2-login-screen.png, id=294, 1031.855pt x 840.13875pt>
 File: screen-shots/torios-rc2-login-screen.png Graphic file (type png)
 
 <use screen-shots/torios-rc2-login-screen.png>
 Package pdftex.def Info: screen-shots/torios-rc2-login-screen.png used on input
- line 321.
+ line 357.
 (pdftex.def)             Requested size: 272.99881pt x 222.27676pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./torios-rc2-install8-final-warning.png> <./torios-rc2-install9.png>] [25
- <./screen-shots/torios-rc2-login-screen.png>] [26
-
-]
-Chapter 7.
-File: screen-shots/torios-rc2-login-screen.png Graphic file (type png)
-<use screen-shots/torios-rc2-login-screen.png>
-Package pdftex.def Info: screen-shots/torios-rc2-login-screen.png used on input
- line 329.
-(pdftex.def)             Requested size: 312.00119pt x 254.03058pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-[27] [28
+ [26 <./torios-rc2-install8-final-warning.png> <./torios-rc2-install9.png>] [27
+ <./screen-shots/torios-rc2-login-screen.png>] [28
 
 ]
 Chapter 8.
-<screen-shots/torios-rc2-shutdown-menu.png, id=255, 1031.855pt x 840.13875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[29] [30
+
+]
+Chapter 9.
+File: screen-shots/torios-rc2-login-screen.png Graphic file (type png)
+<use screen-shots/torios-rc2-login-screen.png>
+Package pdftex.def Info: screen-shots/torios-rc2-login-screen.png used on input
+ line 375.
+(pdftex.def)             Requested size: 312.00119pt x 254.03058pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+[31] [32
+
+]
+Chapter 10.
+<screen-shots/torios-rc2-shutdown-menu.png, id=332, 1031.855pt x 840.13875pt>
 File: screen-shots/torios-rc2-shutdown-menu.png Graphic file (type png)
 
 <use screen-shots/torios-rc2-shutdown-menu.png>
 Package pdftex.def Info: screen-shots/torios-rc2-shutdown-menu.png used on inpu
-t line 337.
+t line 383.
 (pdftex.def)             Requested size: 312.00119pt x 254.03058pt.
 
-Overfull \hbox (10.4475pt too wide) in paragraph at lines 335--339
+Overfull \hbox (10.4475pt too wide) in paragraph at lines 381--385
 [] \OT1/cmr/m/n/12 Here you are pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--339
+Underfull \hbox (badness 10000) in paragraph at lines 381--385
 
  []
 
-[29 <./screen-shots/torios-rc2-shutdown-menu.png>] [30
+[33 <./screen-shots/torios-rc2-shutdown-menu.png>] [34
 
 ]
-Chapter 9.
+Chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-<screen-shots/Torios_Alpha2-desktop.png, id=265, 770.88pt x 578.16pt>
+<screen-shots/Torios_Alpha2-desktop.png, id=342, 770.88pt x 578.16pt>
 File: screen-shots/Torios_Alpha2-desktop.png Graphic file (type png)
 
 <use screen-shots/Torios_Alpha2-desktop.png>
 Package pdftex.def Info: screen-shots/Torios_Alpha2-desktop.png used on input l
-ine 355.
+ine 401.
 (pdftex.def)             Requested size: 312.00119pt x 233.99472pt.
- [31 <./screen-shots/Torios_Alpha2-desktop.png>] [32
+ [35 <./screen-shots/Torios_Alpha2-desktop.png>] [36
 
 ]
-Chapter 10.
-[33] [34
+Chapter 12.
+[37] [38
 
 ]
-Chapter 11.
-[35] <screen-shots/evince.png, id=293, 606.265pt x 622.325pt>
+Chapter 13.
+[39] [40] [41] <screen-shots/evince.png, id=380, 606.265pt x 622.325pt>
 File: screen-shots/evince.png Graphic file (type png)
 
 <use screen-shots/evince.png>
-Package pdftex.def Info: screen-shots/evince.png used on input line 401.
+Package pdftex.def Info: screen-shots/evince.png used on input line 466.
 (pdftex.def)             Requested size: 312.00119pt x 320.2683pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--405
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
-[36 <./screen-shots/evince.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+[42 <./screen-shots/evince.png>] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+<screen-shots/gparted-askforpw.png, id=398, 646.415pt x 240.9pt>
+File: screen-shots/gparted-askforpw.png Graphic file (type png)
+
+<use screen-shots/gparted-askforpw.png>
+Package pdftex.def Info: screen-shots/gparted-askforpw.png used on input line 4
+94.
+(pdftex.def)             Requested size: 312.00119pt x 116.27394pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
-<jwmsettingsmanager.png, id=320, 297.36093pt x 303.38344pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+ []
+
+<screen-shots/gparted1.png, id=399, 781.92125pt x 521.95pt>
+File: screen-shots/gparted1.png Graphic file (type png)
+
+<use screen-shots/gparted1.png>
+Package pdftex.def Info: screen-shots/gparted1.png used on input line 498.
+(pdftex.def)             Requested size: 312.00119pt x 208.26657pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./screen-shots/gparted-askforpw.png> <./screen-shots/gparted1.png>] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+<jwmsettingsmanager.png, id=431, 297.36093pt x 303.38344pt>
 File: jwmsettingsmanager.png Graphic file (type png)
 
 <use jwmsettingsmanager.png>
-Package pdftex.def Info: jwmsettingsmanager.png used on input line 452.
+Package pdftex.def Info: jwmsettingsmanager.png used on input line 558.
 (pdftex.def)             Requested size: 272.99881pt x 278.54211pt.
 
-<mouse-settings.png, id=321, 434.62375pt x 245.91875pt>
+<mouse-settings.png, id=432, 434.62375pt x 245.91875pt>
 File: mouse-settings.png Graphic file (type png)
 
 <use mouse-settings.png>
-Package pdftex.def Info: mouse-settings.png used on input line 456.
+Package pdftex.def Info: mouse-settings.png used on input line 562.
 (pdftex.def)             Requested size: 272.99881pt x 154.47557pt.
 
-<panel-settings.png, id=322, 342.27875pt x 689.57625pt>
+<panel-settings.png, id=433, 342.27875pt x 689.57625pt>
 File: panel-settings.png Graphic file (type png)
 
 <use panel-settings.png>
-Package pdftex.def Info: panel-settings.png used on input line 460.
+Package pdftex.def Info: panel-settings.png used on input line 566.
 (pdftex.def)             Requested size: 272.99881pt x 550.04134pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <./jwmsettingsmanager.png> <./mouse-settings.png>]
-<desktop-settings.png, id=327, 536.0025pt x 583.17876pt>
+ [47 <./jwmsettingsmanager.png> <./mouse-settings.png>]
+<desktop-settings.png, id=438, 536.0025pt x 583.17876pt>
 File: desktop-settings.png Graphic file (type png)
 
 <use desktop-settings.png>
-Package pdftex.def Info: desktop-settings.png used on input line 465.
+Package pdftex.def Info: desktop-settings.png used on input line 571.
 (pdftex.def)             Requested size: 272.99881pt x 297.0257pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <./panel-settings.png>] <window-settings.png, id=332, 681.54625pt x 480.79
+ [48 <./panel-settings.png>] <window-settings.png, id=443, 681.54625pt x 480.79
 625pt>
 File: window-settings.png Graphic file (type png)
 
 <use window-settings.png>
-Package pdftex.def Info: window-settings.png used on input line 469.
+Package pdftex.def Info: window-settings.png used on input line 575.
 (pdftex.def)             Requested size: 272.99881pt x 192.58653pt.
- [40 <./desktop-settings.png> <./window-settings.png>] [41] [42
+ [49 <./desktop-settings.png> <./window-settings.png>] [50
 
 ]
-Chapter 12.
+Chapter 14.
+<screen-shots/synaptic1.png, id=453, 683.55376pt x 501.875pt>
+File: screen-shots/synaptic1.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--507
+<use screen-shots/synaptic1.png>
+Package pdftex.def Info: screen-shots/synaptic1.png used on input line 597.
+(pdftex.def)             Requested size: 312.00119pt x 229.08098pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51 <./screen-shots/synaptic1.png>] [52]
+Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
 
-[43] [44
+[53] [54]
+Chapter 15.
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--668
+
+ []
+
+[55
+
+] [56
 
 ]
-Chapter 13.
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
-
- []
-
-<torios-wget-download.png, id=363, 822.07124pt x 506.89375pt>
-File: torios-wget-download.png Graphic file (type png)
-
-<use torios-wget-download.png>
-Package pdftex.def Info: torios-wget-download.png used on input line 523.
-(pdftex.def)             Requested size: 272.99881pt x 168.32735pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--527
-
- []
-
-[45 <./torios-wget-download.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-
- []
-
+Chapter 16.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 530.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 690.
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--550
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--550
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--550
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--550
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
+
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
 
  []
 
-[46] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 
  []
 
 
-Overfull \hbox (31.26782pt too wide) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+Overfull \hbox (31.26782pt too wide) in paragraph at lines 735--736
 []\OT1/cmr/bx/n/12 Once this is done you will have a new file called: in the To
 riBuilder.vdi
  []
 
-<extractVBimage.png, id=378, 481.8pt x 165.61874pt>
+<extractVBimage.png, id=505, 481.8pt x 165.61874pt>
 File: extractVBimage.png Graphic file (type png)
  <use extractVBimage.png>
-Package pdftex.def Info: extractVBimage.png used on input line 577.
+Package pdftex.def Info: extractVBimage.png used on input line 741.
 (pdftex.def)             Requested size: 272.99881pt x 93.84515pt.
 
-<ToriosTest01.png, id=379, 566.115pt x 431.6125pt>
+<ToriosTest01.png, id=506, 566.115pt x 431.6125pt>
 File: ToriosTest01.png Graphic file (type png)
  <use ToriosTest01.png>
-Package pdftex.def Info: ToriosTest01.png used on input line 584.
+Package pdftex.def Info: ToriosTest01.png used on input line 748.
 (pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
 
-[48 <./extractVBimage.png> <./ToriosTest01.png>]
-<ToriosTest02.png, id=387, 566.115pt x 431.6125pt>
+[59 <./extractVBimage.png> <./ToriosTest01.png>]
+<ToriosTest02.png, id=515, 566.115pt x 431.6125pt>
 File: ToriosTest02.png Graphic file (type png)
  <use ToriosTest02.png>
-Package pdftex.def Info: ToriosTest02.png used on input line 597.
+Package pdftex.def Info: ToriosTest02.png used on input line 761.
 (pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
 
-<ToriosTest03.png, id=388, 566.115pt x 431.6125pt>
+<ToriosTest03.png, id=516, 566.115pt x 431.6125pt>
 File: ToriosTest03.png Graphic file (type png)
  <use ToriosTest03.png>
-Package pdftex.def Info: ToriosTest03.png used on input line 603.
+Package pdftex.def Info: ToriosTest03.png used on input line 767.
 (pdftex.def)             Requested size: 272.99881pt x 208.13976pt.
 
-<virtualbox.png, id=389, 774.895pt x 578.16pt>
+<virtualbox.png, id=517, 774.895pt x 578.16pt>
 File: virtualbox.png Graphic file (type png)
  <use virtualbox.png>
-Package pdftex.def Info: virtualbox.png used on input line 608.
+Package pdftex.def Info: virtualbox.png used on input line 772.
 (pdftex.def)             Requested size: 272.99881pt x 203.69115pt.
- [49 <./ToriosTest02.png> <./ToriosTest03.png>]
-<ToriosTest-done.png, id=397, 774.895pt x 578.16pt>
+ [60 <./ToriosTest02.png> <./ToriosTest03.png>]
+<ToriosTest-done.png, id=524, 774.895pt x 578.16pt>
 File: ToriosTest-done.png Graphic file (type png)
  <use ToriosTest-done.png>
-Package pdftex.def Info: ToriosTest-done.png used on input line 616.
+Package pdftex.def Info: ToriosTest-done.png used on input line 780.
 (pdftex.def)             Requested size: 272.99881pt x 203.69115pt.
 
-<ToriosEnablePAE.png, id=398, 671.50874pt x 464.73625pt>
+<ToriosEnablePAE.png, id=525, 671.50874pt x 464.73625pt>
 File: ToriosEnablePAE.png Graphic file (type png)
 
 <use ToriosEnablePAE.png>
-Package pdftex.def Info: ToriosEnablePAE.png used on input line 622.
+Package pdftex.def Info: ToriosEnablePAE.png used on input line 786.
 (pdftex.def)             Requested size: 272.99881pt x 188.93336pt.
-
-Underfull \vbox (badness 4569) has occurred while \output is active []
-
- [50 <./virtualbox.png> <./ToriosTest-done.png>]
-Overfull \hbox (23.75958pt too wide) in paragraph at lines 625--626
+ [61 <./virtualbox.png> <./ToriosTest-done.png>]
+Overfull \hbox (23.75958pt too wide) in paragraph at lines 789--790
 []\OT1/cmr/bx/n/12 Click sys-tem, then pro-ces-sor tab then check the box En-ab
 lePAE/NX
  []
 
-[51 <./ToriosEnablePAE.png>] [52
+[62 <./ToriosEnablePAE.png>]
+Chapter 17.
 
-]
-Chapter 14.
-
-Overfull \hbox (42.25021pt too wide) in paragraph at lines 665--665
+Overfull \hbox (42.25021pt too wide) in paragraph at lines 830--830
 []    \OT1/cmtt/m/n/12 Share ? copy and redistribute the material in any medium
  or format[] 
  []
 
 
-Overfull \hbox (116.35025pt too wide) in paragraph at lines 665--665
+Overfull \hbox (116.35025pt too wide) in paragraph at lines 830--830
 []    \OT1/cmtt/m/n/12 Attribution ? You must give appropriate credit, provide 
 a link to the license,[] 
  []
 
 
-Overfull \hbox (79.30023pt too wide) in paragraph at lines 665--665
+Overfull \hbox (79.30023pt too wide) in paragraph at lines 830--830
 []     \OT1/cmtt/m/n/12 but not in any way that suggests the licensor endorses 
 you or your use.[] 
  []
 
 
-Overfull \hbox (295.42534pt too wide) in paragraph at lines 665--665
+Overfull \hbox (295.42534pt too wide) in paragraph at lines 830--830
 []     \OT1/cmtt/m/n/12 or build upon the material, you must distribute your co
 ntributions under the same license as the original.[] 
  []
 
-<cc-logi.png, id=414, 88.33pt x 31.11626pt> [53]
-File: cc-logi.png Graphic file (type png)
- <use cc-logi.png>
-Package pdftex.def Info: cc-logi.png used on input line 670.
-(pdftex.def)             Requested size: 88.32977pt x 31.11617pt.
- [54 <./cc-logi.png>] [55] (./torios.ind [56] [57
+[63
 
+] [64]
+Chapter 18.
+[65
+
+] [66
+
+]
+Chapter 19.
+
+Overfull \hbox (80.3001pt too wide) in paragraph at lines 846--863
+ [] 
+ []
+
+[67] [68
+
+]
+Chapter 20.
+
+Package hyperref Warning: Suppressing empty link on input line 880.
+
+
+Package hyperref Warning: Suppressing empty link on input line 882.
+
+
+Package hyperref Warning: Suppressing empty link on input line 884.
+
+
+Package hyperref Warning: Suppressing empty link on input line 886.
+
+[69] [70
+
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 902.
+
+Underfull \hbox (badness 10000) in paragraph at lines 906--908
+[][][]$\OT1/cmtt/m/n/12 http : / / en . wikipedia . org / wiki / Physical _ Add
+ress _ Extension$[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--951
+[][][]$\OT1/cmtt/m/n/12 https : / / help . ubuntu . com / community / OBI ? act
+ion = AttachFile &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--954
+[][][]$\OT1/cmtt/m/n/12 http : / / phillw . net / isos / linux-[]tools / mkusb 
+/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
+[][][]$\OT1/cmtt/m/n/12 http : / / phillw . net / isos / linux-[]tools / mkusb 
+/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--961
+[][][]$\OT1/cmtt/m/n/12 http : / / phillw . net / isos / linux-[]tools / mkusb 
+/
+ []
+
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
+[][][]$\OT1/cmtt/m/n/12 https : / / bugs . launchpad . net / ubuntu / +source /
+ usb-[]creator /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 966--967
+[][][]$\OT1/cmtt/m/n/12 https : / / bugs . launchpad . net / ubuntu / +source /
+ usb-[]creator /
+ []
+
+[72] (./torios.ind [73
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 991.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 991.
  (./torios.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 682.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 991.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 991.
 Package rerunfilecheck Info: File `torios.out' has not changed.
-(rerunfilecheck)             Checksum: A6100861A986BF6E4D559CC1029086C7;762.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 682.
+(rerunfilecheck)             Checksum: B3408F0DD83EE8CAB95647B1ED31C4D3;1187.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 991.
  ) 
 Here is how much of TeX's memory you used:
- 6779 strings out of 493304
- 97880 string characters out of 6139871
- 271374 words of memory out of 5000000
- 9985 multiletter control sequences out of 15000+600000
- 11291 words of font info for 43 fonts, out of 8000000 for 9000
+ 6865 strings out of 493304
+ 99001 string characters out of 6139871
+ 274309 words of memory out of 5000000
+ 10025 multiletter control sequences out of 15000+600000
+ 11650 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,7n,28p,486b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,28p,486b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt12.pfb>
-Output written on torios.pdf (57 pages, 6089979 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt12.pfb>
+Output written on torios.pdf (73 pages, 6161326 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 123 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 745 PDF objects out of 1000 (max. 8388607)
+ 598 compressed objects within 6 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 

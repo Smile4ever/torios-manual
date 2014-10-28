@@ -10,9 +10,8 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage[normalem]{ulem} % needed by strike
-\usepackage[urlcolor=blue,colorlinks=true,citecolor=blue,linkcolor=black]{hyperref}
+\usepackage[urlcolor=blue,colorlinks=true]{hyperref}
 \usepackage{makeidx}
-\usepackage{color}
 \makeindex
 \setcounter{tocdepth}{1}
 \author{Paul Sutton}
@@ -37,61 +36,43 @@ Manual by Paul Sutton
 \end{center}
 
 \tableofcontents
-\index{Table of Contents}
 \chapter{Introduction}
-\index{Introduction}
-The goal of this project is to produce a minimalist Linux distribution that uses as little memory (RAM) as possible.
-
-
+The goal of this project is to produce a minimalist Linux distribution that gives end users more choice as to what software is installed on their system.\\
 
 Ubuntu 12.04 is used as a base for this new system.
 \subsection{About this Manual}
-This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team takes no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
-This manual has been prepared using \LaTeX.
-
-
-
-
+This manual refers to external websites to help explain concepts further, to avoid the need to reproduce what is already out there.  The ToriOS team take no responsibility for external content.  The links are correct and suitable at the time of writing,  Broken links are out of the Authors control between revisions.  It is your responsibility to ensure suitability of information, you should read fully and seek other sources of information and ask for help if unsure.  
+This manual has been prepared using \LaTeX. , if  you know any young people in to coding please could you let them know about this,  
 
 \chapter{What is GNU / Linux}
 
-Linux refers to the kernel (the core) of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNUs Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
-\index{GNU}
-\index{Linux}
-\index{GNU / Linux}
-\index{GPL}
+
+\subsection{About ToriOS}
+\index{About ToriOS}
+ToriOS is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
+\subsection{Non PAE Support}
+
+ToriOS will support PAE Hardware\\
+https://blueprints.launchpad.net/torios/+spec/non-pae-support
 
 \newpage 
-\chapter{About ToriOS}
-\index{About ToriOS}
-ToriOS \cite{ToriOS} is a system aimed at replacing Windows XP, which has reached end-of-life as of April 2014. ToriOS is a fast and minimal system based on Ubuntu 12.04. 
-
+\subsection{Technical overview}
 \index{Technical overview}
-\textbf{TECHNICAL OVERVIEW} \\
 About Tori OS - Tori Operating System Overview:
 
 \begin{itemize}
 \item{Low memory and resource requirements}
 \item{Low disk space}
 \item{Low package overheads (you get to build your own system from a very minimal install base)}
-\item{Built with Ubuntu 12.04LTS as a base, and completely compatible with many thousands of free and paid apps.}
+\item{Built with Ubuntu 12.04LTS as a base , and completely compatible with many thousands of free and paid apps.}
 \item{ A modern OS with up-to-date security built-in, as well as compatible with older processors and video graphics cards}
 \item{Free and open source}
 \item{A secure replacement for older unsupported versions of Microsoft Windows Operating System} 
 \end{itemize}
 
-\subsection{PAE Hardware}
-\index{PAE}
-\index{Non PAE}
-
-As well as the PAE hardware supported by Ubuntu, ToriOS also supports non-PAE hardware which is usually older." "ToriOS does not require a special setup for non-PAE hardware as Ubuntu requires" \cite{PAE2}
-
-
-PAE - Physical Address Extension is explained further on Wikipedia. \cite{PAE} \\
 
 \chapter{The ToriOS Team}
 \index{The Team}
-The ToriOS operating system is made possible by:
 \begin{center}\begin{tabular}{|l|l|l|l|}
 \hline \textbf{Job Title} & \textbf{Name} & \textbf{IRC Nick} & \textbf{E-mail} \\
 \hline Project lead & Ali Linx & amjjawad & amjjawad@torios.org \\
@@ -100,27 +81,25 @@ The ToriOS operating system is made possible by:
 \hline Documentation - wiki & Geoffrey De Belie & smile & smile4ever@torios.org \\
 %\hline Developer lead / driver & Alexander Kluth & DerAlex & alexander@torios.org \\
 \hline Quality Assurance Testing & Jack & fjack & $|$ \\
-\hline Marketing & David B Yentzen & ? & dbyentzen@torios.org \\
+\hline Marketing $|$	David B Yentzen & $|$ dbyentzen@torios.org \\
 \hline Artwork & Rafael & rafaellaguna & $|$ \\
 \hline Developer / testing & Israel & israeldahl & israel@torios.org \\
 \hline \end{tabular}\end{center}
 
 
-\chapter{Installation Overview}
+\chapter{Installation - Getting ToriOS}
 \index{Installation}
 There are several steps to an installation. \\
 \begin{enumerate}
-\item Decide on the installation media CD-R or flash disk* 
-\item Prepare install media - in the case of a flash disk make sure this is empty
-\item Prepare target media and decide where to install Torios to (for example a hard disk)
+\item decide on the installation media CD-R or Flash disk
+\item Prepare install media - in the case of a flash disk make sure this is blank
+\item Prepare target media and decide where to install Torios to
 \item Download the iso file
 \item Create your install media
-\item Initial boot
-\item Either install from menu or run live session and install from there
+\item initial boot
+\item either install from menu or run live session and install from there
 
-*CD usually works more reliable on old computers, and that some computers do not want to boot USB drives. 
 
-%You can mention Plop Boot Manager, however.
 \end{enumerate}
 
 \subsection{Downloading the ISO}
@@ -136,35 +115,26 @@ See chapter \ref{Testing} for how to download and test the iso.
 
 \subsection{Verifying the download}
 There is an excellent guide at\\ \textbf{https://help.ubuntu.com/community/HowToMD5SUM} \\
-that explains how to check your downloaded iso file for errors.  Apart from the file name being different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
-Please see getting involved section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
+that explains how to check your downloaded iso file for errors.  Apart from the file name being
+
+
+
+
+ different so for ToriOS you may have ToriOS-1.0.0.iso the steps are pretty much the same.  
+Please see getting invovled section as this covers some of the above during the testing phase,  that information will appear here once the test phase is over. 
 \chapter{Creating install media}
 
 \subsection{CD-R}
 \index{CD-R/RW/DVD-R/RW}
 
-When you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it.  You won't be able to boot from that media.
+Whem you have an ISO file or disk image you need to BURN image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it 
 
-Examples of software for creating your CD / DVD include
 
-\begin{itemize}
-\item Windows vista and above can write / burn optical media
-\item Brassero and k3b are examples of optical media software under Linux
-\item There are several command line tools for this too.
-\end{itemize}
 
 \subsection{Flash Disks - Unetbootin}
 \index{Flash Disks}
 \index{Unetbootin}
-You can use unetbootin to create a bootable flash disk image.   
-
-\textbf{Note} There is a bug in UNetbootin under ubuntu 14.10 that stops it from working,  this should be fixed by the time ToriOS is ready for final release. 
-
-Older versions are working fine.
-
-See the URL ref section for links to the unetbootin website \ref{URL REF}
-
-http://unetbootin.sourceforge.net/ \cite{unetbootin} and a how to on install ubuntu a usb stick \cite{unetbootin2}
+You can use unetbootin to bootable flash disk image,   http://zleap.net/?s=unetboot
 
 You can follow the steps below \\
 
@@ -172,15 +142,22 @@ Creating a boot usb flash disk
 
 (With thanks to Nio Wiklund for some helpful comments with regard to the title of this document)
 
-A good tool for this is UNetbootin, \cite{unetbootin}  you can install this on Linux, OSX and Windows ,
+A good tool for this is Unetbootin,  you can install this on most popular Linux distributions,
 
-e.g sudo apt-get install unetbootin or use the install method for the distribution you are using. 
+e.g sudo apt-get install unetbootin
 
 you need your root password.
 
 You can then load the software up, you will need your root password
 
-UNetbootin as well as mkusb works in most GNU/Linux distributionss, but I think
+Unetbootin as well as mkusb works in most linux distros, but I think
+it is also very important, that Unetbootin works in Windows (and I
+think also in MacOS). Please write very clearly, at or near page 16,
+that Unetbootin can be installed in Windows and used to create a
+ToriOS boot USB pendrive/stick/flash/thumb drive (whatever name you
+prefer, or all of them).
+
+http://unetbootin.sourceforge.net/
 
 \newpage
 
@@ -191,7 +168,10 @@ UNetbootin as well as mkusb works in most GNU/Linux distributionss, but I think
 \includegraphics[width=0.7\linewidth]{unetbootin} 
 \end{center}
 
-Click disk image,  ISO can be left as in,  then select the box with ? in and select the iso file
+
+If you have downloaded an iso image  you don?t need to worry about the top section
+
+Click disk image,  ISO can be left as in,  then click the box with ? in and select the iso file
 
 select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
 
@@ -199,15 +179,13 @@ drive should be the device reference for this disk
 
 make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
 
-I find it helpful to unmount and unplug my external hdd first,  In other words if you don't want to write to it,  remove that device (if possible)  You can wipe you whole file system uf you get the options wrong. 
-
-Unplug ALL USB devices you don't need, for example USB flash and hard drives. This will prevent writing to them by accident and will make it easier to select your ToriOS  USB stick from the list.  DOUBLE CHECK BEFORE YOU CLICK OK. 
+I find it helpful to unmount and unplug my external hdd first,  it gives less options but also reduces the chances I will write to it,  The disks tool below is useful for finding out what device you are writing to.
 
 If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
 
 Click disk image radio button
 
-the drop down menu to the right of this is a between ISO and floppy
+the drop down menu to the right of this is a betweet ISO and floppy
 
 you can then click on file search button (the one with ? )
 \begin{center}
@@ -236,13 +214,6 @@ then select the device, if you select hard disk then the device reference chance
 \end{center}
 You need to check if the target device should be mounted first or not
 
-Hopefully this how to is useful, please be careful as I am not re-
-sponsible for data loss, I try and write guides to be generic not
-explicit guides. I will leave this to the documentation team
-You can use fdisk and df to determine device references. Read the
-man pages for more info if you get stuck as for help and say you
-have looked at man pages, this blog post etc and are still stuck,
-this shows you have tried to research the issue.
 
 \paragraph{Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team}
 
@@ -281,8 +252,6 @@ All done you can now reboot, select usb disk from the boot device menu (see your
 \index{MkUSB}
 \text{mkUSB - Make USB}
 
-See the URL ref section for links to the information on mkusb \cite{mkUSB-Quick-Start-manual}
-
 mkusb is split now into one GUI program 'mkusb' and two console or text
 applications, mkusb-nox and mkusb-bas. The GUI version works in ToriOS
 (as well as in Ubuntu, Fedora, Debian, openSUSE. Arch to mention a few
@@ -303,25 +272,23 @@ http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf
 
 \chapter{BOOTING INSTALL MEDIA}
 
-Depending on how your computer is set up,  you need to tell the computer to boot off which ever boot media you created either a) cdrom b) dvd c) usb. \\
+\text{Depending on how your computer is set up,  you need to tell the computer to boot of which ever boot media you created either a) cdrom b) dvd c) usb.} //
 
 \subsection{UEFI Boot}
-\index{UEFI}
 If you have very new hardware then you may have the new UEFI boot system,  this means you can't just boot the install media and there are a few extra steps.  These are outlined here.
 
 \newpage
 
 \section{Installation}
 
-\subsection{Installing Torios One Button Installer}
-\index{OBI}
-https://help.ubuntu.com/community/OBI\\
-For more help with the One button installer please refer to the OBI- quick start manual. This can be found on the OBI website \cite{OBI} with a direct link to the manual at \cite{OBI Quickstart}. You are \textbf{STRONGLY ADVISED TO READ THE DOCUMENTATION}
-\\
+\subsection{Installing Torios}
+
+For more help with the One button installer please refer to the OBI-quickstart-manual.pdf
+
 \textbf{Note ; This is based on the RC-2 test version.}
 \linebreak \\
 I set up virtual box with the default settings (256mb RAM)and added a 16gb virtual hard disk sda. \\
-\\
+
 First step in the process is to boot the iso image,  this automatically boots in to the new ToriOS desktop
 
 \includegraphics[width=0.7\linewidth]{toriosRC2} 
@@ -360,16 +327,6 @@ the next screen has a FINAL RED warning. \\
  
 \newpage
 
-\chapter{Login Manager}
-\index{Login Manager}
-We are using 2 Login managers\\
-	
-\textbf{SLiM} \cite{SliM}- is used for the installed system
-SLiM is an acronym for Simple Login Manager. Lightweight and easily configurable, SLiM requires minimal dependencies, and none from the GNOME or KDE desktop environments. It therefore contributes towards a lightweight system for users that also like to use lightweight desktops such as Xfce, Openbox, and Fluxbox. \\
-
-\textbf{nodm} \cite{nodm} - nodm is an automatic display manager which automatically starts an X session at system boot. It is meant for devices like smartphones, but can be used on a regular computer as well, if the security implications are acceptable.
-
-
 \chapter{Login}
 
 \includegraphics[width=0.8\linewidth]{screen-shots/torios-rc2-login-screen} \\
@@ -400,8 +357,8 @@ Here you are presented with 4 options:\\
 
 \includegraphics[width=0.8\linewidth]{screen-shots/Torios_Alpha2-desktop}
 
-\chapter{Shortcuts}
-\index{Shortcuts}
+\chapter{Keyboard - Shortcuts}
+
 \begin{center}\begin{tabular}{|l|l|}
 \hline \textbf{KEY} & \textbf{FUNCTION} \\
 \hline F12 & Fullscreen \\
@@ -433,28 +390,8 @@ Here you are presented with 4 options:\\
 
 \chapter{Applications}
 As previously stated ToriOS is desgined to be very very minimal however it does come with a few applications. 
-
-\newpage
-\subsection{Seamonkey (Internet Suite)}
-\index{Seamonkey}
-Seamonkey - All in one Internet application suite \cite{seamonkey}
-\newline
-From website\\
-\textbf{Web-browser, advanced e-mail, newsgroup and feed client, IRC chat, and HTML editing made simple?all your Internet needs in one application}
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
-\hline Application name & Seamonkey \\
-\hline Application Description & Internet Application suite \\
-\hline Menu Name & Seamonkey \\
-\hline Installed Version & ? \\
-\hline Screen Shot version & ? \\
-\hline Screen Shot Source & ? \\
-\hline Website & \htmladdnormallink{http://www.seamonkey-project.org/}{http://www.seamonkey-project.org/} \\
-\hline \end{tabular}\end{center}
-
-
-\newpage
+\subsection{Internet Menu}
+\subsection{seamonkey (Web browser)}
 \subsection{seamonkey (Private Browsing)}
 \subsection{Wicd Network Manager}
 \subsection{WPA-gui}
@@ -463,82 +400,43 @@ From website\\
 \subsection{Evince}
 \index{Evince}
 
-\includegraphics[width=0.8\linewidth]{screen-shots/evince}
 
-Document (PDF) Viewer\\
+\includegraphics[width=0.8\linewidth]{screen-shots/evince}
+\\
+Document (PDF) Viewer
+\\
 \begin{center}\begin{tabular}{|l|l|}
 \hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
 \hline Application name & Evince \\
 \hline Application Description & PDF Viewer \\
 \hline Menu Name & Document Viewer \\
-\hline Installed Version &  \\
+\hline Installed Version & 3.4 \\
 \hline Screen Shot version & 3.10.3 \\
 \hline Screen Shot Source & xubuntu 14.04 \\
 \hline Website & \htmladdnormallink{https://wiki.gnome.org/Apps/Evince}{https://wiki.gnome.org/Apps/Evince} \\
 \hline \end{tabular}\end{center}
 
-For detailed instructions please check out the user manual for Evince \cite{Evince}
+
 
 \newpage 
 \subsection{Development}
 \subsection{(Python 2.7)}
 
 \subsection{Settings}
-\newpage
 \subsection{GParted}
-\index{GParted}
-
-Partitioning Utility \\
-Gparted is provided to help you manage hard disk partitions.  You need root / admin  priviledges to run this,  upon running you may see the screen below before the main programs runs:\\
-
-\includegraphics[width=0.8\linewidth]{screen-shots/gparted-askforpw}\\
-
-enter your administrator password to gain access to the Gparted utility.  \textbf{THIS PROGRAM CAN DESTROY DATA} \\ \\
-
-\includegraphics[width=0.8\linewidth]{screen-shots/gparted1} \\
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
-\hline Application name & Gparted \\
-\hline Application Description & Partition Utility \\
-\hline Menu Name & Gparted \\
-\hline Installed Version & ? \\
-\hline Screen Shot version & 0.18.0 \\
-\hline Screen Shot Source & xubuntu 14.04 \\
-\hline Website & \htmladdnormallink{http://gparted.org}{http://gparted.org} \\
-\hline \end{tabular}\end{center}
-
-For detailed instructions please check out the user manual for gparted \cite{Gparted}
-
-\newpage
 \subsection{JWM Settings Manager}
 \subsection{Power Manager}
 
 \subsection{System}
-
-\subsection{XTerm}
-\index{xterm}
-
-xterm \cite{xterm} 
-
 \subsection{UXTerm}
-\index{uxterm}
-
-
-uxterm \cite{uxterm} is wrapper for xterm
-
-
-
-
-
-
+\subsection{XTerm}
+\subsection{GParted}
 \subsection{Htop}
-\subsection{synaptic package manager}
-see \ref{synaptic}
+
+\subsection{JWM Settings Manager}
 
 
 \subsection{JWM Settings}
-\index{JWM Settings Manager}
 ToriOS will use the JWM (Joe's Window Manager) window environment:\\
 
 The following is quoted from the projects website
@@ -548,7 +446,6 @@ JWM is a light-weight window manager for the X11 Window System. JWM is written i
 \end{quote}
 http://www.joewing.net/projects/jwm/
 Torios jwm development lead Israel israel@torios.org
-ToriOS Site Page : http://torios.org/jwm.html
 \newpage
 
 {\large \textbf{JWM Settings manager}} \\ \\
@@ -586,62 +483,7 @@ ToriOS Site Page : http://torios.org/jwm.html
 
 \newpage
 
-\chapter{System administration}
-\index{system administration}
-\section{Installing Software}
-\textbf{Package management with Synaptic}
-\index{Package management - synaptic}
-\index{Synaptic}
-\label{synaptic}
-
-\includegraphics[width=0.8\linewidth]{screen-shots/synaptic1}
-
-Upon loading Synaptic you need to enter your root / admin password.  Once done you will see a list of package which can be selected
-with check boxes, click apply to install.  Synaptic is a front end to apt so will pull in dependencies as needed. 
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
-\hline Application name & Synaptic \\
-\hline Application Description & Package manager \\
-\hline Menu Name & Synaptic \\
-\hline Installed Version & ? \\
-\hline Screenshot version & 0.81.1 \\
-\hline Screenshot Source & xubuntu 14.04 \\
-\hline Website & \htmladdnormallink{http://www.nongnu.org/synaptic}{http://www.nongnu.org/synaptic} \\
-\hline \end{tabular}\end{center}
-
-Synaptic \cite{synaptic} is the GUI based package manager that comes with ToriOS.  
-
-
-\newpage 
-
-\textbf{Package management with Apt}
-\index{Package management - apt}
-\index{apt}
-
-If you need to install software from the command line then apt \cite{apt} is the main tool for this on Debian / Ubuntu  derived systems such as ToriOS \\
-
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{ITEM} & \textbf{DESCRIPTION} \\
-\hline  man apt & View the help page \\
-\hline sudo apt-get update & Update package info \\
-\hline sudo apt-get upgrade & Upgrade packages  \\
-\hline  & \\
-\hline apt-cache search string & Search for packages \\
-\hline sudo apt-get install package &  Install package \\
-\hline sudo apt-get remove package & Remove package \\
-\hline  apt-get clean & clears downloaded .deb files \\
-\hline \end{tabular}\end{center}
-
-You need to be root the undertake some of these tasks,  sudo is used along with your ROOT password.  
-\newpage
-\section{User management}
-
-ToriOS user manager.  Adding and removing users, 
-
-\newpage
-
+\subsection{}
 
 \chapter{Get Involved}
 
@@ -671,21 +513,22 @@ ToriOS user manager.  Adding and removing users,
 \newpage
 
 \chapter{Testing}
-\index{testing}
-\index{ISO Testing}
 \subsection {testing - ISO}
-\index{Linux}
 \label{Testing}
 \bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
 
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{Heading} & \textbf{Content} \\
-\hline Filenamne & ToriOS-alpha-rc2.iso \\
-\hline URL & \htmladdnormallink{http://torios.org/ISO/ToriOS-alpha-rc2.iso}{http://torios.org/ISO/ToriOS-alpha-rc2.iso} \\
-\hline MD5 Sum & 6775c77be242e6145552eeed9b6e85a7 \\
-\hline \end{tabular}\end{center}
+As of Week ending 30 / 8 / 2014 Torios is in Alpha 1 this can be downloaded from the website download page  \\ \\
+\textbf{http://torios.org/iso.html}\\ \\
+\textbf{direct link to iso} \\ \\
+\textbf{torios.org/ISO/ToriOS-alpha.iso} \\ \\
+or with wget  \\ \\
 
+\includegraphics[width=0.7\linewidth]{torios-wget-download} \\ \\
+\textbf{wget -c http://torios.org/ISO/ToriOS-alpha.iso} \\ \\
+or from torrent \\ \\
+\textbf{(available soon)}
 
+\textbf{MD5SUM: } md5sum = 9648e831912248d19cd8b115da24ea6b \\ 
 \begin{itemize}
 \item{save the above to a file e.g MD5SUMS}
 \item{place this in the SAME LOCATION as the iso file}
@@ -721,11 +564,7 @@ http://torios.org/contact.html and click ask us if you need help \\
  
 \newpage
 
-\subsection {Testing virtual box images}
-\index{Testing virtual box images}
-\index{Virtualbox}
-Please see the virtual box webpage for more information and and a detailed manual \cite{VirtualBox}
-
+\subsection {testing virtual box images}
 Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
 
 wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
@@ -796,8 +635,7 @@ We will assume here you have thus already installed.
 
 
 \chapter{Document License}
-\index{Creative Commons}
-\index{Document License}
+
 \textbf{Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)}
 
 \begin{verbatim}
@@ -831,161 +669,17 @@ Under the following terms:
 
 http://creativecommons.org/licenses/by-sa/4.0/
 
-\chapter{Software License}
-\index{Software License}
+
+\includegraphics{cc-logi}
+\newpage
+\lipsum
+
 %\license[2.5]{by-nc-sa}
 ...
 % images only
 %\shortlicense[3.0]{by-nc-sa}
+
 %\cc \ccby \ccsa
 
-\chapter{URL References}
-\index{URL References}
-\label{URL REF}
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{Topic} & \textbf{URL} \\
-\hline ToriOS Home Page & \htmladdnormallink{http://torios.org/}{http://torios.org/} \\
-
-\hline ToriOS ISO & \htmladdnormallink{http://torios.org/ISO/ToriOS-alpha-rc2.iso}{http://torios.org/ISO/ToriOS-alpha-rc2.iso} \\
-
-\hline Evince & \htmladdnormallink{https://wiki.gnome.org/Apps/Evince}{https://wiki.gnome.org/Apps/Evince} \\
-
-\hline unetbootin & \htmladdnormallink{http://unetbootin.sourceforge.net/}{http://unetbootin.sourceforge.net/}\\
-
-\hline mkusb & \htmladdnormallink{http://phillw.net/isos/linux-tools/mkusb/README.txt}{http://phillw.net/isos/linux-tools/mkusb/README.txt}\\
-
-\hline Virtualboxx & \htmladdnormallink{https://www.virtualbox.org/}{https://www.virtualbox.org/}\\
-
-\hline CC License & \htmladdnormallink{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}\\
-
-
-\hline \end{tabular}\end{center}
-
-
-
-
-\chapter{PDF References}
-\index{PDF References}
-\label{PDF References}
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{PDF} & \textbf{Location} \\
-\hline Quick start & \htmladdnormallink{mkUSB-quick-start-manual.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf} \\
-
-\hline nox manual & \htmladdnormallink{mkUSB-quick-start-manual-nox.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf} \\
-
-\hline bas manual & \htmladdnormallink{mkUSB-quick-start-manual-bas.pdf}{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf} \\
-
-
-\hline x & \htmladdnormallink{}{}\\
-
-\hline x & \htmladdnormallink{}{}\\
-
-\hline x & \htmladdnormallink{}{}\\
-
-\hline x & \htmladdnormallink{}{}\\
-
-\hline \end{tabular}\end{center}
-
-
-
-
-
-\newpage
-\index{Bibliography}
-\index{Further Reading}
-
-\begin{thebibliography}{1} % 1 is a random guess of the total number of
-%references
-
-\bibitem{ToriOS}
-\url{http://www.torios.org}
-\emph{2014}
-
-\bibitem{PAE}
-\url{http://en.wikipedia.org/wiki/Physical_Address_Extension}
-\emph{September 2014}
-
-\bibitem{PAE2}
-\url{https://help.ubuntu.com/community/PAE}
-
-\bibitem{ToriOS_ISO}
-\url{http://torios.org/ISO/ToriOS-alpha-rc2.iso}
-
-\bibitem{Evince}
-\url{https://wiki.gnome.org/Apps/Evince}
-
-\bibitem{synaptic}
-\url{http://www.nongnu.org/synaptic/}
-
-\bibitem{unetbootin}
-\url{http://unetbootin.sourceforge.net/}
-
-\bibitem{unetbootin2}
-\url{https://help.ubuntu.com/community/Installation/FromUSBStick}
-
-\bibitem{seamonkey}
-\url{http://www.seamonkey-project.org/}
-
-\bibitem{apt}
-\url{https://wiki.debian.org/Apt}
-
-	
-\bibitem{mkusb-url}
-\url{https://help.ubuntu.com/community/mkusb}
-
-\bibitem{VirtualBox}
-\url{https://www.virtualbox.org/}
-
-\bibitem{Gparted}
-\url{http://gparted.org/}
-
-\bibitem{CC-BY-SA-4}
-\url{http://creativecommons.org/licenses/by-sa/4.0/}
-
-\bibitem{OBI}
-\url{https://help.ubuntu.com/community/OBI	}
-
-\bibitem{OBI Quickstart}
-\url{https://help.ubuntu.com/community/OBI?action=AttachFile&do=view&target=OBI-quick-start-manual-3.pdf}
-	
-\bibitem{mkUSB-Quick-Start-manual}
-\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf}
-	
-	
-\bibitem{mkUSB-quick-start-manual-nox}
-\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf}
-
-\bibitem{mkUSB-quick-start-manual-bas}
-\url{http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf}
-	
-\bibitem{bugs}
-\url{https://bugs.launchpad.net/ubuntu/+source/usb-creator/+bug/1325801/comments/49}
-
-\bibitem{bugs2}
-\url{https://bugs.launchpad.net/ubuntu/+source/usb-creator/+bug/1325801/comments/55}		
-
-\bibitem{xterm}
-\url{http://invisible-island.net/xterm}
-
-\bibitem{uxterm}
-\url{http://invisible-island.net/xterm/manpage/uxterm.html}
-			
-\bibitem{SliM}
-\url{https://wiki.archlinux.org/index.php/SLiM}
-
-
-\bibitem{nodm}
-\url{http://www.enricozini.org/sw/nodm/}			
-			
-\end{thebibliography}
-
-	
-\newpage
-
 \printindex
-
-\newpage
-
-
 \end{document}
