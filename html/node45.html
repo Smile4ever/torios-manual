@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2012 (1.2)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Installing Software</TITLE>
+<META NAME="description" CONTENT="Installing Software">
+<META NAME="keywords" CONTENT="torios">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2012">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="torios.css">
+
+<LINK REL="next" HREF="node46.html">
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="up" HREF="node44.html">
+<LINK REL="next" HREF="node46.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html788"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html782"
+  HREF="node44.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html776"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html784"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html786"
+  HREF="node56.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html789"
+  HREF="node46.html">User management</A>
+<B> Up:</B> <A NAME="tex2html783"
+  HREF="node44.html">System administration</A>
+<B> Previous:</B> <A NAME="tex2html777"
+  HREF="node44.html">System administration</A>
+ &nbsp; <B>  <A NAME="tex2html785"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html787"
+  HREF="node56.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001610000000000000000">
+Installing Software</A>
+</H1>
+<B>Package management with Synaptic</B>
+<A NAME="254"></A>
+<A NAME="255"></A>
+<A NAME="synaptic"></A>
+<P>
+4#4
+
+<P>
+Upon loading Synaptic you need to enter your root / admin password.  Once done you will see a list of package which can be selected
+with check boxes, click apply to install.  Synaptic is a front end to apt so will pull in dependencies as needed. 
+
+<P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>ITEM</B></TH>
+<TH ALIGN="LEFT"><B>DESCRIPTION</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">Application name</TD>
+<TD ALIGN="LEFT">Synaptic</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Application Description</TD>
+<TD ALIGN="LEFT">Package manager</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Menu Name</TD>
+<TD ALIGN="LEFT">Synaptic</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Installed Version</TD>
+<TD ALIGN="LEFT">?</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Screenshot version</TD>
+<TD ALIGN="LEFT">0.81.1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Screenshot Source</TD>
+<TD ALIGN="LEFT">xubuntu 14.04</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Website</TD>
+<TD ALIGN="LEFT">http://www.nongnu.org/synaptichttp://www.nongnu.org/synaptic</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+Synaptic [<A
+ HREF="node55.html#synaptic">6</A>] is the GUI based package manager that comes with ToriOS.  
+
+<P>
+
+<P>
+<B>Package management with Apt</B>
+<A NAME="269"></A>
+<A NAME="270"></A>
+
+<P>
+If you need to install software from the command line then apt [<A
+ HREF="node55.html#apt">10</A>] is the main tool for this on Debian / Ubuntu  derived systems such as ToriOS 
+<BR>
+<P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>ITEM</B></TH>
+<TH ALIGN="LEFT"><B>DESCRIPTION</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">man apt</TD>
+<TD ALIGN="LEFT">View the help page</TD>
+</TR>
+<TR><TD ALIGN="LEFT">sudo apt-get update</TD>
+<TD ALIGN="LEFT">Update package info</TD>
+</TR>
+<TR><TD ALIGN="LEFT">sudo apt-get upgrade</TD>
+<TD ALIGN="LEFT">Upgrade packages</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">apt-cache search string</TD>
+<TD ALIGN="LEFT">Search for packages</TD>
+</TR>
+<TR><TD ALIGN="LEFT">sudo apt-get install package</TD>
+<TD ALIGN="LEFT">Install package</TD>
+</TR>
+<TR><TD ALIGN="LEFT">sudo apt-get remove package</TD>
+<TD ALIGN="LEFT">Remove package</TD>
+</TR>
+<TR><TD ALIGN="LEFT">apt-get clean</TD>
+<TD ALIGN="LEFT">clears downloaded .deb files</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+You need to be root the undertake some of these tasks,  sudo is used along with your ROOT password.  
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html788"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html782"
+  HREF="node44.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html776"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html784"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html786"
+  HREF="node56.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html789"
+  HREF="node46.html">User management</A>
+<B> Up:</B> <A NAME="tex2html783"
+  HREF="node44.html">System administration</A>
+<B> Previous:</B> <A NAME="tex2html777"
+  HREF="node44.html">System administration</A>
+ &nbsp; <B>  <A NAME="tex2html785"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html787"
+  HREF="node56.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+geoffrey
+2014-11-23
+</ADDRESS>
+</BODY>
+</HTML>
