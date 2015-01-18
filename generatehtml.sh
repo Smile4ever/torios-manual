@@ -1,1 +1,1 @@
-latex2html -local_icons torios.tex
+latex2html -local_icons -dir html torios.tex
