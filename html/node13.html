@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Flash Disks - Unetbootin</TITLE>
-<META NAME="description" CONTENT="Flash Disks - Unetbootin">
+<TITLE>Login</TITLE>
+<META NAME="description" CONTENT="Login">
 <META NAME="keywords" CONTENT="torios">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,226 +19,57 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="torios.css">
 
-<LINK REL="next" HREF="node16.html">
+<LINK REL="next" HREF="node14.html">
 <LINK REL="previous" HREF="node12.html">
-<LINK REL="up" HREF="node11.html">
+<LINK REL="up" HREF="torios.html">
 <LINK REL="next" HREF="node14.html">
 </HEAD>
 
 <BODY >
 <!--Navigation Panel-->
-<A NAME="tex2html324"
+<A NAME="tex2html235"
   HREF="node14.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html318"
-  HREF="node11.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html312"
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.svg"></A> 
+<A NAME="tex2html231"
+  HREF="torios.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.svg"></A> 
+<A NAME="tex2html225"
   HREF="node12.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html320"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
-<A NAME="tex2html322"
-  HREF="node56.html">
-<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.svg"></A>  
+<A NAME="tex2html233"
+  HREF="node48.html">
+</A> 
 <BR>
-<B> Next:</B> <A NAME="tex2html325"
-  HREF="node14.html">Hopefully this how to</A>
-<B> Up:</B> <A NAME="tex2html319"
-  HREF="node11.html">Creating install media</A>
-<B> Previous:</B> <A NAME="tex2html313"
-  HREF="node12.html">CD-R</A>
- &nbsp; <B>  <A NAME="tex2html321"
-  HREF="node1.html">Contents</A></B> 
- &nbsp; <B>  <A NAME="tex2html323"
-  HREF="node56.html">Index</A></B> 
+<B> Next:</B> <A NAME="tex2html236"
+  HREF="node14.html">Logout</A>
+<B> Up:</B> <A NAME="tex2html232"
+  HREF="torios.html">ToriOS Manual</A>
+<B> Previous:</B> <A NAME="tex2html226"
+  HREF="node12.html">Login Manager</A>
+ &nbsp; <B>  <A NAME="tex2html234"
+  HREF="node48.html">Index</A></B> 
 <BR>
 <BR>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00702000000000000000"></A>
-<A NAME="85"></A>
-<A NAME="86"></A>
-<BR>
-Flash Disks - Unetbootin
-</H2>
-You can use unetbootin to create a bootable flash disk image.   
+<H1><A NAME="SECTION00900000000000000000">
+Login</A>
+</H1>
 
 <P>
-<B>Note</B> There is a bug in UNetbootin under ubuntu 14.10 that stops it from working,  this should be fixed by the time ToriOS is ready for final release. 
-
-<P>
-Older versions are working fine.
-
-<P>
-See the URL ref section for links to the unetbootin website <A HREF="node53.html#URL_REF">19</A>
-
-<P>
-http://unetbootin.sourceforge.net/ [<A
- HREF="node55.html#unetbootin">7</A>] and a how to on install ubuntu a usb stick [<A
- HREF="node55.html#unetbootin2">8</A>]
-
-<P>
-You can follow the steps below 
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-login-screen.png"
+ ALT="Image torios-rc2-login-screen"> 
 <BR>
 <P>
-Creating a boot usb flash disk
-
-<P>
-(With thanks to Nio Wiklund for some helpful comments with regard to the title of this document)
-
-<P>
-A good tool for this is UNetbootin, [<A
- HREF="node55.html#unetbootin">7</A>]  you can install this on Linux, OSX and Windows ,
-
-<P>
-e.g sudo apt-get install unetbootin or use the install method for the distribution you are using. 
-
-<P>
-you need your root password.
-
-<P>
-You can then load the software up, you will need your root password
-
-<P>
-UNetbootin as well as mkusb works in most GNU/Linux distributionss, but I think
-
-<P>
-
-<P>
-<DIV ALIGN="CENTER">
-<IMG
-  WIDTH="538" HEIGHT="403" ALIGN="BOTTOM" BORDER="0"
- SRC="./unetbootin.png"
- ALT="Image unetbootin"> 
-
-</DIV>
-
-<P>
-Click disk image,  ISO can be left as in,  then select the box with ? in and select the iso file
-
-<P>
-select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
-
-<P>
-drive should be the device reference for this disk
-
-<P>
-make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
-
-<P>
-I find it helpful to unmount and unplug my external hdd first,  In other words if you don't want to write to it,  remove that device (if possible)  You can wipe you whole file system uf you get the options wrong. 
-
-<P>
-Unplug ALL USB devices you don't need, for example USB flash and hard drives. This will prevent writing to them by accident and will make it easier to select your ToriOS  USB stick from the list.  DOUBLE CHECK BEFORE YOU CLICK OK. 
-
-<P>
-If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
-
-<P>
-Click disk image radio button
-
-<P>
-the drop down menu to the right of this is a between ISO and floppy
-
-<P>
-you can then click on file search button (the one with ? )
-<DIV ALIGN="CENTER">
-<IMG
-  WIDTH="646" HEIGHT="464" ALIGN="BOTTOM" BORDER="0"
- SRC="./unetbootin2.png"
- ALT="Image unetbootin2"> 
-</DIV>
-<P>
-<DIV ALIGN="CENTER">
-</DIV>
-
-<P>
-Select if you want to have a persistent space for files.
-
-<P>
-<DIV ALIGN="CENTER">
-<IMG
-  WIDTH="559" HEIGHT="419" ALIGN="BOTTOM" BORDER="0"
- SRC="./unetbootin3.png"
- ALT="Image unetbootin3">
-
-</DIV>
-
-<P>
-Type? you can choose between usb and hard disk <B>BE VERY CAREFUL</B> //
-
-<P>
-then select the device, if you select hard disk then the device reference chances to / indicating root of the file system. //
-
-<P>
-<B>REMEMBER</B> that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake. //
-
-<P>
-<DIV ALIGN="CENTER">
-<IMG
-  WIDTH="815" HEIGHT="637" ALIGN="BOTTOM" BORDER="0"
- SRC="./unetbootin4.png"
- ALT="Image unetbootin4">
-
-</DIV>
-You need to check if the target device should be mounted first or not
-
-<P>
-Hopefully this how to is useful, please be careful as I am not re-
-sponsible for data loss, I try and write guides to be generic not
-explicit guides. I will leave this to the documentation team
-You can use fdisk and df to determine device references. Read the
-man pages for more info if you get stuck as for help and say you
-have looked at man pages, this blog post etc and are still stuck,
-this shows you have tried to research the issue.
+After booting you will be presented with a graphical login screen :
 
 <P>
 <BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL>
-<LI><UL>
-<LI><A NAME="tex2html326"
-  HREF="node14.html">Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team</A>
-<LI><A NAME="tex2html327"
-  HREF="node15.html">You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post etc and are still stuck,  this shows you have tried to research the issue.</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
-<HR>
-<!--Navigation Panel-->
-<A NAME="tex2html324"
-  HREF="node14.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html318"
-  HREF="node11.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html312"
-  HREF="node12.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html320"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
-<A NAME="tex2html322"
-  HREF="node56.html">
-<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
-<BR>
-<B> Next:</B> <A NAME="tex2html325"
-  HREF="node14.html">Hopefully this how to</A>
-<B> Up:</B> <A NAME="tex2html319"
-  HREF="node11.html">Creating install media</A>
-<B> Previous:</B> <A NAME="tex2html313"
-  HREF="node12.html">CD-R</A>
- &nbsp; <B>  <A NAME="tex2html321"
-  HREF="node1.html">Contents</A></B> 
- &nbsp; <B>  <A NAME="tex2html323"
-  HREF="node56.html">Index</A></B> 
-<!--End of Navigation Panel-->
 <ADDRESS>
 geoffrey
-2014-11-29
+2015-01-18
 </ADDRESS>
 </BODY>
 </HTML>
