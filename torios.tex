@@ -58,7 +58,7 @@ This manual has been prepared using \LaTeX.
 \index{GNU}
 \index{ToriOS}
 
-Linux refers to the kernel (the core) of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNUs Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
+Linux refers to the kernel (the core) of the operating system.  GNU refers to the tools used with Linux and the licensing model these are released under,  GNU stands for GNU's Not Unix,  so these are versions of the tools you would find on the UNIX operating system but released under a free license in this case the GPL (General Public license).
 \index{GNU}
 \index{Linux}
 \index{GNU / Linux}
@@ -704,151 +704,14 @@ ToriOS user manager.  Adding and removing users,
 
 
 
-\newpage
 
-\chapter{Testing}
-\index{testing}
-\index{ISO Testing}
-\subsection {testing - ISO}
-\index{Linux}
-\label{Testing}
-\bf{PLEASE READ IMPORTANT NOTICE ON NEXT PAGE REGARDING TESTING}
-
-\begin{center}\begin{tabular}{|l|l|}
-\hline \textbf{Heading} & \textbf{Content} \\
-\hline Filenamne & ToriOS-alpha-rc2.iso \\
-\hline URL & \htmladdnormallink{http://torios.org/ISO/ToriOS-alpha-rc2.iso}{http://torios.org/ISO/ToriOS-alpha-rc2.iso} \\
-\hline MD5 Sum & 6775c77be242e6145552eeed9b6e85a7 \\
-\hline \end{tabular}\end{center}
-
-
-\begin{itemize}
-\item{save the above to a file e.g MD5SUMS}
-\item{place this in the SAME LOCATION as the iso file}
-\item{type md5sum -c ToriOS-alpla-iso} 
-\item({checking may take a while and you should get an OK if it checks out}
-\item{any problems please ask}
-\end{itemize}
-
-\textbf{Known issues (2014-Aug-29):}
-\begin{itemize}
-\item{Menu does not display items that do not use a desktop file}  
-\item{Missing features in the Settings Manager}
-\item{USB mounting support ONLY (no CD/DVD mounting unless using a terminal)}
-\item{Hardly any apps installed (this is a feature) :D}
-\item{Menu categories do not support localization yet, though all desktop files that have it are supported in the menu}
-\end{itemize}
-
-This uses the OBI installer. \\ \\
-It should run quite easily on 128MB ram for the Live version, and in even less for the installer.  It currently uses around 60-70MB Ram to run. \\ \\
-Currently you can try out the Live version, and install ONLY from the text installer (or you can use the terminal and launch OBI).
-It is highly suggested that you use the Live version ONLY \\ \\
-
-\begin{center}
-
-\textbf{THIS WILL OVERWRITE THE ENTIRE DEVICE IF YOU 
-INSTALL IT} \\
-
-\end{center}
-
-You should backup all your  personal files, and your OS if you choose to install this.\\ \\
-ToriOS contains a tool called mktbl, this tool can backup your entire disk as a tarball to easily reinstall \\ \\
-http://torios.org/contact.html and click ask us if you need help \\
- 
-\newpage
-
-\subsection {Testing virtual box images}
-\index{Testing virtual box images}
-\index{Virtualbox}
-Please see the virtual box webpage for more information and and a detailed manual \cite{VirtualBox}
-
-Once you are signed up then you can start testing the latest build this can be downloaded as a Virtual box image with.
-
-wget -c http://torios.org/VB/ToriBuilder.vdi.xz \\
-
-Once done you need to extract,   either right click and select extract here or use the command line.  Due to the size of the Virtual box image this may take some time. \\
-
-Once this is done you will have a new file called:    in the ToriBuilder.vdi folder,  
-
-
-Open virtual box
-
-\begin{center}
-\includegraphics[width=0.7\linewidth]{extractVBimage}
-\end{center}
-
-Virtual box 
-Click New
-
-\begin{center}
-\item \includegraphics[width=0.7\linewidth]{ToriosTest01}
-\end{center}
-
-Use the following options
-\begin{itemize}
-\item Name : Torios
-\item Type : Linux
-\item Version : Ubuntu 32 bit
-\end{itemize}
-
-Click Next
-
-\begin{center}
-\includegraphics[width=0.7\linewidth]{ToriosTest02}
-\end{center}
-
-Should be Ok to leave the default memory as 256MB,so click next.
-
-\begin{center}
-\includegraphics[width=0.7\linewidth]{ToriosTest03}
-\end{center}
-
-Upon opening virtual box you will see this screen:
-\begin{center}
-\includegraphics[width=0.7\linewidth]{virtualbox}
-\end{center}
-
-Click use existing and select the file you downloaded earlier, so in this case its \textbf{ToriBuilder.vdi}
-
-Click done.
-
-\begin{center}
-\includegraphics[width=0.7\linewidth]{ToriosTest-done}
-\end{center}
-
-Torios needs PAE support enabled to do this select the virtual box image you just created,  and click settings.
-
-\begin{center}
-\includegraphics[width=0.7\linewidth]{ToriosEnablePAE}
-\end{center}
-
-Click system, then processor tab then check the box EnablePAE/NX then press OK.
-
-You should then bereturned to the main virtual box window,  the image should still be selected so press start and you should boot in to the Torios Test Image. 
-
- note yours may look different as I have a few images,  also note in this screen shot i have a different vm set up.  We still need to open up the ToriOS image we downloaded. 
-
-We will assume here you have thus already installed.
-
-USB support \\
-\includegraphics[width=0.7\linewidth]{screen-shots/virtualbox-usb}\\
-
-Network support\\
-\includegraphics[width=0.7\linewidth]{screen-shots/virtualbox-networking}\\
-
-Sharing files with host system\\
-
-\includegraphics[width=0.7\linewidth]{screen-shots/virtualbox-shared-folder}\\usepackage{xmpincl}
-\includegraphics[width=0.7\linewidth]{screen-shots/virtualbox-shared-folders}\\
 
 \chapter{Document License}
 \index{Creative Commons}
 \index{Document License}
 \textbf{Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)}
 
-\includexmp{CC_Attribution-ShareAlike_4.0_International}
-
-http://creativecommons.org/licenses/by-sa/4.0/
+http://creative commonsorg/licenses/by-sa/4.0/
 
 
 
@@ -1629,7 +1492,7 @@ first, please read \texttt{http://www.gnu.org/philosophy/why-not-lgpl.html}.
 
 \bibitem{ToriOS}
 \url{http://www.torios.org}
-\emph{2014}
+\emph{2014-15}
 
 \bibitem{PAE}
 \url{http://en.wikipedia.org/wiki/Physical_Address_Extension}
