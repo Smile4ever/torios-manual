@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Creating install media</TITLE>
-<META NAME="description" CONTENT="Creating install media">
+<TITLE>Install Torios</TITLE>
+<META NAME="description" CONTENT="Install Torios">
 <META NAME="keywords" CONTENT="torios">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,73 +19,149 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="torios.css">
 
-<LINK REL="next" HREF="node17.html">
-<LINK REL="previous" HREF="node8.html">
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node9.html">
 <LINK REL="up" HREF="torios.html">
 <LINK REL="next" HREF="node12.html">
 </HEAD>
 
 <BODY >
 <!--Navigation Panel-->
-<A NAME="tex2html291"
+<A NAME="tex2html211"
   HREF="node12.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html285"
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.svg"></A> 
+<A NAME="tex2html207"
   HREF="torios.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html279"
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.svg"></A> 
+<A NAME="tex2html201"
   HREF="node10.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html287"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
-<A NAME="tex2html289"
-  HREF="node56.html">
-<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.svg"></A>  
+<A NAME="tex2html209"
+  HREF="node48.html">
+</A> 
 <BR>
-<B> Next:</B> <A NAME="tex2html292"
-  HREF="node12.html">CD-R</A>
-<B> Up:</B> <A NAME="tex2html286"
-  HREF="torios.html">torios</A>
-<B> Previous:</B> <A NAME="tex2html280"
-  HREF="node10.html">Verifying the download</A>
- &nbsp; <B>  <A NAME="tex2html288"
-  HREF="node1.html">Contents</A></B> 
- &nbsp; <B>  <A NAME="tex2html290"
-  HREF="node56.html">Index</A></B> 
+<B> Next:</B> <A NAME="tex2html212"
+  HREF="node12.html">Login Manager</A>
+<B> Up:</B> <A NAME="tex2html208"
+  HREF="torios.html">ToriOS Manual</A>
+<B> Previous:</B> <A NAME="tex2html202"
+  HREF="node10.html">UEFI Boot</A>
+ &nbsp; <B>  <A NAME="tex2html210"
+  HREF="node48.html">Index</A></B> 
 <BR>
 <BR>
 <!--End of Navigation Panel-->
 
 <H1><A NAME="SECTION00700000000000000000">
-Creating install media</A>
+Install Torios</A>
 </H1>
+<B>One Button Installer (OBI) </B>
+<A NAME="136"></A>
+https://help.ubuntu.com/community/OBI
+<BR>
+For more help with the One button installer please refer to the OBI- quick start manual. This can be found on the OBI website [<A
+ HREF="node47.html#OBI">15</A>] with a direct link to the manual at [<A
+ HREF="node47.html#OBI_Quickstart">16</A>]. You are <B>STRONGLY ADVISED TO READ THE DOCUMENTATION</B>
+
+<BR><B>Note ; This is based on the RC-2 test version.</B>
+<BR>
+<BR>
+I set up virtual box with the default settings (256mb RAM)and added a 16gb virtual hard disk sda. 
+<BR>
+<BR>
+First step in the process is to boot the iso image,  this automatically boots in to the new ToriOS desktop
 
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./toriosRC2.png"
+ ALT="Image toriosRC2"> 
 
-<UL>
-<LI><UL>
-<LI><A NAME="tex2html293"
-  HREF="node12.html">CD-R</A>
-<LI><A NAME="tex2html294"
-  HREF="node13.html">Flash Disks - Unetbootin</A>
-<UL>
-<LI><A NAME="tex2html295"
-  HREF="node14.html">Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team</A>
-<LI><A NAME="tex2html296"
-  HREF="node15.html">You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post etc and are still stuck,  this shows you have tried to research the issue.</A>
-</UL>
-<LI><A NAME="tex2html297"
-  HREF="node16.html">Flash Disks - mkUsb</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<BR>
+<P>
+Note the install button at the http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdfbottom of the screen,  click this to start the install process. 
+<BR><IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install1.png"
+ ALT="Image torios-rc2-install1">
+
+<P>
+The initial screen is show here,  i accepted all the defaults except right at the very end for the confirm, where I had to manually select (yes) 
+<BR>
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install2.png"
+ ALT="Image torios-rc2-install2">
+
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install3.png"
+ ALT="Image torios-rc2-install3">
+
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install4.png"
+ ALT="Image torios-rc2-install4">
+
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install5.png"
+ ALT="Image torios-rc2-install5">
+
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install6.png"
+ ALT="Image torios-rc2-install6">
+
+<P>
+the next screen has a FINAL RED warning. 
+<BR>
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install8-final-warning.png"
+ ALT="Image torios-rc2-install8-final-warning">
+<P>
+<IMG
+  WIDTH="1028" HEIGHT="837" ALIGN="BOTTOM" BORDER="0"
+ SRC="./torios-rc2-install9.png"
+ ALT="Image torios-rc2-install9">
+
+<P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html211"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.svg"></A> 
+<A NAME="tex2html207"
+  HREF="torios.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.svg"></A> 
+<A NAME="tex2html201"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.svg"></A>  
+<A NAME="tex2html209"
+  HREF="node48.html">
+</A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html212"
+  HREF="node12.html">Login Manager</A>
+<B> Up:</B> <A NAME="tex2html208"
+  HREF="torios.html">ToriOS Manual</A>
+<B> Previous:</B> <A NAME="tex2html202"
+  HREF="node10.html">UEFI Boot</A>
+ &nbsp; <B>  <A NAME="tex2html210"
+  HREF="node48.html">Index</A></B> 
+<!--End of Navigation Panel-->
 <ADDRESS>
 geoffrey
-2014-11-29
+2015-01-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Pre-installation</TITLE>
-<META NAME="description" CONTENT="Pre-installation">
+<TITLE>Creating install media</TITLE>
+<META NAME="description" CONTENT="Creating install media">
 <META NAME="keywords" CONTENT="torios">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,90 +19,367 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="torios.css">
 
-<LINK REL="next" HREF="node11.html">
-<LINK REL="previous" HREF="node7.html">
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node5.html">
 <LINK REL="up" HREF="torios.html">
 <LINK REL="next" HREF="node9.html">
 </HEAD>
 
 <BODY >
 <!--Navigation Panel-->
-<A NAME="tex2html249"
+<A NAME="tex2html176"
   HREF="node9.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html243"
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.svg"></A> 
+<A NAME="tex2html172"
   HREF="torios.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html237"
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.svg"></A> 
+<A NAME="tex2html166"
   HREF="node7.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html245"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
-<A NAME="tex2html247"
-  HREF="node56.html">
-<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.svg"></A>  
+<A NAME="tex2html174"
+  HREF="node48.html">
+</A> 
 <BR>
-<B> Next:</B> <A NAME="tex2html250"
-  HREF="node9.html">Downloading the ISO</A>
-<B> Up:</B> <A NAME="tex2html244"
-  HREF="torios.html">torios</A>
-<B> Previous:</B> <A NAME="tex2html238"
-  HREF="node7.html">The ToriOS Team</A>
- &nbsp; <B>  <A NAME="tex2html246"
-  HREF="node1.html">Contents</A></B> 
- &nbsp; <B>  <A NAME="tex2html248"
-  HREF="node56.html">Index</A></B> 
+<B> Next:</B> <A NAME="tex2html177"
+  HREF="node9.html">Booting install media</A>
+<B> Up:</B> <A NAME="tex2html173"
+  HREF="torios.html">ToriOS Manual</A>
+<B> Previous:</B> <A NAME="tex2html167"
+  HREF="node7.html">Verifying the download</A>
+ &nbsp; <B>  <A NAME="tex2html175"
+  HREF="node48.html">Index</A></B> 
 <BR>
 <BR>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION00600000000000000000"></A>
-<A NAME="67"></A>
-<BR>
-Pre-installation
+<H1><A NAME="SECTION00500000000000000000">
+Creating install media</A>
 </H1>
-There are several steps to an installation. 
-<BR>
-<OL>
-<LI>Decide on the installation media CD-R or flash disk* 
-</LI>
-<LI>Prepare install media - in the case of a flash disk make sure this is empty
-</LI>
-<LI>Prepare target media and decide where to install Torios to (for example a hard disk)
-</LI>
-<LI>Download the iso file
-</LI>
-<LI>Create your install media
-</LI>
-<LI>Initial boot
-</LI>
-<LI>Either install from menu or run live session and install from there
 
 <P>
-*CD usually works more reliable on old computers, and that some computers do not want to boot USB drives. 
 
 <P>
-</LI>
-</OL>
+<B>CD-R</B>
+<A NAME="84"></A>
 
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+When you have an ISO file or disk image you need to <B>BURN</B> image to cd.  When using which ever cd mastering program you have.  If you copy to CD you will have a cd with an ISO file on it.  You won't be able to boot from that media.
+
+<P>
+Examples of software for creating your CD / DVD include
+
+<P>
 
 <UL>
-<LI><UL>
-<LI><A NAME="tex2html251"
-  HREF="node9.html">Downloading the ISO</A>
-<LI><A NAME="tex2html252"
-  HREF="node10.html">Verifying the download</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<LI>Windows vista and above can write / burn optical media [<A
+ HREF="node47.html#WindowsCD">2</A>]
+</LI>
+<LI>Brassero and k3b are examples of optical media software under Linux
+</LI>
+<LI>There are several command line tools for this too.
+</LI>
+</UL>
+
+<P>
+
+<P>
+<B>K3b</B> 
+<BR>
+Table below is provided for reference on version used for the manual 
+<BR>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>ITEM</B></TH>
+<TH ALIGN="LEFT"><B>DESCRIPTION</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">Application name</TD>
+<TD ALIGN="LEFT">k3b</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Application Description</TD>
+<TD ALIGN="LEFT">CD / DVD creator</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Menu Name</TD>
+<TD ALIGN="LEFT">n/a</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Installed Version</TD>
+<TD ALIGN="LEFT">n/a</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Screenshot version</TD>
+<TD ALIGN="LEFT">?</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Screenshot Source</TD>
+<TD ALIGN="LEFT">Debian 7.6</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Website</TD>
+<TD ALIGN="LEFT">http://www.nongnu.org/synaptichttp://www.nongnu.org/synaptic</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<BR>
+<P>
+If you right click on the image file (iso) and open with k3b then you should see the screen above.  You need to wait until it completes the md5sum scan,  select the burn speed.  Note it says BURN I think this is default when you open an iso file.
+<BR>
+<P>
+Click start 
+<BR> 
+<BR>
+<P>
+This screen shows the progress of the burn.  Once complete it will be ejected and Success will be displayed. 
+
+<P>
+
+<P>
+<B>Flash Disks - Unetbootin</B>
+<A NAME="102"></A>
+<A NAME="103"></A>
+You can use unetbootin to create a bootable flash disk image.   
+
+<P>
+<B>Note</B> There is a bug in UNetbootin under ubuntu 14.10 that stops it from working,  this should be fixed by the time ToriOS is ready for final release. 
+
+<P>
+Older versions are working fine.
+
+<P>
+See the URL ref section for links to the unetbootin website <A HREF="node45.html#URL_REF">19</A>
+
+<P>
+http://unetbootin.sourceforge.net/ [<A
+ HREF="node47.html#unetbootin">7</A>] and a how to on install ubuntu a usb stick [<A
+ HREF="node47.html#unetbootin2">8</A>]
+
+<P>
+You can follow the steps below 
+<BR>
+<P>
+Creating a boot usb flash disk
+
+<P>
+(With thanks to Nio Wiklund for some helpful comments with regard to the title of this document)
+
+<P>
+A good tool for this is UNetbootin, [<A
+ HREF="node47.html#unetbootin">7</A>]  you can install this on Linux, OSX and Windows ,
+
+<P>
+e.g sudo apt-get install unetbootin or use the install method for the distribution you are using. 
+
+<P>
+you need your root password.
+
+<P>
+You can then load the software up, you will need your root password
+
+<P>
+UNetbootin as well as mkusb works in most GNU/Linux distributionss, but I think
+
+<P>
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="538" HEIGHT="403" ALIGN="BOTTOM" BORDER="0"
+ SRC="./unetbootin.png"
+ ALT="Image unetbootin"> 
+
+</DIV>
+
+<P>
+Click disk image,  ISO can be left as in,  then select the box with ? in and select the iso file
+
+<P>
+select type, usb drive or hard disk,  most people are going to want to create a usb boot flash disk.
+
+<P>
+drive should be the device reference for this disk
+
+<P>
+make sure you are 100 percent sure,  and if you are not sure ASK on forums , IRC or elsewhere first.
+
+<P>
+I find it helpful to unmount and unplug my external hdd first,  In other words if you don't want to write to it,  remove that device (if possible)  You can wipe you whole file system uf you get the options wrong. 
+
+<P>
+Unplug ALL USB devices you don't need, for example USB flash and hard drives. This will prevent writing to them by accident and will make it easier to select your ToriOS  USB stick from the list.  DOUBLE CHECK BEFORE YOU CLICK OK. 
+
+<P>
+If you have already downloaded and md5 checked your iso file then you don?t need to worry about the top part,
+
+<P>
+Click disk image radio button
+
+<P>
+the drop down menu to the right of this is a between ISO and floppy
+
+<P>
+you can then click on file search button (the one with ? )
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="646" HEIGHT="464" ALIGN="BOTTOM" BORDER="0"
+ SRC="./unetbootin2.png"
+ ALT="Image unetbootin2"> 
+</DIV>
+<P>
+<DIV ALIGN="CENTER">
+</DIV>
+
+<P>
+Select if you want to have a persistent space for files.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="559" HEIGHT="419" ALIGN="BOTTOM" BORDER="0"
+ SRC="./unetbootin3.png"
+ ALT="Image unetbootin3">
+
+</DIV>
+
+<P>
+Type? you can choose between usb and hard disk <B>BE VERY CAREFUL</B> 
+<BR>
+<P>
+then select the device, if you select hard disk then the device reference chances to / indicating root of the file system. 
+<BR>
+<P>
+<B>REMEMBER</B> that you can wipe your whole file system if you get the options wrong,  if you have an external hard disk and a usb disk plugged in I find it helpful to unmount and unplug the external hard disk,  gives less target options and is less likely to get wiped by mistake. 
+<BR>
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="815" HEIGHT="637" ALIGN="BOTTOM" BORDER="0"
+ SRC="./unetbootin4.png"
+ ALT="Image unetbootin4">
+
+</DIV>
+You need to check if the target device should be mounted first or not
+
+<P>
+Hopefully this how to is useful, please be careful as I am not re-
+sponsible for data loss, I try and write guides to be generic not
+explicit guides. I will leave this to the documentation team
+You can use fdisk and df to determine device references. Read the
+man pages for more info if you get stuck as for help and say you
+have looked at man pages, this blog post etc and are still stuck,
+this shows you have tried to research the issue.
+
+<P>
+Hopefully this how to is useful,  please be careful as I am not responsible for data loss,  I try and write guides to be generic not explicit guides.  I will leave this to the documentation team
+
+<P>
+You can use fdisk and df to determine device references. Read the man pages for more info if you get stuck as for help and say you have looked at man pages,  this blog post etc and are still stuck,  this shows you have tried to research the issue.
+
+<P>
+The Ubuntu manual should have this information in it too.
+
+<P>
+man unetbootin
+
+<P>
+man fdisk
+
+<P>
+man ls
+
+<P>
+man df
+
+<P>
+If you need to format the flash disk, using disks, this is a case of
+
+<P>
+Unmount the flash disk
+
+<P>
+Select format
+
+<P>
+MAKE SURE YOU HAVE THE RIGHT DEVICE SELECTED.
+
+<P>
+Once this is all done and you are happy with the destination click OK
+
+<P>
+Progress bar showing how many files have been copied and a percentage
+
+<P>
+<IMG
+  WIDTH="570" HEIGHT="412" ALIGN="BOTTOM" BORDER="0"
+ SRC="./unetbootin5.png"
+ ALT="Image unetbootin5"> 
+<BR>
+<P>
+All done you can now reboot, select usb disk from the boot device menu (see your Manual on how to access this) and tryout /  install the new OS
+
+<P>
+unetbootin also works from Windows / Mac
+
+<P>
+<B>Flash Disks - mkUsb</B>
+<A NAME="126"></A>
+mkUSB - Make USB
+
+<P>
+See the URL ref section for links to the information on mkusb [<A
+ HREF="node47.html#mkUSB-Quick-Start-manual">17</A>]
+
+<P>
+mkusb is split now into one GUI program 'mkusb' and two console or text
+applications, mkusb-nox and mkusb-bas. The GUI version works in ToriOS
+(as well as in Ubuntu, Fedora, Debian, openSUSE. Arch to mention a few
+distros).
+
+<P>
+mkusb-nox 'can do what mkusb can' but without eye-candy. mkusb-bas is
+basic and can be used in simple distros, where certain tools are not
+available (I have tested and tweaked it to work in Wary Puppy and Tiny
+Core).
+
+<P>
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual.pdf
+
+<P>
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-nox.pdf
+
+<P>
+http://phillw.net/isos/linux-tools/mkusb/mkUSB-quick-start-manual-bas.pdf
+
+<P>
+<B>Using Windpws XP</B>
+
+<P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html176"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.svg"></A> 
+<A NAME="tex2html172"
+  HREF="torios.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.svg"></A> 
+<A NAME="tex2html166"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.svg"></A>  
+<A NAME="tex2html174"
+  HREF="node48.html">
+</A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html177"
+  HREF="node9.html">Booting install media</A>
+<B> Up:</B> <A NAME="tex2html173"
+  HREF="torios.html">ToriOS Manual</A>
+<B> Previous:</B> <A NAME="tex2html167"
+  HREF="node7.html">Verifying the download</A>
+ &nbsp; <B>  <A NAME="tex2html175"
+  HREF="node48.html">Index</A></B> 
+<!--End of Navigation Panel-->
 <ADDRESS>
 geoffrey
-2014-11-29
+2015-01-18
 </ADDRESS>
 </BODY>
 </HTML>
